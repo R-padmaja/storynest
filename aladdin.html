@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryNest | Aladdin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Karma', sans-serif;
+    }
+
+    body {
+      color: #fff;
+      background: #000;
+    }
+
+    #bg-image {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      height: 50px;
+    }
+
+    .nav-logo span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 140px auto 60px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #ffd700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      width: 60px;
+      z-index: 100;
+    }
+
+    .chat-bubble {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 25px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      max-width: 200px;
+    }
+
+    .chat-bubble.show {
+      display: block;
+    }
+
+    #dictionary-popup {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.95);
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      display: none;
+      max-width: 300px;
+      font-size: 0.95rem;
+      z-index: 9999;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .fixed-back {
+      position: fixed;
+      top: 90px; /* just below the nav bar */
+      right: 20px;
+      background-color: #f8a100;
+      color: black;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1001;
+      box-shadow: 0 0 6px rgba(0,0,0,0.5);
+      transition: background 0.3s;
+    }
+
+    .fixed-back:hover {
+      background-color: #ffc04d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Image -->
+  <img id="bg-image" src="09. Aladdin.jpg" alt="Background Image" />
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.png" alt="Logo" />
+      <span>StoryNest</span>
+    </div>
+  </nav>
+
+  <!-- Back Button -->
+  <a href="fairy.html" class="fixed-back">← Back to Fairy Tales</a>
+
+  <!-- Lesson 1 -->
+  <div class="container" id="story">
+    <h2>The Aladdins</h2>
+    <p>ONCE UPON A TIME, a young man’s father died.  Aladdin, as that was the young man’s name, took his father’s place in running the family store with his mother.  One day, a stranger walked into the store.
+
+“I am your uncle,” said the stranger to Aladdin.  “I have come to see you.”
+
+“My father never spoke of a brother,” said Aladdin.
+
+Aladdin’s mother turned around. “My husband had no brother,” said she to the stranger, narrowing her eyes.
+
+“I assure you it is true,” said the stranger. “Years ago your husband and I agreed that if something should happen to him, since I have been very fortunate in my life, I would help to bring the same good fortune to your family.”
+
+The mother was interested.  “What do you have in mind?” she said.I know of a secret place that holds many riches,” said the stranger.  “I will take your son there. With the wealth he will find, you and he will be set for life.”
+
+And so the mother agreed.  The old man and the boy traveled for days throughout the desert.  At last they came to a cave. “You should know that I learned a bit of magic in my life,” said the old man to Aladdin.  “Do not be surprised by anything you might see.”
+
+They stepped inside the cave, and it was pitch-black. The old man shook open his fist.  A ball of light suddenly appeared, brightening the cave. 
+
+Under the light with one long finger, the uncle drew on the ground the shape of a circle. He pulled from his pocket some red dust and threw it over the circle.  He recited magic words, and the earth trembled.  The circle on the cave floor cracked wide open, and up through the cracks rose a giant white quartz crystal.  It hovered in the air. 
+
+“Do not be alarmed,” said the magician.  “What we want is under this crystal.”    
+
+He chanted a few more magic words and the giant crystal moved to the side, and landed.  Aladdin peered into the hole in the circle. The first few steps led into a deep abyss.
+
+ “Fear nothing,” said the magician to Aladdin. “You must go down these steps.  At the bottom of the steps you will see a long hallway.  Follow the hallway to a garden of fruit trees. Touch nothing! Go on and you will see a large flat stone.  On top of the stone is an oil lamp that is lit.  Pour out the oil and bring the lamp to me. Now go!”
+
+"Pour out the oil and bring the lamp to me.  Now go!"
+
+Aladdin stepped with care down the stairs.  Just as the old man had said, at the foot was a long hallway that led to a garden of fruit trees.  The trees were marvelous to behold with fruit that sparkled and shone. He could not help but reach out and touch just one.  Then – too late! – he remembered what his uncle had said. But nothing terrible happened. So he figured he might as well put the fine jewel-fruit in his vest pocket.  The next thing he knew, he was plucking one more and then yet another jewel-fruit, until his pockets were filled.
+
+Aladdin came to a large flat stone and on it was a oil lamp, lit just as the old man had said. He poured out the oil and took the empty lamp back to the opening of the cave.
+
+Aladdin called out, “Here I am, Uncle!”
+
+The magician called out in a great hurry, “Give me the lamp, quickly!”
+
+“Just as soon as I’m up,” said Aladdin, wondering why the magician seemed in such a hurry.  
+
+“Hand over that lamp now!” cried the old man, reaching down his hand.  For you see, the only way the lamp could come out of the cave was as a gift, from one person to another.  The magician knew this.  That is why he wanted to get the lamp from the boy as soon as he could.  Then he would kill the boy.  Aladdin felt a chill in the air - something was wrong. Somehow he knew he must not give up that lamp.  
+
+“Let me up first," said Aladdin.  "Then will I give you the lamp.”
+
+Aladdin felt a chill in the air - something was wrong.
+
+The magician was furious. He fell into a rage and barked out magical words.  The giant white quartz crystal rose up, hovered over the hole and landed. All was dark. Aladdin was trapped!
+
+For two days, Aladdin despaired.  “Why didn’t I just hand over this old lamp? Who cares about it, anyway?  Whatever might have come of it, it couldn’t have been worse than this!  What was I thinking?”
+
+Rubbing the lamp, he moaned, “Oh, I wish I could get out of here!”  At once, a huge Genie rose up into the air. 
+
+“Master!” boomed the Genie. “Is this your first wish - to get out of this cave?  Three wishes are yours to command.”Aladdin’s mouth fell open, amazed. He mumbled Yes, of course!  As more than anything he wanted to get out of the cave and go home.  The very next moment, Aladdin was outside his home, still holding the lamp and with all the jewel-fruits still in his pockets.  
+
+His mother could not believe what her son told her.  “You tell me that's a magic lamp?” she laughed. “That old thing?” She took the lamp, grabbed a rag, and started to clean it.  “If there were really a Genie in this old lamp, I would say to it, ‘Genie, make a feast for my son and me, and serve it on plates of gold!’”
+
+You can imagine the mother’s surprise, for the Genie rose up out of the lamp and said in a booming voice,  "Master, your wish is my command!" At once, a feast fit for a king weighed down her kitchen table, on plates of glimmering gold.  Mother and son enjoyed this feast like no other.  The mother washed and sold the gold plates, and bought necessary things to live.  From then on, Aladdin and his mother lived well.
+
+One day, Aladdin thought to himself, “Why think small?  With all the jewel-fruits I have, I could marry the Princess herself and become the Prince of this land!”  
+
+His mother laughed.  “You can’t just go to a palace with some fine gifts and expect to marry a Princess!”  But Aladdin wrapped some of the jewel-fruits in silk cloth, and went off to the palace anyway.
+
+The guards stopped Aladdin.  He insisted he had something very valuable for the Sultan, and so they let him in.
+
+The guards stopped Aladdin.
+
+Said the Sultan, “What have you brought me that you say is so valuable?”
+
+Aladdin showed the Sultan the jewel-fruits. The Sultan was impressed. “If you are as worthy of my daughter as you say, you must bring me 40 golden trays of the same gems, carried in by servants.”
+
+Aladdin went home and told his mother of the Sultan’s demand.  “It's no problem,” said she. “I still have two more wishes.  I will call for the Genie.” So she rubbed the lamp and made her second wish.  Before long, Aladdin was again at the steps of the Sultan’s palace, this time with 40 golden trays of the jewel-fruits, carried in by as many servants.
+
+The Sultan was pleased.  “But you cannot think this is enough to win the hand of my daughter!” he said. “To truly win my favor, you must build a golden palace for my daughter and you to live.”
+
+Aladdin brought back this news too, to his mother.  So for her third wish, the Mother asked the Genie to create a golden palace.  The next morning, right outside the Sultan’s bedroom, appeared a huge golden palace, gleaming in the sun.Meanwhile, back at Aladdin’s home, his Mother said, “It is time for you to go, my son, to meet your Princess.”  Her wishes spent, she gave him the lamp.
+
+The next morning, the Sultan called for his daughter.  “Look at this palace!” he said, pointing out the window.  “This is the husband for you!”
+
+“Because of this palace?” said his daughter.  “Have you even met this man?”
+
+“Why bother?” said the Sultan.  “He can make a golden palace appear overnight.  He’s even more powerful than my royal adviser, the Vizier.”
+
+“Why bother?” said the Sultan. "He can make a golden palace appear overnight."
+
+“Why is being powerful all that matters?" said the Princess. "Yesterday, your Vizier was most powerful man in the kingdom and I was to marry him.  Today, this stranger is the most powerful man and I’m to marry him. Why do you think it matters to me who is most powerful?”“I am your father, the Sultan of this land!” he roared.  “I say you will marry him!”
+
+The Princess threw up her arms in despair.  “It's no use!” 
+
+In her dressing room, the Princess groaned.  To Nadia, her lady-in-waiting, she said, “My father is determined to marry me off, no matter what.  To one powerful man or another, he hardly cares who he is.”
+
+“But Madam,” said Nadia, “isn’t this wonderful new stranger an excellent match?”
+
+The Princess looked at her lady-in-waiting.  “You don't know how lucky you are,” she said. “I would rather live your life than be handed off in this way.”
+
+“And I would rather live yours,” said Nadia.  The two of them stared at each other for a couple of moments.  They were about the same height, and had about the same color hair. With all the scarves that maidens like them wore…
+
+“Let’s do it!” they said together. The two of them changed clothes.
+
+At that very moment, Aladdin was riding to the Sultan’s palace on a white horse, ready to meet his bride.  The Sultan warmly greeted him.
+
+“Stay here in my palace until the preparations for your wedding are complete,” he said.  As tradition held, Aladdin could not meet the Princess until their wedding day. He caught a glimpse of Nadia from a distance, covered in scarves, thinking she was the true Princess.  Aladdin, the Sultan, and everyone else in the palace waited with growing excitement for the wedding day.
+
+Except for one.  The uncle-magician who had left Aladdin trapped in the cave was also the Sultan’s Vizier.
+
+Except for one.
+
+In court, he recognized Aladdin at once.  He knew there could be only one reason the young man could present all this magic to the Sultan. Aladdin must have somehow escaped from the cave with the lamp!  
+
+“I will get my revenge!” swore the Vizier.   “If anyone is to have the lamp, it is me!” By his magic, he could tell where Aladdin had hidden the lamp.  When Aladdin was sleeping, the Vizier crept in and stole it.In a quiet place, the Vizier made his first wish: “Genie, do as I say.  I want you to take Aladdin’s palace to a faraway place in the desert that no one can find!”
+
+What the Vizier did not know was at that very moment, Nadia was inside Aladdin’s palace, exploring it.  And there is something else the Vizier did not know. The Genie thought the Vizier had commanded to be taken far away too, along with the palace.  So the Genie sent the Vizier, the golden palace and Nadia, all together to a faraway desert. 
+
+The next morning, the Sultan awoke and saw nothing outside his bedroom window where Aladdin’s palace had stood the day before.  The next moment his servants rushed in, announcing that the Princess was gone! Furious, he called for Aladdin.
+
+“What have you done?” the father yelled in a rage.  “Because of your magic tricks I have lost my daughter!  You must bring her back to me in three days or it will cost you your head!” 
+
+"What have you done?" the father yelled in a rage.
+
+Aladdin thought he would simply use his second wish and the Genie would bring back the princess and the castle, too. But he looked everywhere for his magic lamp - it was gone! 
+
+In despair, Aladdin could do nothing but to ride away from the Sultan’s palace on the white horse he had rode in on. Sadly, he rode from town to town but no one knew anything about a palace that had suddenly appeared overnight.  
+
+You may wonder - where was the true Princess all this time? Dressed as a servant girl, she had crept out of the palace the very day she had switched clothes with Nadia.  Down to the marketplace she went, and there she met an aging merchant.
+
+The old merchant told her he was tired from riding so many years from town to town, selling his potions and perfumes.  He had many customers along the way who expected him, but he yearned to rest.
+
+The Princess was dressed humbly, yet she carried herself like royalty. She gained the confidence of the old merchant.  When she offered to ride his camel train in his place and share what she earned with him, he was delighted.  And that is how our Princess found herself up clop-clopping through the desert, selling potions and perfumes from town to town.
+
+Back to Aladdin.  Two days passed, and he was no closer to finding his lost palace.  Crouched in front of his tent, he held his head in his hands.  
+
+“Why the sad face?” The Princess, riding by, stopped her camel train.  “Perhaps a potion will make you feel better.”“No, thank you,” said Aladdin.  “The only thing that could help is if I could bring back a Princess who is missing and find my palace that was lost overnight."
+
+"My goodness!" said the Princess, though Aladdin saw her only as a potions merchant.  "How did all of this come about?"
+
+Aladdin described the golden palace that vanished along with the Princess inside, and that he had but one day left to bring them back home, or lose his life. "Oh, this is an impossible task!”
+
+The true Princess knew it must not be she who was inside the palace, but the pretend Princess.  “Do not despair,” said the true Princess. “In my travels, I heard of a golden palace in the desert that suddenly appeared out of nowhere.
+
+“Do not despair," said the true Princess.
+
+“You did?” said Aladdin, looking up. “Where?”
+
+“I can take you there, if you like.  If we left now, we could get there by morning.”
+
+“I am grateful!” said Aladdin.  He had left all the jewel-fruits with his Mother except one.  This he offered to the camel-rider as payment.
+
+“Oh, keep it,” she said with a wave of her hand.  “It’s no trouble. Bring your horse to ride alongside my camel.”
+
+Riding through the night, the two of them spoke of many things. Aladdin marveled at the young lady’s easy manner and generous spirit.  He somehow knew that she could be trusted. Before long, he told her the rest of his story - how he discovered the magic lamp in the cave in the first place, how he used his wishes to impress the Sultan so he could marry the Princess, and how the lamp was later stolen from him.  
+
+"What makes you think the Princess would have wanted to marry you?" said the true Princess.
+
+"Well you know," said Aladdin, musing.  "I never thought of that."  
+
+This and other matters of the heart and mind passed between them as the two rode through the night.  As the morning’s dawn brightened, Aladdin and she were riding in a path between two very tall walls of rock, rose-colored they were, with thin bands of white and blue.  Suddenly the tall rock walls ended, and they arrived at a clearing.
+
+Suddenly the tall rock walls ended, and they arrived at a clearing.
+
+“Look!” said the Princess, pointing ahead.  “Is that it?”
+
+“It is!” Aladdin cried out with joy, recognizing his palace.  “I hope the Princess is still inside!" Then he added, "Though even if she is, without my lamp I couldn't get them both back before the third day.”
+
+Just then Nadia, who had been carried away along with the palace as you must know, was looking out the window at the new guests.  To her surprise, she recognized the rider of the camel train as none other than her beloved former mistress. She waved at them both to come to the front door.
+
+The servants let in the guests. Nadia took them to the drawing room and shut the door. She said, “Mistress!  How glad I am to see you!” I'm glad to see you too, Nadia.”
+
+Aladdin was amazed. “You know each other?”
+
+The Princess only said to Nadia, “Tell me, how did you find being a Princess?” 
+
+ “At first, I loved it.  What's not to love? I liked well enough the fine gowns and all the attention I got.  But I got carried away with this palace, and the Vizier is here, too.  For the last two days he has done nothing but fly about in a rage and smash things. He terrifies me!”
+
+“He can be scary,” said the Princess, who knew the Vizier and what he was capable of.
+
+“He terrifies me!"
+
+“There’s more,” said Nadia.  “He said with his lamp, tomorrow we’ll return to the Sultan’s land and I will have to marry him!”  
+
+“You said…'with his lamp'?” Aladdin and the princess looked at each other.
+
+The Princess turned to Nadia. “Wait a minute!  I have a plan.” 
+
+The Princess gave Nadia one of the sleeping potions in her stock of merchandise.  She told Nadia that when the Vizier returned that night, she must pour the sleeping potion into his wine.  He would fall into a sleep so deep that he would not be awakened by any noise. That is what she did. When the wicked man was snoring, Nadia, the true Princess, and Aladdin searched everywhere for the magic lamp. At last they found it.
+
+The lamp in his hands again, Aladdin said, “Now I can make my second wish. I am going to wish for this castle and everyone in it to go back to the Sultan’s kingdom – except for the Vizier.”
+
+“Wait!” said the true Princess.  "Leave me behind, too.” 
+
+Aladdin urged her to come with him, but the Princess would have none of it. She liked too well the life of freedom she led as a merchant who traveled from town to town on camel.  Aladdin did not like at all that she would be left behind with the Vizier. But she assured him the Vizier would not awaken for hours, and she would have plenty of time to get far away.  
+
+So Aladdin rubbed the lamp and stated his wish to the Genie. In a whoosh, Aladdin, the palace and Nadia were all transported back to the very spot where the palace had stood before.
+
+The Sultan was delighted to have his daughter back, or you might say, the young woman he believed to be his daughter, covered as she was in scarves.  “We will hold the wedding in three days!” the Sultan said to Aladdin.
+
+Yet a sadness was growing in Aladdin’s heart.  Nadia was indeed a nice young woman, but there was something about that woman who rode the camel train, the one who sold perfumes and potions.  He could not get out of his mind the sound of her laugh, her clever mind, and the comfort of her company. 
+
+At last, he rubbed the lamp.
+
+At last, he rubbed the lamp.
+
+"Master!” said the Genie. “This is your third and final wish.  Is it mountains of jewels you want, power over all the neighboring lands, or the strength of 100 men?”
+
+“None of that,” said Aladdin.  “I wish you to take me to that young woman I met, the camel rider, the one who sold perfumes and potions.”
+
+“But Master, this is your last wish!” said the Genie.  “You could offer this woman your heart, and she may not agree.  You’ll miss your chance to marry the Sultan’s daughter and become a Prince!” 
+
+“I don’t care!” said Aladdin. “I must tell this woman what is in my heart.  Whatever comes of it, so be it.”
+
+So Aladdin made his third and last wish and was whisked to the true Princess.  He shared his feelings with her. The Princess told him her secret – that she was actually a Princess and now was happier living as a traveling merchant.  Aladdin said he wanted nothing better than to spend the rest of his days with her by his side, Princess or not.  They agreed to travel and have adventures together.  It was not long before her feelings matched his own, and the two of them decided to marry.
+
+Then – such surprising news!  Aladdin and the Princess learned that the Sultan had suddenly died.  Said Aladdin to his new bride, “Since your father is gone, would you consider returning to your father’s palace?  We could rule the kingdom, side by side.”
+
+As a last goodbye to their life on the camel train, the Princess mixed two magical potions.  One sent the gold she had earned selling potions flying back to the merchant she had met in the village.  And with her second potion, in a cloud of smoke a magic carpet appeared!  On this magic carpet Aladdin and the Princess flew back to the palace.Nadia was very pleased to see them. She gladly stepped down to serve again as lady-in-waiting to the Princess.  Having to settle disputes and make important royal decisions was not at all what she had in mind.
+
+From then on, Aladdin and the Princess ruled the kingdom wisely and well.  They lived happily ever after, as may you.
+The End..  </p>
+    
+  </div>
+
+  
+
+
+  <!-- Dictionary Popup -->
+  <div id="dictionary-popup"></div>
+
+  <!-- AI Chat Assistant -->
+  <img src="ai1.png" class="chat-icon" id="chatToggle" alt="AI Chat Icon" />
+  <div class="chat-bubble" id="chatBubble">
+    👋 Need help with the story?
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const toggle = document.getElementById("chatToggle");
+    const bubble = document.getElementById("chatBubble");
+    toggle.addEventListener("click", () => {
+      bubble.classList.toggle("show");
+    });
+
+    // Dictionary popup logic
+    const popup = document.getElementById("dictionary-popup");
+    document.getElementById("story").addEventListener("pointerdown", (e) => {
+      const selection = window.getSelection();
+      setTimeout(() => {
+        const word = selection.toString().trim();
+        if (word.length > 0) {
+          fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+            .then(res => res.json())
+            .then(data => {
+              const def = data[0]?.meanings[0]?.definitions[0]?.definition || "No definition found.";
+              popup.innerHTML = `<strong>${word}</strong>: ${def}`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            })
+            .catch(() => {
+              popup.innerHTML = `No definition found for "${word}".`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            });
+        }
+      }, 500);
+    });
+
+    document.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  </script>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-31f6fa21-066a-4d5e-8751-6591d35cdf0e" data-elfsight-app-lazy></div>
+
+
+</body>
+</html>
