@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryNest | Rapunzel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Karma', sans-serif;
+    }
+
+    body {
+      color: #fff;
+      background: #000;
+    }
+
+    #bg-image {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      height: 50px;
+    }
+
+    .nav-logo span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 140px auto 60px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #ffd700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      width: 60px;
+      z-index: 100;
+    }
+
+    .chat-bubble {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 25px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      max-width: 200px;
+    }
+
+    .chat-bubble.show {
+      display: block;
+    }
+
+    #dictionary-popup {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.95);
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      display: none;
+      max-width: 300px;
+      font-size: 0.95rem;
+      z-index: 9999;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .fixed-back {
+      position: fixed;
+      top: 90px; /* just below the nav bar */
+      right: 20px;
+      background-color: #f8a100;
+      color: black;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1001;
+      box-shadow: 0 0 6px rgba(0,0,0,0.5);
+      transition: background 0.3s;
+    }
+
+    .fixed-back:hover {
+      background-color: #ffc04d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Image -->
+  <img id="bg-image" src="05. Rapunzel.jpg" alt="Background Image" />
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.png" alt="Logo" />
+      <span>StoryNest</span>
+    </div>
+  </nav>
+
+  <!-- Back Button -->
+  <a href="fairy.html" class="fixed-back">← Back to Fairy Tales</a>
+
+  <!-- Lesson 1 -->
+  <div class="container" id="story">
+    <h2>The Rapaunzel</h2>
+    <p>ONCE UPON A TIME, there lived a carpenter and his wife.  More than anything they yearned for a child of their own.  At long last, their wish came true –  they were going to have a baby!   From their second floor window, the wife could see the garden next door.  Such fine straight rows of fresh green plants!  But no one dared to see them up close, for the garden belonged to a witch.
+
+One day the wife was staring at the garden from her window.  How delicious those big green heads of lettuce looked! “I must eat one of them,” she said to her husband.  “You must go and get me some.”I cannot!” said her husband.  “You know as well as I do that the garden belongs to a witch.”
+
+“If I cannot have that lettuce,” said the wife, “I will not eat anything at all.  I will die!"
+
+What could the carpenter do?  Later that night, he climbed over the garden wall. Taking very quiet steps, he broke one green head of lettuce from the ground.  Holding the lettuce close to his chest, he climbed back over the garden wall.  His wife ate all the lettuce right away.  
+
+Taking very quiet steps, he broke one green head of lettuce from the ground.
+
+But eating the lettuce only made her want more! She said if she could not have more lettuce, there was nothing she would eat! So the next night, the carpenter climbed back over the garden wall.  He broke one more head of lettuce from the ground. All at once rang a high, loud, voice.  
+
+“Exactly what do you think you are doing?”
+
+“I…uh…am getting lettuce for my wife,” said the carpenter."Thief!" yelled the witch.  "You will pay for this!"
+
+“Please!” said the carpenter.  “My wife is going to have a baby.  She saw your lettuce and wanted it so very much.”
+
+“Why does that matter?” howled the witch.
+
+“I will do anything to make this right!” begged the carpenter.  He thought, "Surely I can build her something she would like."  
+
+"I will do anything to make this right!" begged the carpenter.
+
+“You say you will do anything?” said the witch.
+
+“Yes, name it!” said he.
+
+“Fine!” said the witch.  “Here's the deal.  Go ahead - take all the lettuce you want.  Your wife will have a baby girl.  And when she does, the baby will be mine!”
+
+“What?!” said the carpenter.  “I will never agree to that!”
+
+“You already did!” said the witch.  And she laughed an evil laugh.
+
+Indeed, the wife had a baby girl just as the witch had predicted.  To keep the baby safe from the witch, the carpenter built a tall tower deep in the woods.  He built a staircase that led up to a room at the very top, and he installed one long, pointed window in that top room.  He and his wife took turns staying there with the baby. But the witch had a magic ball, and the magic ball showed the baby was in the top room of this tower.  When the carpenter and his wife were both inside the house, the witch cast a spell over both of them and they fell into a deep sleep.  The witch went directly to the tower, and up to room at the top, where the baby slept in its cradle.
+
+"You are mine!" hissed the witch.  "I will call you Rapunzel, for that is the name of the lettuce that brought you to me."  
+
+With her magic, the witch sent the carpenter and his wife back to their cottage. 
+
+The witch did not know how to take care of a baby.  Rapunzel grew into a child, and the witch did not know how to cut her hair. The girl’s blond hair grew longer and longer.  All the witch could do was keep the little girl locked in the room at the very top of the tower.  She told the child that the world was a very bad place, and that is why she must never leave the tower.
+
+As she grew up, many times Rapunzel said to the witch, “There is nothing here for me to do! Why must I stay in this tower all the time?”
+
+And the witch shouted back, “I told you so many times! The world is a very bad place.  Now comb your hair and be quiet!”
+
+"Why must I stay in this tower all the time?"
+
+"Is it really so bad out there?" Rapunzel would sometimes insist.  "I hear people laughing down there below the window."
+
+At such times the witch would yell, "How many times do I have to repeat myself? Don't listen to anything you see or hear out there.  The world is much worse than you think."
+
+On her 12th birthday, Rapunzel found the courage to say to the witch, “I don't care what you say anymore.  I'm so tired of staying here alone all the time! When you are gone, I will chip away at the door.  I will make a hole.  I will run down the stairs and go outside, and you can't stop me!”
+
+“You think so?" said the witch.  "Think again!”  With her power, she made the staircase in the tower collapse.  She closed up the door at the base of the tower so there was no trace of it.  Now there was no way for Rapunzel to escape!By then, Rapunzel’s hair had grown very, very long.  Once the stairs were gone, when it was time for the witch to visit her in the tower, she would call from outside, “Rapunzel, Rapunzel!  Let down your hair!”  Rapunzel would throw her long blond braid out of the window.  The witch would grab hold of her hair like a rope.  And that is how the witch climbed up the tower wall to the window in Rapunzel’s room.
+
+Five more long years went by.  Poor Rapunzel!  She had to stay that room, day after day.  All she could do was sing sad songs from the window.  Sometimes birds at the treetops would join her songs.  Then she would feel a little better.  But only a little.One day, a Prince was riding through the woods.  He heard a sound of beautiful singing.  It seemed like it was coming from the treetops but of course that was impossible. He rode closer to the sound and at last, was standing before the tower.  
+
+“This is odd!” he said, looking around the base of the tower.  “There is no door to get in. Yet someone is singing at the very top of the tower.  How does anyone get in or out?”  The singing enchanted him, and the Prince found himself returning to the tower each day.  Who was this young woman?  And why was she there every day?One day when the Prince rode up to the tower, he saw an old woman standing at the base of the tower.  He jumped behind a tree to hide. He heard the witch call out, “Rapunzel, Rapunzel!  Let down your hair!”  A long blond braid was thrown out from a window at the very top.  The old woman grabbed onto the braid and climbed to the window at the very top of the tower.  
+
+“Ah, ha!” thought the Prince.  "So that is how it's done.” 
+
+He waited.  After a bit, the braid was thrown out the window again.  The witch climbed back down the tower wall.  Then she left.  
+
+The Prince waited some more.  He stepped up to the tower.  In a voice that sounded as much like the witch as he could, he called out, “Rapunzel, Rapunzel!  Let down your hair!” In a moment, the same long blond braid came out of the window.  “It works!” thought the Prince.  He climbed up the tower wall.You can be sure Rapunzel was very surprised to see the Prince climb into her window. She had never seen a person up close before other than the witch, much less a man! “Who are you?” she said in fear.  
+
+“Do not worry,” said the Prince. “I am a friend.”
+
+“I do not know you,” said Rapunzel.
+
+“I feel as if I know you,” said the Prince.  “Since I have heard you singing every day.  You have a beautiful voice!  I love it when the birds sing with you, too.”
+
+You know about that?” said Rapunzel.  “It may be the only thing I like, since I have no choice but to stay here in this same old tower, day after day, my whole life long.” Rapunzel told the Prince about the witch.  She told him that since the world was such a very bad place, she must always stay in the tower room.
+
+“But the world is not as bad as all that,” said the Prince.  He told Rapunzel about flowers and festivals, gardens and games, puddles and puppies, strawberries and secrets.  She was fascinated.
+
+"But the world is not as bad as all that," said the Prince.
+
+And so many hours went by. At last, Rapunzel said to the Prince, "You must go.  The witch may come back at any time."
+
+“Very well,” said he.  “But I will be back tomorrow.”  Rapunzel threw her braid out the window, and the Prince climbed down.
+
+The next day, the Prince climbed back up to Rapunzel’s room.  He said, “I have a surprise for you.”  He had brought her a basket of strawberries. As she tasted a strawberry Rapunzel thought, "What I was told is not true!  The world can be a very fine place.  What else is there that I am missing?"  She said to the Prince, "I must get out of this tower as soon as I can!  But how?The Prince said, "I can come and go by holding onto your braid.  But once I am down, the problem is - how do we get you down, too?"
+
+Then suddenly, Rapunzel had an idea.  "Bring me a ball of silk each time you come. I will weave the silk into a ladder.  Silk folds up so small that the Witch won't see it.  When the ladder gets long enough to reach the ground, I will follow you by climbing down the silk ladder.”
+
+“That will work!” cried the Prince.  He moved closer to Rapunzel.  "You know, out in the world when two people like each other very much, they can do something very special.  It's called getting married and that means the two people can be together always.  Do you think you might want to get married someday?” Maybe,” said Rapunzel, "there is so much I have to learn about the outside world.  And we can still spend time together even if we are not married, isn't that right?"
+
+"Of course," said the Prince, thinking that he can be patient.  Every day after that, the Prince brought one ball of silk to Rapunzel.  Over time, she weaved the silk into a long ladder.
+
+On Rapunzel’s 18th birthday the witch spoke to her in a sharp voice. “I am sick and tired of hearing you go on and on about being alone in this tower all the time.  Know this, Rapunzel.  That is not going to change.  You will stay in this tower - forever!"
+
+“Who says I’m alone in the room all the time?” said Rapunzel.
+
+"Who says I'm alone in the room all the time?" said Rapunzel.
+
+“What?!” said the witch.  “Who's been up here with you?”
+
+“No one!” said Rapunzel at once, in fear.  “I mean, no one but you!”
+
+The witch did not believe her.  She looked everywhere in the room for something to prove that someone else had been there.  She found the ladder and held it high in the air.  She yelled, “What is the meaning of this?”“My friend the Prince brought me the silk, and I made the ladder,” said Rapunzel.  
+
+"You will never see this Prince again!” yelled the witch.  She took out a knife.  Snip, snap, and Rapunzel's lovely braid was cut off! Holding the braid in one hand, the witch laughed an evil laugh.  
+
+Then, with a stroke of her magic, Rapunzel was cast off to a faraway desert. But the witch stayed in the tower room.  She knew the Prince would soon returnThe witch did not have to wait long.  Before long the Prince was calling at the bottom of the tower, “Rapunzel, Rapunzel, let down your hair!”
+
+"So that is how he did it!" said the witch.  Holding tightly to one end of Rapunzel's braid, she threw the braid out the window.  The prince took hold and climbed up.  When he got to the window, he was very surprised to see the witch!
+
+“Where is Rapunzel?” he called out.  “What have you done with her?”
+
+“You will never see Rapunzel again!” howled the witch.  
+
+And the old woman pushed the Prince so hard that he lost hold of the window.  Down, down, he fell! The Prince landed on some bushes.  That helped with the fall, but the bushes had thorns and some went into his eyes.  The Prince was blinded!
+
+ For two years the poor blind Prince wandered the world, looking for Rapunzel. From morning to night, he called for her.  But it was no use.  At last, he reached a desert. One day, he heard beautiful singing.  “I would know that voice anywhere!” he exclaimed. It was his dear Rapunzel!  He went closer and closer to the voice he knew so well. “My Prince!” called Rapunzel when she saw him.  The two of them hugged tight.  Two tears of joy dropped from Rapunzel's face into the eyes of the Prince.  All at once, he could see again!
+
+What happened next, well, you may have a pretty good idea.  The Prince and Rapunzel went back to the kingdom where the Prince lived.  During all that time apart, both of them came to realize that it was right between them, and decided to be married.  A few years later, the Prince became the King of the land and Rapunzel became Queen.  The two of them lived happily ever after, as may you</p>
+    
+  </div>
+
+  
+
+
+  <!-- Dictionary Popup -->
+  <div id="dictionary-popup"></div>
+
+  <!-- AI Chat Assistant -->
+  <img src="ai1.png" class="chat-icon" id="chatToggle" alt="AI Chat Icon" />
+  <div class="chat-bubble" id="chatBubble">
+    👋 Need help with the story?
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const toggle = document.getElementById("chatToggle");
+    const bubble = document.getElementById("chatBubble");
+    toggle.addEventListener("click", () => {
+      bubble.classList.toggle("show");
+    });
+
+    // Dictionary popup logic
+    const popup = document.getElementById("dictionary-popup");
+    document.getElementById("story").addEventListener("pointerdown", (e) => {
+      const selection = window.getSelection();
+      setTimeout(() => {
+        const word = selection.toString().trim();
+        if (word.length > 0) {
+          fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+            .then(res => res.json())
+            .then(data => {
+              const def = data[0]?.meanings[0]?.definitions[0]?.definition || "No definition found.";
+              popup.innerHTML = `<strong>${word}</strong>: ${def}`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            })
+            .catch(() => {
+              popup.innerHTML = `No definition found for "${word}".`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            });
+        }
+      }, 500);
+    });
+
+    document.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  </script>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-31f6fa21-066a-4d5e-8751-6591d35cdf0e" data-elfsight-app-lazy></div>
+
+
+</body>
+</html>

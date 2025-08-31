@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryNest | Pirates Gold</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Karma', sans-serif;
+    }
+
+    body {
+      color: #fff;
+      background: #000;
+    }
+
+    #bg-image {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.3;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      height: 50px;
+    }
+
+    .nav-logo span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 140px auto 60px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #ffd700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      width: 60px;
+      z-index: 100;
+    }
+
+    .chat-bubble {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 25px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      max-width: 200px;
+    }
+
+    .chat-bubble.show {
+      display: block;
+    }
+
+    #dictionary-popup {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.95);
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      display: none;
+      max-width: 300px;
+      font-size: 0.95rem;
+      z-index: 9999;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .fixed-back {
+      position: fixed;
+      top: 90px; /* just below the nav bar */
+      right: 20px;
+      background-color: #f8a100;
+      color: black;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1001;
+      box-shadow: 0 0 6px rgba(0,0,0,0.5);
+      transition: background 0.3s;
+    }
+
+    .fixed-back:hover {
+      background-color: #ffc04d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Image -->
+  <img id="bg-image" src="pirates gold.jpg" alt="Background Image" />
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.png" alt="Logo" />
+      <span>StoryNest</span>
+    </div>
+  </nav>
+
+  <!-- Back Button -->
+  <a href="adventure.html" class="fixed-back">← Back to Adventure</a>
+
+  <!-- Lesson 1 -->
+  <div class="container" id="story">
+    <h2>The Pirates Gold</h2>
+    <p>Rylan woke to the crackle of lightning and read the date in his notebook: September 1717. He’d stepped into a story—into the rainy streets of Port Royal, Jamaica—leaving the 21st century far behind. The humid air stung his lungs, and he tightened his grip on the ornate journal that brought him here. Crowds bustled around him, sailors and merchants shouting, the smell of salt and sweat mingling in the air.
+
+No sooner had he enjoyed the scene than rough hands seized him. He was dragged aboard a British naval pinnace and introduced, with a sneer, to Captain Pike, a ruthless man known for his cruelty. Rylan’s captors threatened him with hanging—until the captain saw potential value in a bright boy such as him. Pike put him to work scrubbing the decks.Darkness and despair threatened as days passed under Captain Pike’s command. But Rylan’s fate shifted when pirates led by Captain Sebastian LaRue attacked. LaRue was charismatic and cunning, her scarlet coat flapping like a banner in the gunpowder smoke. Mid-battle, the pirates boarded and inflicted chaos. Pike's crew mutinied, the British flag was torn down, and Rylan escaped into the chaos aboard LaRue’s ship, the Sea WraithLaRue’s crew welcomed—not harmless rogues, but men and women hardened by storms, skirmishes, and survival. Rylan, despite his shock, felt alive: he was free.LaRue’s ship plunged headlong into tempestuous seas. Waves crashed for hours, rigging snapped, and lightning lit the ocean in blinding arcs. Rylan clung to the helm’s wheel, salt stinging his eyes. A colossal tentacle rose from the depths: a Kraken. LaRue barked orders—men fired cannons, grappling hooks flew—but the beast dragged a sailor overboard. The survivors fought back with everything they had—and the beast retreated beneath the swell
+After the storm, they anchored near a mangrove swamp. As LaRue walked the shore, Rylan stumbled across hulking crocodiles sunning themselves. The crew skipped dinner for fear of returning at night. Yet, that night, another threat surfaced: a spy aboard the Sea Wraith, betraying their rendezvous point to Captain Pike. Rumors whispered through the brig: someone leaking strategy to the British.LaRue’s once‑loyal crew grew suspicious, tensions frayed. Rylan, curious and determined, used keen observation to catch small clues: a folded note, hushed conversations in the hold. One night, Rylan trailed a sailor into the captain’s quarters where the traitor—a dapper fellow named Finch—handed secrets over a lit lantern to a British informant. LaRue burst in with pistol drawn. In the firefight, Finch fell screaming onto the deck.
+
+With the spy exposed, LaRue rallied the crew. They burned their secret documents and set a trap, luring Captain Pike’s frigate into ambush. Cannons thundered. British sailors boarded—they were met with cutlass and powder. Pike fell back, wounded, his flagship smoking.Ship destroyed and wounded, the Sea Wraith limped away. Supplies dwindling, they sought refuge on a deserted island rumored to hold Spanish gold. On shore they found a hidden cavern beneath twisted vines and skull-strewn altars. A moaning echo greeted them. Inside, faint trails of phosphorescence lit a shrine. They dug at a marked “X” beneath the shrine and uncovered a massive chest: filled with Spanish doubloons, emeralds, and rubiesBut gold emits greed—and LaRue warned all: shared equally, or it wasn’t coming aboard. Under dripping stalactites, the crew counted coins beneath torchlight. Rylan felt a surge—the story had delivered him treasure and triumph, but also taught a lesson: real value lay in loyalty, companionship, courage.With treasure loaded in canoes, they navigated reefs and hidden coves. Captain Pike’s surviving vessel was still nearby, but weakened. LaRue and Rylan guided the crew in a stealthy return. They eluded the British ship under cover of darkness.
+
+Rylan faced a choice: remain with the pirates, or return home. Captain LaRue asked him one calm dawn: “Will you stay, lad?” Rylan looked at his journal, pages fluttering in the salt breeze. His heart tightened. He bid farewell to the crew—some hearty hugs, some silent nods.
+
+He stepped onto the beach and touched his journal. In a blink, he was back in his room in the 21st century. The journal lay closed beside him. The first page held a new sketch: the chest, the shrine, the image of LaRue’s scarred coat.Back in his own time, Rylan sometimes woke at night, hearing waves and feeling the weight of a hidden doubloon in his pocket. He didn’t know how time-travel truly worked—but he did know: he had lived a legend, found treasure, faced betrayal, and returned wiser.
+
+  </p>
+    
+  </div>
+
+  
+
+
+  <!-- Dictionary Popup -->
+  <div id="dictionary-popup"></div>
+
+  <!-- AI Chat Assistant -->
+  <img src="ai1.png" class="chat-icon" id="chatToggle" alt="AI Chat Icon" />
+  <div class="chat-bubble" id="chatBubble">
+    👋 Need help with the story?
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const toggle = document.getElementById("chatToggle");
+    const bubble = document.getElementById("chatBubble");
+    toggle.addEventListener("click", () => {
+      bubble.classList.toggle("show");
+    });
+
+    // Dictionary popup logic
+    const popup = document.getElementById("dictionary-popup");
+    document.getElementById("story").addEventListener("pointerdown", (e) => {
+      const selection = window.getSelection();
+      setTimeout(() => {
+        const word = selection.toString().trim();
+        if (word.length > 0) {
+          fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+            .then(res => res.json())
+            .then(data => {
+              const def = data[0]?.meanings[0]?.definitions[0]?.definition || "No definition found.";
+              popup.innerHTML = `<strong>${word}</strong>: ${def}`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            })
+            .catch(() => {
+              popup.innerHTML = `No definition found for "${word}".`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            });
+        }
+      }, 500);
+    });
+
+    document.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  </script>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-31f6fa21-066a-4d5e-8751-6591d35cdf0e" data-elfsight-app-lazy></div>
+
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StoryNest Sign-Up</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .signup-container {
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .signup-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .signup-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .signup-container button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #0077cc;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .signup-container p {
+      margin-top: 15px;
+      color: #666;
+    }
+
+    .signup-container a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .oauth {
+      margin-top: 20px;
+    }
+
+    .oauth button {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      padding: 8px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .oauth img {
+      height: 20px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Create Your  Account</h2>
+    <form action="/register" method="POST">
+      <input type="text" name="fullname" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="text" name="contact" placeholder="contact" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <p>Already have an account?</p>
+    <a href="login.html">Log In</a>
+
+    <div class="oauth">
+      <button>
+        <img src="google.png" alt="Google Logo" />
+        Sign Up with Google
+      </button>
+      <button>
+        <img src="microsoft.png" alt="Microsoft Logo" />
+        Sign Up with Microsoft
+      </button>
+      <button>
+        <img src="apple.png" alt="Apple Logo" />
+        Sign Up with Apple
+      </button>
+    </div>
+  </div>
+   <script>
+    document.getElementById("signup-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      // Simulate sending confirmation + OTP
+      document.getElementById("success-message").style.display = "block";
+
+      // You can also add code here to send real data to Firebase or your server
+    });
+  </script>
+  <div id="success-message" style="display: none; text-align:center ; margin-top: 20px; color: greenyellow;">
+    <p></p>
+  </div>
+
+</body>
+</html>

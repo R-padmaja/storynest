@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryNest | The Little Mermaid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Karma', sans-serif;
+    }
+
+    body {
+      color: #fff;
+      background: #000;
+    }
+
+    #bg-image {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      height: 50px;
+    }
+
+    .nav-logo span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 140px auto 60px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #ffd700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      width: 60px;
+      z-index: 100;
+    }
+
+    .chat-bubble {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 25px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      max-width: 200px;
+    }
+
+    .chat-bubble.show {
+      display: block;
+    }
+
+    #dictionary-popup {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.95);
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      display: none;
+      max-width: 300px;
+      font-size: 0.95rem;
+      z-index: 9999;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .fixed-back {
+      position: fixed;
+      top: 90px; /* just below the nav bar */
+      right: 20px;
+      background-color: #f8a100;
+      color: black;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1001;
+      box-shadow: 0 0 6px rgba(0,0,0,0.5);
+      transition: background 0.3s;
+    }
+
+    .fixed-back:hover {
+      background-color: #ffc04d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Image -->
+  <img id="bg-image" src="08. The Little Mermaid.jpg" alt="Background Image" />
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.png" alt="Logo" />
+      <span>StoryNest</span>
+    </div>
+  </nav>
+
+  <!-- Back Button -->
+  <a href="fairy.html" class="fixed-back">← Back to Fairy Tales</a>
+
+  <!-- Lesson 1 -->
+  <div class="container" id="story">
+    <h2>The Little Mermaid</h2>
+    <p>THE SEA KING ruled the ocean.  The walls of his castle were made of blue coral and on the roof, shells opened and closed when waves of water passed by. The Sea King lived deep in the sea with his mother and four daughters, each one born a year apart.The youngest of the four princesses was the Little Mermaid. She spent much of her time swimming to fallen shipwrecks.  She would fill her arms with treasures from the world above.  As she carried them to her special collection in a cave and arranged them with the other treasures, she sang happily.  Fish followed her and circled around, for the Little Mermaid’s voice was the most beautiful sound under the sea.
+
+When the princesses turned 15, they would be allowed to swim up to the surface for the very first time. The Little Mermaid knew she had to wait a long time since she was the youngest. She begged her grandmother to tell her everything she knew about life up on land. The old woman told her everything she knew about towns and marketplaces, festivals and ferries, and then some.When the eldest sister turned 15, she was be the first to rise up to the surface.  When she came back, she had many wonders to share.  She told about the sparkling sandy shoreline and gazing above at a deep blue sky with white puffy clouds.  When the sun set, the eldest sister relayed in a whisper, the whole sky turned shades of deep color. The birds flying high above her dipped and turned in the red and gold sky.
+
+When the next sister turned 15, it was winter.  When she returned, she told of icebergs floating in the sea and shining bright.  She said the ships seemed to stay far away from the icebergs, as if in fear. But the icebergs did not seem lonely.  They were like friends, she relayed, floating close to each other. 
+
+When it was the third sister’s turn, she saw on a cliff the gate of a town. She heard people calling out to each other, horses clip-clopping down a street, and more sounds than she could guess what they might be. The people were making music too, she said - enchanting and strange sounds.  
+
+All this the Little Mermaid heard with wonder.  It wasn’t fair that she had to wait so long!  At last the day came when she turned 15.  Now it was her turn!
+
+At last the day came when she turned 15. 
+
+When her head rose over the ocean water, the Little Mermaid saw she was next to a large ship. On the ship beautiful music was playing.  Sailors were dancing on the deck. They were laughing and having a fine time. Now and then as the waves lifted the Little Mermaid, she had a better look.  A handsome young man stepped out on the deck. When he did, a hundred rockets rose in the air. The party was for him. Was it his birthday? She swam closer.
+
+The men all seemed to like that young man.  When he spoke, the sailors would laugh. Sometimes they patted him on his back in joy. Once that made his crown fall off. The men laughed and picked it up. “A crown!” thought the Little Mermaid.  “He must be a prince.”
+
+ When the eldest sister turned 15, she was be the first to rise up to the surface.  When she came back, she had many wonders to share.  She told about the sparkling sandy shoreline and gazing above at a deep blue sky with white puffy clouds.  When the sun set, the eldest sister relayed in a whisper, the whole sky turned shades of deep color. The birds flying high above her dipped and turned in the red and gold sky.
+
+When the next sister turned 15, it was winter.  When she returned, she told of icebergs floating in the sea and shining bright.  She said the ships seemed to stay far away from the icebergs, as if in fear. But the icebergs did not seem lonely.  They were like friends, she relayed, floating close to each other. 
+
+When it was the third sister’s turn, she saw on a cliff the gate of a town. She heard people calling out to each other, horses clip-clopping down a street, and more sounds than she could guess what they might be. The people were making music too, she said - enchanting and strange sounds.  
+
+All this the Little Mermaid heard with wonder.  It wasn’t fair that she had to wait so long!  At last the day came when she turned 15.  Now it was her turn!
+
+At last the day came when she turned 15. 
+
+When her head rose over the ocean water, the Little Mermaid saw she was next to a large ship. On the ship beautiful music was playing.  Sailors were dancing on the deck. They were laughing and having a fine time. Now and then as the waves lifted the Little Mermaid, she had a better look.  A handsome young man stepped out on the deck. When he did, a hundred rockets rose in the air. The party was for him. Was it his birthday? She swam closer.
+
+The men all seemed to like that young man.  When he spoke, the sailors would laugh. Sometimes they patted him on his back in joy. Once that made his crown fall off. The men laughed and picked it up. “A crown!” thought the Little Mermaid.  “He must be a prince.”
+
+ When night fell, the wind picked up.  The sailors started to run about on deck.  They pulled down the sail as the ship dipped and swooped.  It rolled from side to side, up and down the high waves.
+
+Then lightning struck.  Thunder clapped, and a pouring rain was unleashed.  The poor ship started to tip. It was so dark that the Little Mermaid could see nothing except when lightning lit up the sky.  When that happened, she saw the young Prince on deck.  He was working hard to keep the ship afloat.  He was throwing ropes out to his men who had jumped. All at once, the waves rose very high and the ship started to tip over.  The Prince was flung to the side of the ship and thrown overboard - down into the sea!
+
+He dropped very fast.  What could the Little Mermaid do?  She knew that human beings cannot live for long under the water. She dove deep and fast.  She reached out and was able to grab his shirt. Pulling him to the surface as fast as she could, at last she pushed his head above water where he could breathe. The two of them floated on the surface as the waves rose and fell.  By morning, the storm passed. Yet the prince was as still as he had been all night. From far off the Little Mermaid saw the tops of hills.  “Land!” she sighed with relief.  "I will set him down on dry land.  Maybe then he'll wake up."
+
+It was not easy to pull the young man up onto the sandy shore, but she did it.  Was he dead? She started to sing a sad song. All of a sudden, the Prince blinked open his eyes.  “Oh! Are you all right?” she asked, gently touching his forehead.
+
+Just then, she heard a group of girls coming over.  At once, she dove into the sea and hid behind a rock.  They must not see her - a mermaid! The girls found the Prince, who was now awake. They called for help, and when a team of servants arrived, they carried him away. The Prince would never know that she had saved him.  The Little Mermaid sank into a deep gloom. When she went back home, her sisters wanted to know all about her trip.  But she was too sad to say anything.
+
+ Days went by.  Weeks.
+
+The sisters appealed to their grandmother for help.  So the old woman went to see her youngest granddaughter. “Child, what is the matter?” she said.
+
+The Little Mermaid cried out, “Grandmother, I will never be happy again!” She told about meeting the Prince and saving him.  Then having to leave him behind. “Unless I can somehow walk on land with two legs and be with that young man, I will be sad for the rest of my days!"
+
+"Grandmother, I will never be happy again!"  
+
+“My dear,” said the grandmother, “you know as well as I do that it is not possible for a mermaid to walk on two legs.  Why, the only one who could grant a wish like that is the Sea Witch! But of course it is much too dangerous to go to her.”
+
+The Sea Witch!  Could that be the answer? At her very first chance, the Little Mermaid took off and swam to the far corner of the sea where the Sea Witch lived.
+
+“This is no problem,” said the Sea Witch when the Little Mermaid explained what she needed. “I fix problems much harder than yours."  The Little Mermaid's heart leaped with hope.  "Why, to have legs, all you need to do is to drink my potion.” The Sea Witch turned to face the girl. “But I don’t just give it away, you understand.”Of course,” said the Little Mermaid.  “What is your price?”
+
+“Oh, not too much,” said the Sea Witch.  “Just ... your voice.”
+
+“My voice?” said the Little Mermaid.  
+
+“You don’t need it!” said the Sea Witch.  “Chitter and chatter all day long, what a waste of time! But know this, my little pretty.  If the Prince marries someone else, the very next day you will die. And your voice will stay with me forever.  But of course there's nothing to worry about - as long as he chooses YOU.”
+
+"If the Prince marries someone else, the very next day you will die." 
+
+The Sea Witch held out a glass with the green potion.  “So!” she said. “What are you going to do? Make up your mind!  I don’t have all day.”
+
+The Little Mermaid took the potion and drank it.  At once she felt dizzy and in pain, as if a sword was being passed through her body. She spun and jerked about, then fell.  When she awoke, she was on the same dry land as when she had rescued the Prince. Lifting up her head, she could see that her wish was granted.  Where her tail had been before, she had two human legs!  Then it struck her - how would she find the Prince?  She had so little time!
+
+ Say, Miss, are you in trouble?”  It was none other than the Prince!  Even if she could speak - and that she could no longer do - she would not have been able to, so surprised and pleased was she.  “Can you speak?” The Little Mermaid shook her head “no.”
+
+“Well then, let me take you to the castle," said the Prince.  "You can clean up there and get some dry clothes to wear.”
+
+At first, walking on her two legs was shaky. But soon she got the hang of it. That night, the Prince showed her around the castle.  He would point to a portrait and tell her all about the person.When he said something funny, they laughed. When his story was sad, her kind eyes told him that she felt sad, too.
+
+The next day was going to be a royal party.  The Prince was not looking forward to it. Hours of standing with finely-dressed courtiers who yap and yap and have nothing to say.  He asked the Little Mermaid if she might come with him. She nodded a big “Yes”! That day with the Little Mermaid by his side, the Prince felt glad.  Sometimes he would whisper a comment or a joke to her. And by her eyes and face, he knew that she understood.
+
+After that, the Prince wanted the Little Mermaid by his side every day.  He wondered if he might be falling in love with her. But he still held out hope that he would someday find and marry the young lady with the beautiful voice he remembered from the day he was rescued.  This new friend, this silent young woman, could not be the same one who had rescued him as she had sung with the most marvelous voice.
+
+One day, the King called for his son.  “Son,” he said, “your mother and I have made a decision.  It is time that you took a bride. Lucky for you that we already have one picked out for you.”
+
+“You do!?” the Prince cried in dismay.  He only wanted to marry the woman with the beautiful voice.  
+
+“You do?” the Prince cried in dismay.
+
+“She's a princess.  Perfectly appropriate.  Tonight she is coming with her parents.  We will start at once to make the wedding plans.”
+
+The Prince was crushed.  And the Little Mermaid's heart stopped.  She knew what would happen to her the day after the Prince married someone else!
+
+That night her troubles grew even more.  The Little Mermaid did not know that the Sea Witch had put her voice into this Princess.  She was a stuck-up young lady who thought only of herself. Yet when she spoke, it was the Little Mermaid’s voice that rang out! The Prince was stunned with joy. He told her parents that the sooner the wedding could be planned, the better
+When the Prince shared his news with the Little Mermaid, she tried to show that she was happy for him.  But gloom filled her heart.
+
+The next morning at dawn, the Little Mermaid went to the seashore. Her sisters, worried that they had not heard from her, rose above the water to see how she was.  The youngest sister let her three older sisters know the trouble she was in. The Prince’s wedding was going to take place the very next day! The day after that she must die. The sisters said that they had an idea, and she must not worry.  They said she must come back to the shore later that night. Then they dove back into the sea.
+
+Later that night, the Little Mermaid came back to the shore as she was told to do.  The three sisters rose up again. Gone was their beautiful long hair. For they had cut it all off to give to the Sea Witch in exchange for a knife.  With the knife, the Little Mermaid must kill the Princess that  very night. Then the wedding could not take place and she could return to the sea and be with her family.  She took the knife, for she knew they had done all this for her sake. But in her heart she knew that she was not going to kill the Princess.The wedding day had arrived.
+
+The Little Mermaid stepped onto the wedding ship with the other guests.  The wedding would take place at sunset.
+
+In the meantime, the three sisters had returned home.  They were met with an angry father. “Where is your sister?” the Sea King roared. “Where have you all been?”
+
+They told the father the trouble their youngest sister was in. The father swam up to the wedding ship.  He saw the Prince and Princess getting ready to be married. He knew that his daughter did not use the knife the night before.  
+
+The Sea King rushed to see the Sea Witch.  She just laughed. She said there was only one way to save his youngest daughter from the fate that awaited her.  If he would only hand over his scepter to her so that SHE would rule the Underwater Kingdom from now on, only then would the Little Mermaid's life be spared. The Sea King took a deep breath. What else could he do? 
+
+The Sea Witch grabbed the scepter and laughed in glee.  She rushed to the wedding ship to see her victory. The Little Mermaid saw the Sea Witch rise out of the sea.  With the scepter in her hands, the Sea Witch had transformed into a huge sea monster! Tentacles were twisting from all over her body like an octopus.  The Little Mermaid knew she must somehow protect the prince and even his new bride.  She took out the knife her sisters gave her. Just then, one of the Sea Witch's tentacles reached out and lifted the Little Mermaid right off the ship!  “This is the end for you!” crowed the Sea Witch.
+
+Before the Little Mermaid knew it, she was wrapped up by the tentacle.  She was spun to the very chest of the Sea Witch. With the knife she was holding – the Sea Witch’s very own knife – in one stroke she drove that knife deep into the chest of the monster.
+
+The Sea Witch reeled back in pain.  The Little Mermaid was free!  On ship, the guests ran around in fear.  The Prince shot arrow after arrow at the monster.  Finally, the Sea Witch dropped below the water.  As she fell, the Little Mermaid’s voice was let go, and it returned to her.    
+
+The Princess shouted in her true gruff voice, “What kind of lousy wedding is this?” The Prince heard her coarse voice and knew at once she was not who he thought she was.  Then the Little Mermaid started to sing, and the prince recognized at once the voice he was longing to hear.  And it belonged to the very same young woman he had recently grown to love!Home » The Little Mermaid
+The Little Mermaid
+The Little Mermaid Story
+The Little Mermaid
+Illustrated By: Sarah Frank
+
+Chapters
+Part 1: The Undersea World
+Part 2: Trips to the Surface
+Part 3: The Storm
+Part 4: The Sea Witch
+Part 5: The Prince
+Part 6: The Wedding Day
+Part 1: The Undersea World
+THE SEA KING ruled the ocean.  The walls of his castle were made of blue coral and on the roof, shells opened and closed when waves of water passed by. The Sea King lived deep in the sea with his mother and four daughters, each one born a year apart.
+
+
+
+The youngest of the four princesses was the Little Mermaid. She spent much of her time swimming to fallen shipwrecks.  She would fill her arms with treasures from the world above.  As she carried them to her special collection in a cave and arranged them with the other treasures, she sang happily.  Fish followed her and circled around, for the Little Mermaid’s voice was the most beautiful sound under the sea.
+
+When the princesses turned 15, they would be allowed to swim up to the surface for the very first time. The Little Mermaid knew she had to wait a long time since she was the youngest. She begged her grandmother to tell her everything she knew about life up on land. The old woman told her everything she knew about towns and marketplaces, festivals and ferries, and then some.
+
+
+
+ 
+
+ 
+
+Part 2: Trips to the Surface
+When the eldest sister turned 15, she was be the first to rise up to the surface.  When she came back, she had many wonders to share.  She told about the sparkling sandy shoreline and gazing above at a deep blue sky with white puffy clouds.  When the sun set, the eldest sister relayed in a whisper, the whole sky turned shades of deep color. The birds flying high above her dipped and turned in the red and gold sky.
+
+When the next sister turned 15, it was winter.  When she returned, she told of icebergs floating in the sea and shining bright.  She said the ships seemed to stay far away from the icebergs, as if in fear. But the icebergs did not seem lonely.  They were like friends, she relayed, floating close to each other. 
+
+When it was the third sister’s turn, she saw on a cliff the gate of a town. She heard people calling out to each other, horses clip-clopping down a street, and more sounds than she could guess what they might be. The people were making music too, she said - enchanting and strange sounds.  
+
+All this the Little Mermaid heard with wonder.  It wasn’t fair that she had to wait so long!  At last the day came when she turned 15.  Now it was her turn!
+
+At last the day came when she turned 15. 
+
+When her head rose over the ocean water, the Little Mermaid saw she was next to a large ship. On the ship beautiful music was playing.  Sailors were dancing on the deck. They were laughing and having a fine time. Now and then as the waves lifted the Little Mermaid, she had a better look.  A handsome young man stepped out on the deck. When he did, a hundred rockets rose in the air. The party was for him. Was it his birthday? She swam closer.
+
+The men all seemed to like that young man.  When he spoke, the sailors would laugh. Sometimes they patted him on his back in joy. Once that made his crown fall off. The men laughed and picked it up. “A crown!” thought the Little Mermaid.  “He must be a prince.”
+
+ 
+
+Part 3: The Storm
+When night fell, the wind picked up.  The sailors started to run about on deck.  They pulled down the sail as the ship dipped and swooped.  It rolled from side to side, up and down the high waves.
+
+Then lightning struck.  Thunder clapped, and a pouring rain was unleashed.  The poor ship started to tip. It was so dark that the Little Mermaid could see nothing except when lightning lit up the sky.  When that happened, she saw the young Prince on deck.  He was working hard to keep the ship afloat.  He was throwing ropes out to his men who had jumped. All at once, the waves rose very high and the ship started to tip over.  The Prince was flung to the side of the ship and thrown overboard - down into the sea!
+
+He dropped very fast.  What could the Little Mermaid do?  She knew that human beings cannot live for long under the water. She dove deep and fast.  
+
+The Little Mermaid Story
+
+She reached out and was able to grab his shirt. Pulling him to the surface as fast as she could, at last she pushed his head above water where he could breathe. The two of them floated on the surface as the waves rose and fell.  By morning, the storm passed. Yet the prince was as still as he had been all night. From far off the Little Mermaid saw the tops of hills.  “Land!” she sighed with relief.  "I will set him down on dry land.  Maybe then he'll wake up."
+
+It was not easy to pull the young man up onto the sandy shore, but she did it.  Was he dead? She started to sing a sad song. All of a sudden, the Prince blinked open his eyes.  “Oh! Are you all right?” she asked, gently touching his forehead.
+
+Just then, she heard a group of girls coming over.  At once, she dove into the sea and hid behind a rock.  They must not see her - a mermaid! The girls found the Prince, who was now awake. They called for help, and when a team of servants arrived, they carried him away. The Prince would never know that she had saved him.  The Little Mermaid sank into a deep gloom. When she went back home, her sisters wanted to know all about her trip.  But she was too sad to say anything.
+
+ 
+
+Part 4: The Sea Witch
+Days went by.  Weeks.
+
+The sisters appealed to their grandmother for help.  So the old woman went to see her youngest granddaughter. “Child, what is the matter?” she said.
+
+The Little Mermaid cried out, “Grandmother, I will never be happy again!” She told about meeting the Prince and saving him.  Then having to leave him behind. “Unless I can somehow walk on land with two legs and be with that young man, I will be sad for the rest of my days!"
+
+"Grandmother, I will never be happy again!"  
+
+“My dear,” said the grandmother, “you know as well as I do that it is not possible for a mermaid to walk on two legs.  Why, the only one who could grant a wish like that is the Sea Witch! But of course it is much too dangerous to go to her.”
+
+The Sea Witch!  Could that be the answer? At her very first chance, the Little Mermaid took off and swam to the far corner of the sea where the Sea Witch lived.
+
+“This is no problem,” said the Sea Witch when the Little Mermaid explained what she needed. “I fix problems much harder than yours."  The Little Mermaid's heart leaped with hope.  "Why, to have legs, all you need to do is to drink my potion.” The Sea Witch turned to face the girl. “But I don’t just give it away, you understand.”
+
+
+
+“Of course,” said the Little Mermaid.  “What is your price?”
+
+“Oh, not too much,” said the Sea Witch.  “Just ... your voice.”
+
+“My voice?” said the Little Mermaid.  
+
+“You don’t need it!” said the Sea Witch.  “Chitter and chatter all day long, what a waste of time! But know this, my little pretty.  If the Prince marries someone else, the very next day you will die. And your voice will stay with me forever.  But of course there's nothing to worry about - as long as he chooses YOU.”
+
+"If the Prince marries someone else, the very next day you will die." 
+
+The Sea Witch held out a glass with the green potion.  “So!” she said. “What are you going to do? Make up your mind!  I don’t have all day.”
+
+The Little Mermaid took the potion and drank it.  At once she felt dizzy and in pain, as if a sword was being passed through her body. She spun and jerked about, then fell.  When she awoke, she was on the same dry land as when she had rescued the Prince. Lifting up her head, she could see that her wish was granted.  Where her tail had been before, she had two human legs!  Then it struck her - how would she find the Prince?  She had so little time!
+
+ 
+
+Part 5: The Prince
+“Say, Miss, are you in trouble?”  It was none other than the Prince!  Even if she could speak - and that she could no longer do - she would not have been able to, so surprised and pleased was she.  “Can you speak?” The Little Mermaid shook her head “no.”
+
+“Well then, let me take you to the castle," said the Prince.  "You can clean up there and get some dry clothes to wear.”
+
+At first, walking on her two legs was shaky. But soon she got the hang of it. That night, the Prince showed her around the castle.  He would point to a portrait and tell her all about the person.
+
+The Little Mermaid Story
+
+When he said something funny, they laughed. When his story was sad, her kind eyes told him that she felt sad, too.
+
+The next day was going to be a royal party.  The Prince was not looking forward to it. Hours of standing with finely-dressed courtiers who yap and yap and have nothing to say.  He asked the Little Mermaid if she might come with him. She nodded a big “Yes”! That day with the Little Mermaid by his side, the Prince felt glad.  Sometimes he would whisper a comment or a joke to her. And by her eyes and face, he knew that she understood.
+
+After that, the Prince wanted the Little Mermaid by his side every day.  He wondered if he might be falling in love with her. But he still held out hope that he would someday find and marry the young lady with the beautiful voice he remembered from the day he was rescued.  This new friend, this silent young woman, could not be the same one who had rescued him as she had sung with the most marvelous voice.
+
+One day, the King called for his son.  “Son,” he said, “your mother and I have made a decision.  It is time that you took a bride. Lucky for you that we already have one picked out for you.”
+
+“You do!?” the Prince cried in dismay.  He only wanted to marry the woman with the beautiful voice.  
+
+“You do?” the Prince cried in dismay.
+
+“She's a princess.  Perfectly appropriate.  Tonight she is coming with her parents.  We will start at once to make the wedding plans.”
+
+The Prince was crushed.  And the Little Mermaid's heart stopped.  She knew what would happen to her the day after the Prince married someone else!
+
+That night her troubles grew even more.  The Little Mermaid did not know that the Sea Witch had put her voice into this Princess.  She was a stuck-up young lady who thought only of herself. Yet when she spoke, it was the Little Mermaid’s voice that rang out! The Prince was stunned with joy. He told her parents that the sooner the wedding could be planned, the better.
+
+The Little Mermaid Story
+
+When the Prince shared his news with the Little Mermaid, she tried to show that she was happy for him.  But gloom filled her heart.
+
+The next morning at dawn, the Little Mermaid went to the seashore. Her sisters, worried that they had not heard from her, rose above the water to see how she was.  The youngest sister let her three older sisters know the trouble she was in. The Prince’s wedding was going to take place the very next day! The day after that she must die. The sisters said that they had an idea, and she must not worry.  They said she must come back to the shore later that night. Then they dove back into the sea.
+
+Later that night, the Little Mermaid came back to the shore as she was told to do.  The three sisters rose up again. Gone was their beautiful long hair. For they had cut it all off to give to the Sea Witch in exchange for a knife.  With the knife, the Little Mermaid must kill the Princess that  very night. Then the wedding could not take place and she could return to the sea and be with her family.  She took the knife, for she knew they had done all this for her sake. But in her heart she knew that she was not going to kill the Princess.
+
+ 
+
+Part 6: The Wedding Day
+The wedding day had arrived.
+
+The Little Mermaid stepped onto the wedding ship with the other guests.  The wedding would take place at sunset.
+
+In the meantime, the three sisters had returned home.  They were met with an angry father. “Where is your sister?” the Sea King roared. “Where have you all been?”
+
+They told the father the trouble their youngest sister was in. The father swam up to the wedding ship.  He saw the Prince and Princess getting ready to be married. He knew that his daughter did not use the knife the night before.  
+
+The Sea King rushed to see the Sea Witch.  She just laughed. She said there was only one way to save his youngest daughter from the fate that awaited her.  If he would only hand over his scepter to her so that SHE would rule the Underwater Kingdom from now on, only then would the Little Mermaid's life be spared. The Sea King took a deep breath. What else could he do? 
+
+The Sea Witch grabbed the scepter and laughed in glee.  She rushed to the wedding ship to see her victory. The Little Mermaid saw the Sea Witch rise out of the sea.  With the scepter in her hands, the Sea Witch had transformed into a huge sea monster! Tentacles were twisting from all over her body like an octopus.  
+
+
+
+The Little Mermaid knew she must somehow protect the prince and even his new bride.  She took out the knife her sisters gave her. Just then, one of the Sea Witch's tentacles reached out and lifted the Little Mermaid right off the ship!  “This is the end for you!” crowed the Sea Witch.
+
+Before the Little Mermaid knew it, she was wrapped up by the tentacle.  She was spun to the very chest of the Sea Witch. With the knife she was holding – the Sea Witch’s very own knife – in one stroke she drove that knife deep into the chest of the monster.
+
+The Sea Witch reeled back in pain.  The Little Mermaid was free!  On ship, the guests ran around in fear.  The Prince shot arrow after arrow at the monster.  Finally, the Sea Witch dropped below the water.  As she fell, the Little Mermaid’s voice was let go, and it returned to her.    
+
+The Princess shouted in her true gruff voice, “What kind of lousy wedding is this?” The Prince heard her coarse voice and knew at once she was not who he thought she was.  Then the Little Mermaid started to sing, and the prince recognized at once the voice he was longing to hear.  And it belonged to the very same young woman he had recently grown to love!
+
+The Little Mermaid Story
+
+The angry Princess stormed off the wedding ship.  Her family stomped off with her.
+
+When the Sea King arrived, the scepter was floating in the sea, as if it were waiting for him.  With one sweep of his arm, the scepter was his again, and he once again ruled the sea.
+
+With a wave of his scepter, he lifted the Little Mermaid back onto the ship.  The Prince put his arms around her.  “Well!” said the Sea King.  “I see my daughter is in good hands.” 
+
+“It was you all along!" said the Prince.  "Of course it was you!  This is more right than I ever could have imagined!  Please, will you marry me?” The Little Mermaid had her voice, but with all the happiness in her heart could barely manage to speak. She whispered “Yes!” with a warm smile.  And a wedding on board the ship took place after all. </div>
+
+  
+
+
+  <!-- Dictionary Popup -->
+  <div id="dictionary-popup"></div>
+
+  <!-- AI Chat Assistant -->
+  <img src="ai1.png" class="chat-icon" id="chatToggle" alt="AI Chat Icon" />
+  <div class="chat-bubble" id="chatBubble">
+    👋 Need help with the story?
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const toggle = document.getElementById("chatToggle");
+    const bubble = document.getElementById("chatBubble");
+    toggle.addEventListener("click", () => {
+      bubble.classList.toggle("show");
+    });
+
+    // Dictionary popup logic
+    const popup = document.getElementById("dictionary-popup");
+    document.getElementById("story").addEventListener("pointerdown", (e) => {
+      const selection = window.getSelection();
+      setTimeout(() => {
+        const word = selection.toString().trim();
+        if (word.length > 0) {
+          fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+            .then(res => res.json())
+            .then(data => {
+              const def = data[0]?.meanings[0]?.definitions[0]?.definition || "No definition found.";
+              popup.innerHTML = `<strong>${word}</strong>: ${def}`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            })
+            .catch(() => {
+              popup.innerHTML = `No definition found for "${word}".`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            });
+        }
+      }, 500);
+    });
+
+    document.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  </script>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-31f6fa21-066a-4d5e-8751-6591d35cdf0e" data-elfsight-app-lazy></div>
+
+
+</body>
+</html>

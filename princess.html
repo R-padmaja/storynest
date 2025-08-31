@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryNest | The Princesses and the Pea</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Karma', sans-serif;
+    }
+
+    body {
+      color: #fff;
+      background: #000;
+    }
+
+    #bg-image {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      height: 50px;
+    }
+
+    .nav-logo span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 140px auto 60px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #ffd700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      width: 60px;
+      z-index: 100;
+    }
+
+    .chat-bubble {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 25px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      max-width: 200px;
+    }
+
+    .chat-bubble.show {
+      display: block;
+    }
+
+    #dictionary-popup {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.95);
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      display: none;
+      max-width: 300px;
+      font-size: 0.95rem;
+      z-index: 9999;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .fixed-back {
+      position: fixed;
+      top: 90px; /* just below the nav bar */
+      right: 20px;
+      background-color: #f8a100;
+      color: black;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1001;
+      box-shadow: 0 0 6px rgba(0,0,0,0.5);
+      transition: background 0.3s;
+    }
+
+    .fixed-back:hover {
+      background-color: #ffc04d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Image -->
+  <img id="bg-image" src="18. Princess.jpg" alt="Background Image" />
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.png" alt="Logo" />
+      <span>StoryNest</span>
+    </div>
+  </nav>
+
+  <!-- Back Button -->
+  <a href="fairy.html" class="fixed-back">← Back to Fairy Tales</a>
+
+  <!-- Lesson 1 -->
+  <div class="container" id="story">
+    <h2>The Princesses and the Pea</h2>
+    <p>This little gem of a story by Hans Christian Andersen reveals the ultimate test to find out whether or not a girl is a true princess. It is short, but sweet, and an enduring favourite. The English text is the Andrew Lang version, from his Yellow Fairy book, first published in 1894.
+
+Proofread by Claire Deakin.
+Read by Natasha. Duration just 4.30
+
+
+There was, once upon a time, a prince who wanted to marry a princess, but she must be a true princess. So he travelled through the whole world to find one, but there was always something against each. There were plenty of princesses, but he could not find out if they were true princesses. In every case there was some little defect, which showed the genuine article was not yet found. So he came home again in very low spirits, for he had wanted very much to have a true princess. One night there was a dreadful storm; it thundered and lightened, and the rain streamed down in torrents. It was fearful! There was a knocking heard at the palace gate, and the old king went to open it.
+
+There stood a princess outside the gate; but oh! What a sad plight she was in from the rain and the storm! The water was running down from her hair and her dress into the points of her shoes and out at the heels again. Yet she said she was a true princess.
+
+"Well, we shall soon find that out!" Thought the old queen. But she said nothing, and went into the sleeping room, took off all the bedclothes, and laid a pea on the bottom of the bed. Then she put twenty mattresses on top of the pea, and twenty eiderdown quilts on the top of the mattresses. This was the bed in which the princess was to sleep.
+
+The next morning she was asked how she had slept.
+
+"Oh, very badly!" Said the princess. "I scarcely closed my eyes all night! I am sure I don’t know what was in the bed. I laid on something so hard that my whole body is black and blue. It was dreadful!"
+
+Now they perceived that she was a true princess, because she had felt the pea through the twenty mattresses and the twenty eiderdown quilts. No one but a true princess could be so sensitive.
+
+So the prince married her, for now he knew that at last he had gotten hold of a true princess. The pea was put into the Royal Museum, where it is still to be seen, if no one has stolen it. Now this is a true story.
+
+So Bertie says that’s how you tell a real princess. Sadie says she would never sit on a pea, but still Bertie won’t say that she’s a real princess and now she’s in a bit of a huff. I’m sure she will cheer up soon because she likes Bertie really.In a land far far away there was a glorious kingdom. In the kingdom stood a great castle. And inside the castle lived a handsome Prince.
+
+he Prince was sad.
+
+He longed for a true Princess to share his castle and kingdom, but he couldn't find one.
+
+This was not because there was a lack of Princesses. In fact, the kingdom was full of fair maidens all claiming to be Princesses.
+
+The Prince scoured the kingdom, meeting every one of these so-called Princesses. But he returned sad and empty handed.
+
+“It is impossible to tell whether these are true Princesses!” he said to his Father, the King.
+
+“You must be patient my son. You will know when you know” said the King, with a knowing smile.
+
+The Prince smiled back, then went to his chamber.
+
+That evening a huge storm came.
+
+Thunder clapped. Lightning flashed. And the rain clattered down on the castle roof like the sound of a thousand horses charging into battle.
+
+Suddenly, came a loud knock at the castle door. The King put on his robe and opened the door to find a cold, soggy young lady standing in front of him.
+
+I am a true Princess,” she said, “Please can I have some dry clothes and a bed for the night?”
+
+The King let her in.
+
+“She says she is a true Princess,” said the King to the old Queen-mother.
+
+The Queen-mother didn’t say a word.
+
+Instead, she thought to herself, “We’ll soon see about that”. She then handed the Princess a nightgown and said, “put this on while I prepare your chamber.”
+
+The Queen-mother began preparing the chamber—but in a very peculiar way.
+
+First, she took the covers, sheets and mattress off the bed.
+
+Then she placed a single garden pea on the bedstead.
+
+And then she laid twenty mattresses on top of the pea taking care to separate each layer with a soft eiderdown quilt.
+
+After this she replaced the bedclothes on the top mattress and said to the Princess, “Your chamber is ready!”
+
+he bed was now so high off the ground that the Princess needed to climb a ladder to get into the bed. So the Princess climbed up the ladder, got under the covers and blew out her candle.
+
+At breakfast the next morning the Queen-mother turned to the Princess and asked, “My dear Princess, how did you sleep?”
+
+“Oh, not at all well,” said the Princess. “I mean to say, I am extremely grateful for your kindness in putting me up for the night, but there seemed to be something ever so hard and uncomfortable under my mattress. I didn’t sleep a wink.”
+
+My my!” replied the Queen-mother, “is that so?”
+
+The Queen-mother turned to the Prince and said, “I believe we have found your true Princess, for none but a true Princess possesses such a delicate sense to feel a single pea through twenty mattresses and twenty of my finest quilts. You must wed immediately!”
+
+The Prince was overjoyed.
+
+He turned to the Princess and said, “Dear Princess, would you do me the great honour of becoming my wife?”
+
+She blushed, then taking a moment to finish a mouthful of cereal, said, “On one condition.”
+
+“Anything!” replied the Prince.
+
+She looked at the Prince with a cheeky grin and said, “That you promise, dear Prince, that from this day forward any pea that should enter this castle is simply for eating. And not for sleeping upon.”
+
+The Prince looked back at her, chuckled and said, “I promise!”  </p>
+    
+  </div>
+
+  
+
+
+  <!-- Dictionary Popup -->
+  <div id="dictionary-popup"></div>
+
+  <!-- AI Chat Assistant -->
+  <img src="ai1.png" class="chat-icon" id="chatToggle" alt="AI Chat Icon" />
+  <div class="chat-bubble" id="chatBubble">
+    👋 Need help with the story?
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const toggle = document.getElementById("chatToggle");
+    const bubble = document.getElementById("chatBubble");
+    toggle.addEventListener("click", () => {
+      bubble.classList.toggle("show");
+    });
+
+    // Dictionary popup logic
+    const popup = document.getElementById("dictionary-popup");
+    document.getElementById("story").addEventListener("pointerdown", (e) => {
+      const selection = window.getSelection();
+      setTimeout(() => {
+        const word = selection.toString().trim();
+        if (word.length > 0) {
+          fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+            .then(res => res.json())
+            .then(data => {
+              const def = data[0]?.meanings[0]?.definitions[0]?.definition || "No definition found.";
+              popup.innerHTML = `<strong>${word}</strong>: ${def}`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            })
+            .catch(() => {
+              popup.innerHTML = `No definition found for "${word}".`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            });
+        }
+      }, 500);
+    });
+
+    document.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  </script>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-31f6fa21-066a-4d5e-8751-6591d35cdf0e" data-elfsight-app-lazy></div>
+
+
+</body>
+</html>

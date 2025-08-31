@@ -1,0 +1,324 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryNest | Snow White</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Karma', sans-serif;
+    }
+
+    body {
+      color: #fff;
+      background: #000;
+    }
+
+    #bg-image {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      height: 50px;
+    }
+
+    .nav-logo span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 140px auto 60px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #ffd700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      width: 60px;
+      z-index: 100;
+    }
+
+    .chat-bubble {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 25px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      max-width: 200px;
+    }
+
+    .chat-bubble.show {
+      display: block;
+    }
+
+    #dictionary-popup {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.95);
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      display: none;
+      max-width: 300px;
+      font-size: 0.95rem;
+      z-index: 9999;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .fixed-back {
+      position: fixed;
+      top: 90px; /* just below the nav bar */
+      right: 20px;
+      background-color: #f8a100;
+      color: black;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1001;
+      box-shadow: 0 0 6px rgba(0,0,0,0.5);
+      transition: background 0.3s;
+    }
+
+    .fixed-back:hover {
+      background-color: #ffc04d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Image -->
+  <img id="bg-image" src="06. Snow whte.jpg" alt="Background Image" />
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.png" alt="Logo" />
+      <span>StoryNest</span>
+    </div>
+  </nav>
+
+  <!-- Back Button -->
+  <a href="fairy.html" class="fixed-back">← Back to Fairy Tales</a>
+
+  <!-- Lesson 1 -->
+  <div class="container" id="story">
+    <h2>Snow White</h2>
+    <p>ONCE THERE WAS AN EVIL WIZARD who created a cursed mirror with his dark magic.  If anything good or beautiful were put in front of this bedeviled mirror, the reflection would show an image that was rotten and gray.  And if anything evil were put in front of the mirror, the reflection would show back the sameThe wizard wanted the whole world to know his evil mirror.  He held it under his arm and flew up into the sky.   The mirror, rather bulky to carry, started to shake.  At one sudden gust of wind, it dropped and smashed on the ground into many tiny sharp bits of glass.  The wizard was delighted, knowing if even one bit of that evil glass were to blow into anyone’s eye, that person would see only the bad and dark in people, and no longer the good.  
+
+Years later, two friends, a boy named Kai and a girl named Gerda, lived next door to one another.  Both of their bedrooms were in the attic.  When they opened their attic windows, they were so close they could reach out and touch fingertips.The roof was sloped and an old gutter ran between the two roofs.  Where the rainwater landed at the end of the gutter, the families had planted vegetables and roses.  Kai and Gerda tended to it as if it were their very own garden.  Kai and Gerda’s families were poor and there were no toys to play with.  But they played in their garden on the roof, and were happy.
+
+One day, Gerda and Kai were on the roof weeding the garden.  All of a sudden a gust of wind blew by.  It blew a sharp bit of that evil glass right into Kai’s eye.  He stood up, stepping on the roses.  "I don't want to weed this stupid garden anymore!" he said loudly.  
+
+"Okay," said Gerda.  "Say, Kai, you're stepping on the roses."
+
+Kai snapped, “What do I care if I step on the roses? Stupid roses aren't worth anything.  I never want to play with you, Gerda, ever again!"  Gerda was stunned.  She simply did not know what to say.
+
+ The next day, Kai took his sled into town.  Ah, that sled was so slow!  A big white sleigh was speeding behind him on the road, very fast.  As the sleigh skimmed close to Kai, it slowed down just a bit.  At once, Kai had an idea.  He quickly threw the rope of his sled onto the back of the sleigh.  Now he could ride his sled behind the big sleigh!  He thought himself very clever, but Kai did not know that driving the sleigh was the evil Snow Queen.  
+
+In her white fur coat, the Snow Queen knew very well that Kai and his sled were on the road.  She had slowed down her sleigh when she got closer, just to give him a chance to tie on the rope.  She did not turn around to look.  She could tell that Kai was riding along behind her.  Soon he would be near frozen with cold.  Then, she knew, it would be easy to make him hers.
+
+The Snow Queen drove on.  When she knew Kai must be bitter cold, she stopped the sleigh, went up to the boy and said, "Poor thing, you must be frightfully cold."  Kai could only shiver in response.  "I can make it so that you do not feel the cold," said the Snow Queen.  “I will kiss your cheek.  Would you like to not feel the cold anymore?”Kai nodded.  She gave him a kiss on the cheek and sure enough, he no longer felt cold.  
+
+“Now, one more kiss,” said the Snow Queen. “With this one, you will forget all about Gerda and your family.”  Before Kai could say anything, the Snow Queen kissed the other cheek.  She laughed and said, “If I kissed you a third time on your forehead, you would die.  But I have things for you to do for me back at my palace.” Then she got back into her sleigh and drove on.Kai did not return home that day.  Or the day after that.  You can imagine how upset everyone was!  They said poor Kai must have drowned in the river.  Gerda ran down to the river.  She called out to the waters rushing by - Is it true?  The river would not say.  Gerda took off her red shoes and held them up.  She said she would throw her red shoes into the river, if only the river would give back Kai. But the river would not let her throw in the shoes. And that is how Gerda knew that he must not be under the water.
+
+But where was he?  
+
+Gerda went many places looking for Kai.  She went to see a witch.  The witch tried to trick Gerda into staying with her forever. Gerda ran out very fast, just in time.  She met a crow. The crow told Gerda that to find Kai, she must go to the palace of a certain Princess.  
+
+So off went Gerda to the palace of the Princess.  The Princess did not know anything about Kai.  But she gave Gerda warm clothes and a beautiful coach she could ride on her way.
+
+ Gerda was riding her coach when a band of robbers jumped up from behind.  Their leader, a Robber Girl, forced Gerda into her coach.  She took the reins and rode on.  Now Gerda was her prisoner!
+
+And worse, she had no more clue than ever on where to find Kai.  
+
+The Robber Girl took Gerda back to the house where she lived.   Gerda must sleep in the barn, in a corner next to a reindeer. When the Robber Girl left, Gerda cried out, “Oh Kai, where are you?” Two white dove birds up high in the loft of the barn, heard her cry.  
+
+Said one dove to her, “We remember seeing that boy Kai you speak of.”  
+
+"You do?" said Gerda.
+
+"The Snow Queen drove by him on her sleigh," said the other dove.  "The boy Kai threw his rope on the back of her sleigh and rode behind it on his sled, very fast."
+
+"We were flying to see our friends, who were sitting in their nest," said the first dove.  "When the evil Snow Queen passed by, she turned and breathed on our friends.” The dove could not finish, and the other one said, “Only we survived!” 
+
+"We were flying to see our friends, who were sitting in their nest," said the first dove.
+
+“How terrible! I am so sorry for you,” said Gerda.  “But you saw my dear Kai?  Where was the sleigh headed?”
+
+“It was headed in the direction of the Snow Queen's palace in Lapland,” said the first dove, “where there's snow and ice all year long.”  
+
+“How will I ever find this place - Lapland?” said Gerda.  
+
+The reindeer, who was roped to a post and hadn't said a word till now, spoke up.  “I know about Lapland,” said the reindeer.  “I was born there.”
+
+“How will I ever find this place - Lapland?" said Gerda.  
+
+"Please,  could you take me there?" said Gerda.
+
+“Yes I could, if only you and I were free of this place.  But who knows how long we must stay here?”
+
+The Robber Girl was just outside the barn door all this time.  She was not really so mean after all.  She went into the barn and cut the ropes that bound the reindeer.  She helped Gerda mount the reindeer and gave her a cushion to sit on.  She even gave Gerda a pair of fur boots, two loaves of bread, a and a piece of bacon, too.  "Be off now," said the Robber Girl.  "Find your friend."
+
+Off like the wind flew Gerda and the reindeer.  They rode and rode until it got dark.  Then they needed to find a place to stay for the night.  They knocked on the door of a hut.  An old woman opened the door and welcomed them inside. Gerda told her about their search to find Kai.  The old woman said, “You still have a long way to go to get to Lapland.  The Snow Queen's palace is 100 miles away."
+
+"How will we know it when we get there?" said Gerda.
+
+“You can't miss it," said she.  "The windows of her palace burn with a blue light that can be seen for miles around. But when you get there, do not go to the palace at first.  You must look for a cabin nearby with a red door.  Inside that cabin lives a Lapland woman I know."  The old woman picked up a piece of dried fish and wrote some words on it.  “Give her this fish," said the old woman, "and she will help you."The next day, Gerda and the reindeer rode as fast as they could.  They flew like the wind for three days.  On the third day, they saw blue lights from afar.  When they got closer, they saw that it was a large, dark palace.  But they did not go inside.  Instead, they looked for a cabin nearby with a red door. Very cold they were by then, and hungry too.  And glad when they found the cabin.  They knocked on the door and a Lapland woman ushered them inside and let them warm themselves by the fire.
+
+Gerda told her that they had come looking her dear friend Kai.  And that Kai was last seen with the Snow Queen.  Gerda handed the fish to the Lapland woman.  
+
+The old woman read the words on the fish three times.  She put it in the pot on the fire for soup, as she never wanted to waste anything.
+
+The old woman read the words on the fish three times.
+
+“Did it tell you anything at all?” cried out Gerda.
+
+The reindeer said, “Is it some magic that will give Gerda the power of ten men?”
+
+“The power of ten men!” said the Lapland woman, in a huff. “That would be of very little use."  She turned to Gerda. “There is no magic anyone can do for you that you cannot do for yourself.  Your friend Kai got some bad glass in his eye.  That's why the Snow Queen took him.  By now, she has probably kissed him twice.  That gives her full power over him.” 
+
+"Full power!" cried Gerda, alarmed.  "Surely something can be done!" 
+
+"Full power!" cried Gerda, alarmed.  “Surely something can be done!”
+
+"Maybe," said the Lapland woman.  She turned to the reindeer. "Go now, both of you to the Snow Queen’s palace.  About one hundred feet before the entrance you will see a bush with red berries half covered in snow.  Put her down at the bush and wait for her there while she goes to find Kai.  And Gerda," said she, turning to the girl, "When you find Kai, he will not want to leave.  He is in her power.  He thinks that her palace is the very best place in the world.  He has forgotten all about you.”
+
+“But then how can I rescue him?" said Gerda.  
+
+“Look at what you have already done!" snapped the Lapland woman.  "Look at how far you've already come."
+
+So Gerda mounted the reindeer, and off they went.“Oh, no!” said Gerda after the cabin was no longer in sight.  “I left my fur boots behind!”  But there was no time to go back.  So on they went.
+
+At the bush with red berries, Gerda climbed off the reindeer. There she was, with no boots and her feet bare in the cold snow.  But the Snow Queen’s palace was right ahead of her, its blue lights burning in the windows.  So Gerda walked on, calling and calling for Kai.  
+
+Then at last, there he was!  Kai was sitting on his knees on top of a frozen lake.  A throne sat on the lake, and the throne was empty.  The Snow Queen had given Kai a job of arranging thin slices of ice into words.  Other slices of ice he must make into numbers.  For this frozen lake was the Lake of Reason.  And the throne was the very throne of the Snow Queen.
+
+"Kai!" called Gerda.  But he did not look up.
+
+Kai's skin was dark blue, as if he were frozen. Kai had so little feeling left he did not even notice the cold anymore.  The Snow Queen was away and Kai was busy with his task, working on the frozen lake.  He moved one piece of ice here and another there, making the words and numbers.
+
+“Kai!” called Gerda again.  Still, Kai did not look up.  Gerda ran right up to his face.  “Kai, Kai! It's me, Gerda!”  
+
+At last, Kai looked up.  But he looked right past her with his deep dark eyes, and did not see her at all.  Gerda burst into tears.  Cold and cutting was the wind on that lake.  As Gerda cried, “Kai, where are you? Where have you gone?” one of her tears blew right onto Kai’s face.
+
+The tear burned his face until his whole face felt hot.  Then Kai, too, was crying.  
+
+“Gerda!” said Kai, “is that you?” Kai shivered.  He cried with joy, for the evil bit of glass was washed from his eye.  Kai took Gerda’s hands.  Though they were both frozen cold, each of them felt deeply warm inside.Gerda and Kai walked hand in hand back to the bush with the red berries, where the reindeer waited.  As they walked, the sun came out and warmed and dried them.  The wind stopped and birds started to chirp.  
+
+The reindeer took them to the first old woman, who gave Gerda a new pair of fur boots.  Each of them got a fur hat, too.  As the reindeer carried them on the long road back home, who came along but the Robber Girl!  She was riding the coach she had taken from Gerda, but Gerda was glad to see her, just the same.
+
+The Robber Girl said to Gerda, “So this is the friend you traveled all the way across the world to save.  I hope he was worth it!”   They smiled.
+
+The Robber Girl said they should hop on the sleigh and she would give them a lift home.  By the time they finally got home, it was summertime.  Much to their surprise, they were all grown up.In the years that came to be, Gerda and Kai stayed the best of friends.   There were no more adventures with the Snow Queen or the cold frozen north, and it was a quiet life.  But it was one where each of them knew, deep down, that no matter what, they would always look out for each other.
+<span>The End..</span></p> </div>
+
+  
+
+
+  <!-- Dictionary Popup -->
+  <div id="dictionary-popup"></div>
+
+  <!-- AI Chat Assistant -->
+  <img src="ai1.png" class="chat-icon" id="chatToggle" alt="AI Chat Icon" />
+  <div class="chat-bubble" id="chatBubble">
+    👋 Need help with the story?
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const toggle = document.getElementById("chatToggle");
+    const bubble = document.getElementById("chatBubble");
+    toggle.addEventListener("click", () => {
+      bubble.classList.toggle("show");
+    });
+
+    // Dictionary popup logic
+    const popup = document.getElementById("dictionary-popup");
+    document.getElementById("story").addEventListener("pointerdown", (e) => {
+      const selection = window.getSelection();
+      setTimeout(() => {
+        const word = selection.toString().trim();
+        if (word.length > 0) {
+          fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+            .then(res => res.json())
+            .then(data => {
+              const def = data[0]?.meanings[0]?.definitions[0]?.definition || "No definition found.";
+              popup.innerHTML = `<strong>${word}</strong>: ${def}`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            })
+            .catch(() => {
+              popup.innerHTML = `No definition found for "${word}".`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            });
+        }
+      }, 500);
+    });
+
+    document.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  </script>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-31f6fa21-066a-4d5e-8751-6591d35cdf0e" data-elfsight-app-lazy></div>
+
+
+</body>
+</html>

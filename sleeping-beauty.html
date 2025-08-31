@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryNest | The Sleeping Beauty</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Karma', sans-serif;
+    }
+
+    body {
+      color: #fff;
+      background: #000;
+    }
+
+    #bg-image {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      height: 50px;
+    }
+
+    .nav-logo span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 140px auto 60px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #ffd700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      width: 60px;
+      z-index: 100;
+    }
+
+    .chat-bubble {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 25px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      max-width: 200px;
+    }
+
+    .chat-bubble.show {
+      display: block;
+    }
+
+    #dictionary-popup {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.95);
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      display: none;
+      max-width: 300px;
+      font-size: 0.95rem;
+      z-index: 9999;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .fixed-back {
+      position: fixed;
+      top: 90px; /* just below the nav bar */
+      right: 20px;
+      background-color: #f8a100;
+      color: black;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1001;
+      box-shadow: 0 0 6px rgba(0,0,0,0.5);
+      transition: background 0.3s;
+    }
+
+    .fixed-back:hover {
+      background-color: #ffc04d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Image -->
+  <img id="bg-image" src="07. The sleeping beauty.jpg" alt="Background Image" />
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.png" alt="Logo" />
+      <span>StoryNest</span>
+    </div>
+  </nav>
+
+  <!-- Back Button -->
+  <a href="fairy.html" class="fixed-back">← Back to Fairy Tales</a>
+
+  <!-- Lesson 1 -->
+  <div class="container" id="story">
+    <h2>The Sleeping Beauty</h2>
+    <p>Long ago in France there lived a King and Queen.  More than anything, they yearned for a child.  At last to their great happiness, the Queen gave birth to a baby girl.  All the bells in the land rang with joy. The King and Queen invited all the fairies in the kingdom to a Naming Party for the baby.  And what a party it was!  Plates and silverware of pure gold were set for each guest.  One fairy, whose name was Maleficent, had left 50 years before and had not been seen in all that time.  Yet she showed up at the door!
+
+Quickly the King and Queen whispered to the servants they must quickly find a place setting and make room at the table for the new guest.  Alas, all the gold plates were already on the table and only a platewear setting made of silver could be found.  This greatly angered Maleficent.
+
+Soon it was time for each Fairy to give her blessing to the baby.  When it came to Maleficent’s turn, she stood up and pointed her long scraggly finger at the sleeping baby girl in the cradle.
+
+“I declare, before all of you,” Maleficent called out, “that this child, on her 16th birthday, shall prick her finger on the spindle of a spinning wheel, and die!”With a whoosh of smoke, the evil fairy vanished.  Everyone cried out with alarm, as you can imagine.  But one fairy had not yet given the baby her blessing.  The King and Queen asked this fairy, whose name was Merryweather, to reverse the curse.  Merryweather shook her head sadly –  that she could not do.  But she could soften the curse. 
+
+“On her 16th birthday,” said Merryweather, “when the Princess pricks her finger on the spinning wheel, she will not die.  Instead, she will fall asleep for 100 years.”
+
+“She must never prick her finger on a spinning wheel," said the Queen
+
+"We will do everything we can to protect our daughter," said the King.
+
+And so the King and Queen ordered every spinning wheel in the kingdom to be brought to the palace and burned.  To be extra sure the Princess would not be anywhere near a spinning wheel on her 16th birthday or anytime before then, they ordered Merryweather, along with two other fairies, Flora and Fauna, to take the baby far away into the forest. The fairies would raise the child in a cottage deep in the woods.  They would keep her safe until after her 16th birthday.  Then it would be safe to bring the Princess, who had been named Aurora, back to the castle.
+
+Aurora grew up knowing no others than the three fairies, whom she knew as her aunts.  The animals of the forest were her friends and companions.  The birds and the deer, the chipmunks and the rabbits, followed her around as she fed them treats and cooed to them. From the time she was little, Aurora was told she must stay inside the hills that surrounded them.  She must never go beyond those hills!  That was fine with her, as the woods surrounding the cottage had plenty of room to play.
+
+One day when Aurora came home, she found her three aunts preparing for a party.  “What’s going on?” she said.
+
+“Tonight we celebrate your 16th birthday!” said Flora. 
+
+"What's going on?" she said.
+
+“My 16th birthday is tonight?” said Aurora.  “That means tomorrow I'll go back to the castle.”
+
+“Yes, you will!” said Merryweather.  “We have kept you safe from that spinning wheel for 16 years. Starting tomorrow, it will be time for you to start your proper royal life as a princess.”
+
+ “And the first thing is that you will get married,” said Fauna.“Married?” said Aurora.  “Who am I supposed to marry?”
+
+“No need to worry about that,” said Fauna with a wave of her hand. “Even if he’s a bit strange or even on the horrid side, it's hardly matters.”
+
+“He comes from a fine family!” added Flora with a quick smile.
+
+“What do you mean?” said Aurora, pulling back, “on the horrid side?”
+
+“It’s best not focus on such things, dear,” said Merryweather.  "You won't need to spend much time with him, after all."
+
+What do you mean?" said Aurora, pulling back, "on the horrid side?"
+
+“Just do whatever your husband tells you to do,” said Flora. “And you will be fine.”
+
+“This is not turning out like I thought!” cried Aurora.  “How long do I have to stay married?” 
+
+"Your whole life, of course," dsaid Fauna.
+
+“No, this is all wrong!”  Aurora turned to her three aunts and said in a firm voice,  “I would rather prick my finger on a spinning wheel and fall asleep for 100 years than to marry someone I do not want! Maybe by the time I wake up, times will be different and people won’t have to get married this way!”  She ran out the door.
+
+"No, this is all wrong!"
+
+“Dear me!” said Merryweather to the other two fairies.  “I don’t believe that went over very well.”
+
+Aurora ran into the woods where her animal friends lived. A deer hopped over to her, along with the rabbits and chipmunks. 
+
+“We have to get out of here,” she said.  Pointing to the forbidden hills, she said, “We will go over those hills.  I must find a spinning wheel, and quickly too. I must prick my finger on it, fall asleep for 100 years and get out of this marriage.”
+
+Aurora and her animal friends marched through the hills.  On the other side, she looked around.  The world was much like the world closer to her cottage.  However one thing was different - in front of her was a road.  In the distance she heard a clopping sound and saw a cloud of dust - it was a carriage, coming their way.  As the rider approached, her animal friends scattered.
+
+It was a carriage, coming their way.
+
+“Hail!” said the stranger.  “I’m afraid my carriage scared away your pets.  May I give you a lift? Or do you need some kind of assistance?”
+
+Aurora had never seen a man before.  But she couldn’t think about that.  Unless she could find a spinning wheel, her aunts with their magic could find her and whisk her back to the palace, where she'd have to marry that horrid prince. 
+
+“Actually,” Aurora said slowly to the stranger, “there is something that I need.”
+
+“What’s that?” said the stranger, hopping out of the carriage.  Very nicely dressed he was, and well mannered, too.
+
+“A spinning wheel,” said Aurora.A spinning wheel!” said the stranger.  “But there are none left in the land – everyone knows that.”  
+
+“Well, you see,” said Aurora, rubbing her hands together, “I have this friend.  She needs to find a spinning wheel, and right away, too.”  Aurora looked directly at the stranger.  "It's terribly important."
+
+The stranger returned her gaze.  He said in a low voice, “I may know of one.  But this must stay between you and me.”  Aurora nodded.
+
+“Not far from here lives an old woman who spun yarn all her life.  When the order came to burn all the spinning wheels, she could not bear to let go of the beloved spinning wheel that had been in her family for generations.  She came to me.”
+
+He said in a low voice, "I may know of one.  But this must stay between you and me."
+
+The stranger pointed down the road. “She knew I’m a Prince from the kingdom down that way, and she begged me to store it safely for her. I put it in the attic room of my castle tower.  No one ever goes there.  Once the 16 years are over and the Princess Aurora returns, I intend to return it to her.” 
+
+"Will you take me to your castle tower?" said Aurora.
+
+“I shouldn’t,” said the Prince.  After a moment, he added, “But yes, I will.”
+
+When they arrived at his castle tower, they both stepped out of the carriage.  The prince said, “You are not doing this for your friend, are you?”
+
+"I shouldn't," said the Prince.  After a moment, he added, "But yes, I will."
+
+“Thank you for taking me here,” said Aurora in a firm voice.  “I will remember your kindness.  Now if you please, I must do what I have to do.”
+
+Aurora turned and climbed the winding tower staircase, up to the very last stair at the top.  There was a wooden door in front of her, and it creaked open.  Inside, all was dark and musty.  Aurora could barely see in front of her for all the spider webs. But she pushed the spider webs aside and stepped forward. There in the middle of the room was a spinning wheel.  From the rose-colored light coming through the small attic window, she could tell the sun was setting.  “I hope this works,” she said, “before it’s too late.”
+
+Aurora held out her finger on the tip of the spindle.  One prick and a tiny droplet of blood dripped from her finger.  At once, Aurora felt dizzy and fell onto an old dusty velvet blanket on the floor.  There she fell into a deep sleep.  Moments later, all the others in the castle, servants and royals alike, fell asleep as well.  So did the Prince, who was still waiting for her outside the tower door.  Almost immediately, thorns and vines sprung up and wrapped around the castle so thickly that no human or beast could pass through. 
+
+For 100 years, Aurora and the others in and around the castle slept soundly.
+
+For 100 years, Aurora and the others in and around the castle slept soundly. 
+
+After 100 years, Aurora blinked her eyes awake.  At that very moment, all others in and around the castle woke up, too.  Everyone started to do what they had been doing the moment before they had fallen asleep. The thorns and vines around the castle melted away.
+
+Aurora stepped down the tower staircase.  There stood the prince, rubbing his eyes.  He was still waiting for her.
+
+"I feel different," said the Prince.  "Do you?"  She nodded, and they smiled.
+
+They stepped into the Prince’s carriage.  They were both hungry, and he headed for the market square. 
+
+"I feel different," said the Prince.  "Do you?"  She nodded, and they smiled.
+
+But instead of the market square the prince remembered, in the very same place bustled a whole new world, completely different from the one they had known.  After 100 years, such marvels on the street!  Bicycles and streetcars, telephones and streetlights.  Shops the likes of which they had never seen! 
+
+Perhaps best of all, they learned that in this strange new world, it was quite all right for women and men to get to know each other - if they fell in love, so be it, and if they did not, well, that was fine, too. Aurora and the prince took each other’s hand. Because getting to know each other better was exactly what each of them wanted to do.
+
+ 
+
+end</p>
+    
+  </div>
+
+  
+
+
+  <!-- Dictionary Popup -->
+  <div id="dictionary-popup"></div>
+
+  <!-- AI Chat Assistant -->
+  <img src="ai1.png" class="chat-icon" id="chatToggle" alt="AI Chat Icon" />
+  <div class="chat-bubble" id="chatBubble">
+    👋 Need help with the story?
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const toggle = document.getElementById("chatToggle");
+    const bubble = document.getElementById("chatBubble");
+    toggle.addEventListener("click", () => {
+      bubble.classList.toggle("show");
+    });
+
+    // Dictionary popup logic
+    const popup = document.getElementById("dictionary-popup");
+    document.getElementById("story").addEventListener("pointerdown", (e) => {
+      const selection = window.getSelection();
+      setTimeout(() => {
+        const word = selection.toString().trim();
+        if (word.length > 0) {
+          fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+            .then(res => res.json())
+            .then(data => {
+              const def = data[0]?.meanings[0]?.definitions[0]?.definition || "No definition found.";
+              popup.innerHTML = `<strong>${word}</strong>: ${def}`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            })
+            .catch(() => {
+              popup.innerHTML = `No definition found for "${word}".`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            });
+        }
+      }, 500);
+    });
+
+    document.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  </script>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-31f6fa21-066a-4d5e-8751-6591d35cdf0e" data-elfsight-app-lazy></div>
+
+
+</body>
+</html>

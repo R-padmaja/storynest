@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryNest | Rumpelstiltskin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Karma', sans-serif;
+    }
+
+    body {
+      color: #fff;
+      background: #000;
+    }
+
+    #bg-image {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      height: 50px;
+    }
+
+    .nav-logo span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 140px auto 60px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #ffd700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      width: 60px;
+      z-index: 100;
+    }
+
+    .chat-bubble {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 25px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      max-width: 200px;
+    }
+
+    .chat-bubble.show {
+      display: block;
+    }
+
+    #dictionary-popup {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.95);
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      display: none;
+      max-width: 300px;
+      font-size: 0.95rem;
+      z-index: 9999;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .fixed-back {
+      position: fixed;
+      top: 90px; /* just below the nav bar */
+      right: 20px;
+      background-color: #f8a100;
+      color: black;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1001;
+      box-shadow: 0 0 6px rgba(0,0,0,0.5);
+      transition: background 0.3s;
+    }
+
+    .fixed-back:hover {
+      background-color: #ffc04d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Image -->
+  <img id="bg-image" src="15. Rump.jpg" alt="Background Image" />
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.png" alt="Logo" />
+      <span>StoryNest</span>
+    </div>
+  </nav>
+
+  <!-- Back Button -->
+  <a href="fairy.html" class="fixed-back">← Back to Fairy Tales</a>
+
+  <!-- Lesson 1 -->
+  <div class="container" id="story">
+    <h2>Rumpelstiltskin</h2>
+    <p>ONCE UPON A TIME, there was a miller who lived with his daughter. He was the sort of fellow who would do whatever it took to get others to pay attention and admire him.  What was best was getting a response of “oow!” or “ahh!” from a crowd.  What he actually SAID wasn't as important.
+
+One day the King happened to be riding through the miler’s village on his way to a hunting trip.  At the time the miller was holding a crowd spellbound by telling them the secrets of good health and fortune. The King saw the crowd and bellowed out, “What’s going on?”
+
+Everyone turned.  “It’s the King!” 
+
+“What, the King?!”  Everyone bowed down low.  
+
+Everyone turned.  "It's the King!"
+
+The miller thought, “This is my big chance!  If I can impress the King by saying something clever, everyone will always look up to me.  “Your Majesty,” the miller stepped forward and bowed. “I was simply telling folks my secrets to wealth and fortune.”
+
+“What do you know about wealth and fortune?” scoffed the King, noticing his worn work clothes.  Every time the miller moved, clouds of flour puffed up around him.
+
+"This is my big chance!  If I can impress the King by saying something clever, everyone will always look up to me."
+
+“Even a poor miller such as myself,” said the miller, continuing to bow, “can stumble upon secrets to wealth and gold.”
+
+The King was not convinced.
+
+“Changing one’s humble circumstances is, well, like spinning straw into gold,” the miller continued, warming up to the topic. “And I should know, Your Majesty, as my own daughter can do that very thing - spin straw into gold. Why, there's no doubt she is the most clever and talented young maiden in all the kingdom!”
+
+“You say your daughter can spin straw into gold?” said the King, changing his tone. “Why, this young woman must come to my palace, tonight!”
+
+“Uh, Your Majesty, what I meant was in a manner of speaking—” the miller added quickly. 
+
+“Silence!” said the King, who was no longer listening.  “Bring your daughter over tonight, I command it!”
+
+The miller wished he could take it back.  Now it was too late.
+
+"Bring your daughter over tonight, I command it!"
+
+When the miller shared with his daughter what he had told the King about her, she was as distraught as you can imagine.  "Father, why did you say said such a thing to the King?" she wailed. Still, she had not choice but to go to the King's palace as commanded. 
+
+At the palace door, the miller’s daughter was immediately whisked inside and led to a small room.  Inside the room was a spinning wheel, an empty basket, and a bale of straw.  The King entered.  He pointed to the straw and boomed, “By morning, I expect this bale of straw will be spun into balls of gold thread in this basket.  If you do not do this, off with your head!  I don’t appreciate being made a fool of by a mere miller!”The King turned around and slammed the door, locking it with a padlock.  He stationed two guards outside the door.  The girl was all alone.  “What has my father done?” she moaned.  “How could he put me in this situation?  No one can accomplish this impossible task!”
+
+Just then, an odd little man stood before her.  "Did I hear, 'no one'?" said he.
+
+“Wait!" said the girl, shocked.  "How did you get in here?” 
+
+“Never mind that,” said the imp.  “What matters is that I can save your life.  If you make it worth my while, that is.”
+
+"You're telling me that you can actually spin straw into gold?" said the girl in disbelief. He nodded. 
+
+She wondered if she should trust this stranger who appeared out of thin air and claimed to do the impossible.  But then again, what choice did she have?  "Very well, “ she said.  “What is your price?” 
+
+ 
+
+The imp pointed to her neck.  “How about that necklace?” he said.  
+
+The maiden was puzzled.  If the little man could really spin straw into gold, he could buy any necklace he wanted.  Why would he do all this work and only get a necklace?  Still, he seemed to be her only chance to save her life and so she wasn’t about to ask too many questions. She said, “By morning if you can spin this bale of straw into gold thread, the necklace is yours.”
+
+The little man got to work.  Whirr, whirr, whirr, went the spinning wheel.  The girl fell asleep sitting against a wall.  By morning, the bale of straw was gone.  Piled inside the basket were balls of gleaming gold thread. 
+
+“You did it!” said she, amazed. "Well, a deal is a deal." She handed over the necklace.  In a puff, he was gone.
+
+When the King stepped into the room, he saw the basket was filled to the brim with balls wound with true sparkling gold thread.  He knew the room had been locked and two guards had been stationed outside the door all night, so it must be true that she could actually spin straw into gold!  
+
+“Now if you please, sir,” said the girl with a curtsy.  “May I go home?”
+
+“Not on your life!” bellowed the King.  “I will have my servants bring a dozen bales of straw to fill a room larger than this one. You will stay there tonight.  Beware – by morning all the straw must be spun into gold.  If you care about your life!”
+
+"Not on your life!' bellowed the King.
+
+“But I already–!” said the girl.
+
+“I am the King!” he roared.  And the King slammed the door behind him.
+
+“I was lucky last night!” the girl despaired.  “What are the chances I'll be lucky again?”
+
+“Pretty good, I'd say,” said a voice.  The girl turned.  That odd little man again!
+
+“How do you get in here?” she asked.
+
+“Focus!” said the Imp.  “I can do this job for you, but what do I get for it? Hmm... how about that ring?”
+
+The girl looked at her ring - her favorite piece of jewelry. “But after all," she thought, "it's just a ring.”  So she agreed.  
+
+All night, the imp spun the straw.  By morning, there were no more bales of straw on the floor.  And the dozen baskets were laden full of glistening, golden balls of thread.The girl gave him the ring as promised.
+
+Well, if two rooms of gold look good to a king, you can imagine that three rooms full of gold would look even better.  The King took the girl to his royal banquet hall, a room so large you could barely see from one end to the other.  He had filled the banquet room from floor to ceiling with bales of straw on one side and empty baskets were stacked on the other side.  As before, she must spin all the straw in the room to gold by morning.  Or else!
+
+However this time, the King told her he was busy the next morning and wouldn’t be the one to check in on her himself.  His son had returned that day from a trip, so he would send the Prince instead. If all the straw were spun to gold, said the King, his son would marry her.  The King thought to himself, "Even if she's only a miller's daughter, with that talent of spinning straw into gold, she's as fitting a bride as I could want."  What he barked to the girl was that if she could not do the task, she would marry no one at all, for she would die!
+
+When the King left, the girl fell into a gloom.  Even if the little man were to appear again and spin all that straw into gold, she’d only have to marry a prince who was no doubt as cruel and horrible as his father.  Either way, she was stuck! 
+
+When she lifted her head, there was that little man standing before her again.  “So, what have you to give me this time?” he said.“I don’t have any more jewelry,” she said.  “And even if I did, I’d only have to marry a horrible prince, so what’s the point?”
+
+“We will come to a good price,” said the imp. He went to work, spinning the straw into gold.
+
+“Stop!” said the girl.  “I said I can’t pay you. Please stop!”  But the imp did not stop.  He spun and spun, though the girl waved at him from all angles and pleaded with him to stop.  But it was no use.
+
+By morning, the job was done.  “There!” said the imp.  “Now we’ll talk price.”
+
+“That’s not fair!” said the girl. 
+
+“There!" said the imp.  "Now we'll talk price."
+
+"Lots of things in life aren't fair," said the imp with a shrug. “But don’t worry.  I know you don’t have anything to give me … now.  But when you become Queen, I will take as my payment … your first-born child.”
+
+“What?!” said the girl.  “I would never become Queen.  But even if I did, I would never agree to give up my child.” 
+
+“Ah, but you already did!” said the imp.  “The straw is spun.  The deal is done.”  He turned and vanished.
+
+A moment later, there was a knock on the door.  This was different – the King always barged in.  A young man stepped in.
+
+ "Miss, are you all right?" said he.  "I just learned what’s been going on here.  I know my father can be tough."
+
+"That’s an understatement," she said under her breath.  Was that a smile that passed between them? 
+
+The Prince looked around.  He saw the balls of shining gold thread overflowing the baskets.  "So it’s true!” he marveled.  “This is why my father is bent on our getting married.”  The girl hung her head.  Getting married into this royal family was the last thing she wanted.  They would find out soon enough that she can't turn straw into gold.  Then what would happen to her?  She had to get out!  But how?  
+
+She had to get out!  But how?
+
+“You want to get out of here, don’t you?” said the Prince quietly.  The miller's daughter was startled, but nodded.  Though not too heartily as she couldn't risk the Prince's thinking that she didn't want to marry him.  These things can be tricky, after all.  “But what to tell my father?” said the Prince, who started to pace the room. “I know!" he said, "I’ll tell him you’re already married.  No, wait!  What if you had some terrible disease?” She stared at him.  Was this Prince really trying to help her?  “The trouble is," he stopped in his tracks. "He’ll never let you go if he thinks you can keep on spinning straw into gold. We need to come up with a reason why that would have to stop.  Maybe this was some kind of temporary magical ability?”
+
+“That’s closer to the truth than you know,” she said.
+
+Together, they came up with all kinds of reasons why they couldn’t possibly get married, some of which were pretty bizarre, and made them laugh.  Then the two of them started to talk about other things.  In fact, they chatted the rest of the day.  By sunset, the girl felt that if this kind, clever young man would someday ask her to marry him, who knows? She might actually say Yes.   
+
+In fact, they chatted the rest of the day.
+
+At last, the two of them arrived at a plan.  The Prince would tell the King that he could keep the gold only if the maiden were set free immediately.  That the girl was under an enchantment, and if she were kept her at the palace even one day more, all the gold would turn back to straw.  
+
+The King was spooked by magic, and so he agreed to release her. 
+
+The maiden could go home!  A month later, the terrible old King died.  The Prince, now King, found the village where the miller's daughter lived and invited her and her father to come to the palace.  When she and King met again, they found they had just as much to talk about as before.  It wasn't long before the two of them realized they were falling in love.  Before long, they were married.
+
+ 
+
+In time, the new Queen had a baby of her own, a son.  Joy filled the palace.One day, when the Queen was alone in the garden, the imp appeared before her. “Give me what you promised!” said the imp, pointing at the baby.  “We agreed.  Give me that baby, now!” 
+
+“I never agreed!” said the Queen with panic.  She held her baby tightly in her arms. She gathered her thoughts and said, “I will give you gold instead.”
+
+“Don’t make me laugh!” said the little man.  “I can spin all the gold I want!”
+
+“I will give you a castle,” said the Queen.
+
+"Don't make me laugh!" said the little man.  "I can spin all the gold I want!"
+
+“I come and go where I want,” said the imp.  “What do I want with a castle?”
+
+“I will give you servants who will take care of you day and night,” said the Queen.
+
+“No one takes care of me!” said the imp.  “I come and go as I please.  No one even knows my name!”
+
+“I will find out your name,” said the Queen.
+
+“Oh, really?” said the imp.  For he knew that no one on earth knew his name. He had made it up himself and had never told a soul.
+
+“Oh, really?" said the imp.
+
+“Very well,” he said.  “You think you can find out my name?  I give you three days.  After three days, if you cannot tell me my name, the baby is mine forever.  If you can guess my name, keep the baby for all I care.  And tell no one about this pact!  If you say but one word to anyone, including the King, the baby will disappear at once and you'll never see him again!” 
+
+Three days is a long time, thought the Queen.  It's plenty of time to gather every name possible.  The imp didn’t say she couldn’t get others, like her servants, to help.  So she agreed to his terms.
+
+The next day, the Queen wrote down every name she could think of.  She ordered her servants to come up with every name they could think of too, from their home countries and faraway lands.  The servants did not know why they needed to do this, but Kings and Queens make a lot of odd requests and they did their best to comply.   
+
+That night when the imp appeared, the Queen shook out a scroll of names that fell to the floor.  
+
+Could your name be Nathan?” she said.  “Lucas? Jacob?  Hugo? Jerome? Maximillian?  Pointdexter?”  She went on and on.
+
+“Not even close!” laughed the imp.  “See you tomorrow night.”  He was gone.
+
+The second day, the Queen looked through every book she had read.  Her servants went through every book stored in the royal library.  She collected names from faraway places.  Names she had never heard of.  
+
+That night when the imp appeared, the Queen read her list.  
+
+“Perhaps your name is Abner,” she said.  “No? How about Gunnar?”  “Alfonso?” “Silas?” And many more.
+
+“This is boring!” said the imp.  “But I will not be bored tomorrow night.  That will be the third night and the baby will be mine!”  He laughed again and was gone.
+
+“This is boring!" said the imp. "But I will not be bored tomorrow night."
+
+The Queen, in a cold sweat, stayed up all night that night, coming up with every bizarre name she could think of.  She had her servants do the same.  They were writing down names such as “Roast ribs,” or “Sheepshark,” “Gorglethorpe,” or “Spindleshank.”  “We’re just guessing!” she said in despair.  She put on her royal cape and hood, and walked outside the castle.  “If I have peace and quiet, maybe I will think of something,” she thought.  "I must have a breakthrough, somehow."
+
+The Queen went into the woods to the deepest, thickest part, so deep it was dark even though it was daytime. All of a sudden, the queen saw the light of a fire far away.  And heard a voice, too.  There was something about that voice, but what?  She stepped closer, quietly so as not to make a sound.  There in front of a fire danced a little man.  It was he, the very same imp!  Very quietly, the queen listened.As the little man danced, he sang:
+
+          Today I brew.  Tomorrow I bake.
+
+          Then the child I shall take.
+
+          The queen will never win this game
+
+          For Rumpelstiltskin is my name!
+
+“Rumpelstiltskin!” the queen thought to herself.  She tip-toed backward, very very quietly, and made her way back to the palace.
+
+That night when Rumpelstiltskin appeared, the queen went through a few more names.  “Is your name Yusaf?  Bobek? How about Salaman?”
+
+“No, a thousand times, no!” said the imp.  “You are wasting my time.  I give you one last guess.  Then that's the end!”
+
+“No, a thousand times, no!" said the imp.  "You are wasting my time."
+
+“Well, I am sure this is not right.  But could your name possibly be – Rumpelstiltskin?”
+
+“Rumpelstiltskin?” yelled the imp.  “How could you know?”  The imp was so mad that he stamped his feet and a very big hole opened in the ground that he fell right down into.  Rumpelstiltskin was never seen again.  
+
+The Queen and her husband the King lived happily for the rest of their days.  As so may you.
+
+ The End. </p>
+    
+  </div>
+
+  
+
+
+  <!-- Dictionary Popup -->
+  <div id="dictionary-popup"></div>
+
+  <!-- AI Chat Assistant -->
+  <img src="ai1.png" class="chat-icon" id="chatToggle" alt="AI Chat Icon" />
+  <div class="chat-bubble" id="chatBubble">
+    👋 Need help with the story?
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const toggle = document.getElementById("chatToggle");
+    const bubble = document.getElementById("chatBubble");
+    toggle.addEventListener("click", () => {
+      bubble.classList.toggle("show");
+    });
+
+    // Dictionary popup logic
+    const popup = document.getElementById("dictionary-popup");
+    document.getElementById("story").addEventListener("pointerdown", (e) => {
+      const selection = window.getSelection();
+      setTimeout(() => {
+        const word = selection.toString().trim();
+        if (word.length > 0) {
+          fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+            .then(res => res.json())
+            .then(data => {
+              const def = data[0]?.meanings[0]?.definitions[0]?.definition || "No definition found.";
+              popup.innerHTML = `<strong>${word}</strong>: ${def}`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            })
+            .catch(() => {
+              popup.innerHTML = `No definition found for "${word}".`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            });
+        }
+      }, 500);
+    });
+
+    document.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  </script>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-31f6fa21-066a-4d5e-8751-6591d35cdf0e" data-elfsight-app-lazy></div>
+
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryNest | Lost Island</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Karma', sans-serif;
+    }
+
+    body {
+      color: #fff;
+      background: #000;
+    }
+
+    #bg-image {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.3;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      height: 50px;
+    }
+
+    .nav-logo span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 140px auto 60px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #ffd700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      width: 60px;
+      z-index: 100;
+    }
+
+    .chat-bubble {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 25px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      max-width: 200px;
+    }
+
+    .chat-bubble.show {
+      display: block;
+    }
+
+    #dictionary-popup {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.95);
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      display: none;
+      max-width: 300px;
+      font-size: 0.95rem;
+      z-index: 9999;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .fixed-back {
+      position: fixed;
+      top: 90px; /* just below the nav bar */
+      right: 20px;
+      background-color: #f8a100;
+      color: black;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1001;
+      box-shadow: 0 0 6px rgba(0,0,0,0.5);
+      transition: background 0.3s;
+    }
+
+    .fixed-back:hover {
+      background-color: #ffc04d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Image -->
+  <img id="bg-image" src="lost island.jpg" alt="Background Image" />
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.png" alt="Logo" />
+      <span>StoryNest</span>
+    </div>
+  </nav>
+
+  <!-- Back Button -->
+  <a href="adventure.html" class="fixed-back">← Back to Adventure</a>
+
+  <!-- Lesson 1 -->
+  <div class="container" id="story">
+    <h2>Lost Island</h2>
+    <p>Emily was an adventurous girl who lived in a small town. She dreamed of exploring unknown territories and uncovering hidden treasures. One sunny afternoon, she found an old map hidden behind a loose brick in her grandfather's house. It depicted an uncharted island with an "X" marking a spot.
+Encouraged by the discovery, she decided to embark on an expedition to the mysterious island. She packed up a bag, gathered her courage, and set off for the adventure of a lifetime.Emily built a makeshift raft using fallen tree trunks and fibrous vines. She placed the map securely in a waterproof pouch and set off for the island, rowing into the sunset.As the sun dipped below the endless expanse of the ocean, casting fiery hues across the vast, watery canvas, Emily's keen eyes caught sight of a mysterious island emerging from the horizon's embrace. Her heart quickened with an exhilarating blend of anticipation and curiosity, propelling her to grasp her oars firmly and set a determined course towards the enigmatic landmass, shrouded in secrets and beckoning her into the realm of the unknown.On reaching the island, Emily was delighted to find dense forests, colorful birds, and a variety of fruit trees. She spent the day exploring and noting down her discoveries.Emily found intriguing symbols engraved on trees and followed them, guessing they might lead her to the treasure. The journey was getting more exciting with every passing minute.In the soft embrace of a setting sun, Emily stumbled upon a concealed cave tucked behind a majestic waterfall, its entrance adorned with the very same enigmatic symbols she had encountered on the ancient trees and the mysterious map.Taking deep breaths, Emily ventured into the dimly lit cave. She trusted the glow of her flashlight to guide her through the winding tunnels. She remembered her explorer's heart and kept going.Suddenly, Emily stumbled upon a carved wooden chest lying in an alcove. Heart pounding, she slowly opened it to reveal a dazzling collection of jewels and gold coins.In that very moment, a menacing growl pierced the air, jolting Emily into swift action. With a hasty motion, she closed the mysterious chest, her heart pounding in rhythm with the rising threat. A colossal and foreboding creature was steadily drawing near, and Emily steeled herself for the impending confrontation, knowing that danger loomed just around the corner.To Emily's surprise, the creature was a massive, friendly dog. Its tail was wagging, and it seemed to be guarding the treasure. Emily named it Buster.Buster was the perfect companion and protector for Emily. Together, they spent the night in the cave, safe from the elements and the eerie night sounds outside.The next day, Emily decided to leave the treasure where it was, believing it belonged to the island. However, she took one gold coin as a keepsake of her incredible adventure.Emily and Buster spent the day exploring more parts of the island. They found a beautiful lagoon, climbed tall trees, and even found a hidden fruit garden.Emily noticed that Buster always stayed by her side, helping her through difficult paths and protecting her at all times. She felt grateful for his companionship.After a few days, Emily decided to head back home. She designed a collar for Buster using vines and the gold coin. Then, the duo bid farewell to the island and set off on their journey back.After a few days, Emily decided to head back home. She designed a collar for Buster using vines and the gold coin. Then, the duo bid farewell to the island and set off on their journey back.After a few days, Emily decided to head back home. She designed a collar for Buster using vines and the gold coin. Then, the duo bid farewell to the island and set off on their journey back.Arriving home, Emily was welcomed with warm hugs and curious inquiries about her whereabouts. She told them her incredible stories and everyone was in awe.Buster quickly became a part of Emily's family. He was loved by all, and his presence made Emily's house even livelier. The pair became inseparable, sharing fun-filled days and countless adventures.Emily would often look at the gold coin and remember her fearless journey. She felt proud of herself for taking the leap, exploring a new place, and making a new friend.hus, Emily's ordinary life transformed into a lifelong adventure. And, every time she looked at the map or the gold coin, she was reminded of her incredible journey to the lost islandEmily would often recount her extraordinary adventure to her friends. They listened in utter disbelief, enchanted by Emily's courage and determination. It reminded them of the joy and thrill of going on adventures.As the days passed, Emily and Buster's bond grew stronger. They explored local forests, climbed trees, and even swam in the river. Each day was an adventure waiting to be discovered.Buster was more than just a pet to Emily; he was her brave and loyal friend. He would follow her everywhere, and Emily felt safe knowing Buster was by her side.Emily's love for adventure and exploration never faded. She would often imagine new islands to explore, dream about hidden treasures, and plan her next big adventure. Buster was always by her side, ready for their next journey.The memory of her adventure on the lost island was etched in Emily’s heart forever. It had taught her the beauty of courage, the thrill of discovery, and the joy of friendship.Even years later, Emily would often find herself smiling at the thought of her adventure. The vibrant island, the hidden cave, the treasure, and of course, Buster - they were all a part of her grand adventure.Emily's experience had taught her that life was an adventure in itself. And while the world was full of hidden treasures, the most valuable treasures were of the heart - friendship, courage, and a never-ending curiosity.With every passing day, Emily's relationship with Buster got stronger. They were the best of friends, sharing a bond of friendship that was forged in adventure. Leah was sure they would experience many more interesting journeys together.And so, Emily's life was filled with love, laughter, and countless stories of her extraordinary adventure. With Buster by her side, she was always eager to embark on her next exciting journey.Emily would always cherish her unforgettable journey to the lost island. It was a testament to her courage and ignited an adventurer's spirit within her that inspired every child in the neighborhood.Even as the years passed, Emily always made time for new adventures with Buster. And, every time they embarked on a journey, they were reminded of their first adventure together on the Lost Island.Emily's story served as an inspiration to all who knew her. It reminded everyone of the joy of exploration, the thrill of finding the unknown, and the importance of building lasting friendships.The incredible journey of Emily had instilled in her an indomitable spirit of adventure that sparked her imagination. Through her adventures, she discovered more about herself and the world around her.Every time Emily looked at the gold coin, it reminded her of her journey. It was a symbol of her courage, her perseverance, and her ability to dream big and go for it.Emily’s life was filled with dreams and adventures that took her beyond her small town. With her best friend Buster by her side, she knew there were no boundaries to their explorations and no limit to their adventures.The End.
+
+  </p>
+    
+  </div>
+
+  
+
+
+  <!-- Dictionary Popup -->
+  <div id="dictionary-popup"></div>
+
+  <!-- AI Chat Assistant -->
+  <img src="ai1.png" class="chat-icon" id="chatToggle" alt="AI Chat Icon" />
+  <div class="chat-bubble" id="chatBubble">
+    👋 Need help with the story?
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const toggle = document.getElementById("chatToggle");
+    const bubble = document.getElementById("chatBubble");
+    toggle.addEventListener("click", () => {
+      bubble.classList.toggle("show");
+    });
+
+    // Dictionary popup logic
+    const popup = document.getElementById("dictionary-popup");
+    document.getElementById("story").addEventListener("pointerdown", (e) => {
+      const selection = window.getSelection();
+      setTimeout(() => {
+        const word = selection.toString().trim();
+        if (word.length > 0) {
+          fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+            .then(res => res.json())
+            .then(data => {
+              const def = data[0]?.meanings[0]?.definitions[0]?.definition || "No definition found.";
+              popup.innerHTML = `<strong>${word}</strong>: ${def}`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            })
+            .catch(() => {
+              popup.innerHTML = `No definition found for "${word}".`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            });
+        }
+      }, 500);
+    });
+
+    document.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  </script>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-31f6fa21-066a-4d5e-8751-6591d35cdf0e" data-elfsight-app-lazy></div>
+
+
+</body>
+</html>
