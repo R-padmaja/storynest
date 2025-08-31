@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryNest | Alice in Wonderland</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Karma', sans-serif;
+    }
+
+    body {
+      color: #fff;
+      background: #000;
+    }
+
+    #bg-image {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      height: 50px;
+    }
+
+    .nav-logo span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 140px auto 60px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #ffd700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      width: 60px;
+      z-index: 100;
+    }
+
+    .chat-bubble {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 25px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      max-width: 200px;
+    }
+
+    .chat-bubble.show {
+      display: block;
+    }
+
+    #dictionary-popup {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.95);
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      display: none;
+      max-width: 300px;
+      font-size: 0.95rem;
+      z-index: 9999;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .fixed-back {
+      position: fixed;
+      top: 90px; /* just below the nav bar */
+      right: 20px;
+      background-color: #f8a100;
+      color: black;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1001;
+      box-shadow: 0 0 6px rgba(0,0,0,0.5);
+      transition: background 0.3s;
+    }
+
+    .fixed-back:hover {
+      background-color: #ffc04d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Image -->
+  <img id="bg-image" src="10. Alice.jpg" alt="Background Image" />
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.png" alt="Logo" />
+      <span>StoryNest</span>
+    </div>
+  </nav>
+
+  <!-- Back Button -->
+  <a href="fairy.html" class="fixed-back">← Back to Fairy Tales</a>
+
+  <!-- Lesson 1 -->
+  <div class="container" id="story">
+    <h2>Alice in Wonderland</h2>
+    <p>Once upon a time, in the quiet English countryside, there lived a curious young girl named Alice. One sunny afternoon, Alice was sitting by a riverbank, feeling a little bored. She glanced up and noticed a white rabbit with pink eyes, dressed in a vest, hurrying past. The rabbit pulled out a pocket watch and said, “Oh dear! Oh dear! I shall be late!”
+
+Very interested, Alice jumped up and followed the rabbit. She watched as he disappeared into a large rabbit hole. Without thinking twice, Alice followed him—and suddenly, she was falling down, down, down into a strange and wonderful world.
+
+Alice landed softly in a hallway filled with doors of all sizes. On a glass table, she found a small golden key and a bottle labeled “Drink Me.” She sipped the potion and suddenly began to shrink, getting smaller and smaller until she was just the right size to fit through a tiny door that led to a beautiful garden.
+
+As Alice explored Wonderland, she met many unusual and talking creatures. First, she saw a Caterpillar sitting on a mushroom. He gave her strange advice and said that the mushroom could change her size. Alice carefully took a piece and saved it for later.
+
+Next, she met the Cheshire Cat, a grinning cat who could appear and disappear whenever he wanted. The Cat told Alice to visit the March Hare’s house. There, she found the Mad Hatter and the Dormouse having a never-ending tea party. The Hatter and the Hare were very silly—they kept switching seats, telling funny riddles, and pouring tea in the oddest ways. Alice laughed, even though some of it didn’t make sense.
+
+After the tea party, Alice wandered into the garden of the Queen of Hearts. The Queen was bossy and loud, and she loved to play croquet using flamingos as hammers and hedgehogs as balls. She often shouted, “Off with their heads!” when she didn’t get her way. But Alice bravely stood her ground.
+
+During the game, Alice met the King of Hearts and the royal court, which was made up of living playing cards. The Queen accused the Knave of Hearts of stealing her tarts, and a trial began. The court was very silly—witnesses like the Mad Hatter and the March Hare gave such mixed-up answers that no one could follow along.
+
+As the trial became more ridiculous, Alice found herself growing taller and taller. The Queen screamed, “Off with her head!” but Alice, now towering above everyone, simply said, “You’re nothing but a pack of cards!”
+
+Just then, the whole court flew into the air and tumbled down around her.
+
+Alice blinked—and found herself waking up on the riverbank. It had all been a dream! Her sister was still sitting nearby, reading a book.
+
+Alice smiled and thought about all the curious and wonderful characters she had met. Though it had been a strange and magical dream, she felt braver and more curious than ever. She knew that she would always remember her journey through Wonderland and the lessons she had learned—about being curious, standing up for herself, and believing in her imagination.
+
+The End.  </p>
+    
+  </div>
+
+  
+
+
+  <!-- Dictionary Popup -->
+  <div id="dictionary-popup"></div>
+
+  <!-- AI Chat Assistant -->
+  <img src="ai1.png" class="chat-icon" id="chatToggle" alt="AI Chat Icon" />
+  <div class="chat-bubble" id="chatBubble">
+    👋 Need help with the story?
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const toggle = document.getElementById("chatToggle");
+    const bubble = document.getElementById("chatBubble");
+    toggle.addEventListener("click", () => {
+      bubble.classList.toggle("show");
+    });
+
+    // Dictionary popup logic
+    const popup = document.getElementById("dictionary-popup");
+    document.getElementById("story").addEventListener("pointerdown", (e) => {
+      const selection = window.getSelection();
+      setTimeout(() => {
+        const word = selection.toString().trim();
+        if (word.length > 0) {
+          fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+            .then(res => res.json())
+            .then(data => {
+              const def = data[0]?.meanings[0]?.definitions[0]?.definition || "No definition found.";
+              popup.innerHTML = `<strong>${word}</strong>: ${def}`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            })
+            .catch(() => {
+              popup.innerHTML = `No definition found for "${word}".`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            });
+        }
+      }, 500);
+    });
+
+    document.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  </script>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-31f6fa21-066a-4d5e-8751-6591d35cdf0e" data-elfsight-app-lazy></div>
+
+
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryNest | Goldilocks and Three Bears</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Karma', sans-serif;
+    }
+
+    body {
+      color: #fff;
+      background: #000;
+    }
+
+    #bg-image {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      height: 50px;
+    }
+
+    .nav-logo span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 140px auto 60px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #ffd700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      width: 60px;
+      z-index: 100;
+    }
+
+    .chat-bubble {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 25px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      max-width: 200px;
+    }
+
+    .chat-bubble.show {
+      display: block;
+    }
+
+    #dictionary-popup {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.95);
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      display: none;
+      max-width: 300px;
+      font-size: 0.95rem;
+      z-index: 9999;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .fixed-back {
+      position: fixed;
+      top: 90px; /* just below the nav bar */
+      right: 20px;
+      background-color: #f8a100;
+      color: black;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1001;
+      box-shadow: 0 0 6px rgba(0,0,0,0.5);
+      transition: background 0.3s;
+    }
+
+    .fixed-back:hover {
+      background-color: #ffc04d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Image -->
+  <img id="bg-image" src="13. Goldilocks.jpg" alt="Background Image" />
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.png" alt="Logo" />
+      <span>StoryNest</span>
+    </div>
+  </nav>
+
+  <!-- Back Button -->
+  <a href="fairy.html" class="fixed-back">← Back to Fairy Tales</a>
+
+  <!-- Lesson 1 -->
+  <div class="container" id="story">
+    <h2>Goldilocks and Three Bears</h2>
+    <p>ONCE UPON A TIME a girl named Goldilocks lived at the edge of the woods. In those days, when hair twisted around in curls, it used to be called "locks of hair" - anyway this girl was called "Goldilocks" because running down her head and shoulders were golden locks of hair. One morning Goldilocks was out for a walk when a beautiful bird flew right in front of her.  The bird darted off into the woods and she followed it.  Her mother had said many times she must never go into the woods.  But Goldilocks didn’t think of that.Deeper and deeper into the woods she followed that bird. But then - where did it go?  It was nowhere to be seen.  Goldilocks looked around and with a pang, realized the truth - she was lost.  
+
+But a house was not far away.  “I wonder who lives so deep in the woods," she thought.  She knocked on the door.  No answer.  She knocked again.  Still no answer.  Goldilocks knocked a third time.  This time the door opened, but no one was behind the door.  
+
+“Well, the door is already open,” said the girl. “I may as well go in.”
+
+Goldilocks smelled a wonderful smell! On the table were three steaming bowls of oatmeal.  All of a sudden she felt how very hungry she was.
+
+“Well, the door is already open," said the girl.  "I may as well go in."
+
+What Goldilocks did not know is that three bears lived in this house.  In fact, that very morning the three bears had sat down to their breakfast of oatmeal but the cereal was too hot, so they decided to take a short walk.  They said, "By the time we return home, our oatmeal will be perfect."
+
+Gazing now at the three steaming bowls of oatmeal, Goldilocks thought, “I'm sure whoever lives here won’t mind if I take just one sip.” She sat at the first chair took a sip from the bowl.  “Ah!” she said, “it is too hot.”She moved to the second bowl and sipped from the bowl.  “Ah!” she said, “it is too cold.”
+
+She moved to the third bowl and took a sip.  “This is just right!” Before she knew it, the oatmeal was gone.  
+
+Goldilocks rubbed her full tummy and stretched.  “I'd love a cozy chair,” she thought.  
+
+In the living room, three chairs were lined up in a row – a big chair, a medium-sized chair, and a wee little chair.
+
+"I'd love a cozy chair," she thought.
+“I'm sure whoever lives here won't mind if I sit on that big chair,” said Goldilocks. She sat on it but it was too hard. 
+
+“That next chair looks good,” said Goldilocks.  She moved to the medium-sized chair, but it was too soft.
+
+“That wee little chair looks even better,” said the girl.  She sat down on the little chair and it was perfect!  But when Goldilocks leaned back a bit, the chair broke into a dozen pieces.  She plopped down on the floor.
+
+Oh, no!” Goldilocks wailed. Then she yawned.  Where could she lie down for a nap?
+
+The girl noticed a ladder.  Up she climbed to an attic.  There she found three beds lined up in a row – a big bed, a medium-sized bed, and a wee little bed.  
+
+“I'm sure whoever lives here won’t mind if I laid down for just a short nap,” she said.  She laid down on the big bed but it was too hard.  She laid down on the medium-sized bed but it was too soft.  The girl laid down on the wee little bed, and it was just right!  Before her head hit the pillow, Goldilocks was fast asleep.Just then, the three bears came home from their walk.  "Oh, my!" said Mama Bear. “Did either of you leave the front door open?” 
+
+“Not I,” said Papa Bear. 
+
+"Not I," said Little Bear.
+
+Slowly, the three bears stepped inside.  Carefully, they looked aroundMost odd!” said Papa Bear, noticing his spoon in his bowl of oatmeal.  “Someone was eating my breakfast!”
+
+“Most odd indeed!” said Mama Bear, also seeing a spoon in her bowl of oatmeal.  “Someone was eating my breakfast!”
+
+“This is the most odd of all!” said Little Bear.  “Someone was eating my breakfast and they ate it all up!”
+
+The three bears shook their heads with wonder.  With care, they stepped into their living room.Do you think someone was sitting in my chair?” said Papa Bear.
+
+“I know someone was sitting in my chair,” said Mama Bear, “because I can see the seat cushion is pushed down.”
+
+“I know someone was sitting in my chair, too!” said Little Bear. “Because it broke!”
+
+The three bears were now alarmed.  Yet they must explore their entire cottage, so they climbed the ladder to their attic.  
+
+“Someone has been sleeping on my bed,” said Papa Bear, who could see that his blankets had been moved.
+
+“Someone was sleeping on my bed, too,” said Mama Bear, who could also see that her blankets had been moved.
+
+“Someone was sleeping on my bed,” said Little Bear. “And there she is!”Goldilocks bolted awake.  Three bears were looming over her.  They did not look happy.Oh my!” said Goldilocks, jumping out of bed.  As quick as she could, she climbed down the ladder and ran out the front door.
+
+Little Bear chased after her.  "Wait, please!"
+
+Goldilocks stopped.  She turned around. 
+
+"Tell me," said Little Bear, “Why did you come in our cottage?”
+
+Goldilocks stopped.  She turned around.
+“I didn’t think–" said Goldilocks. 
+
+“Why did you eat my breakfast?” said Little Bear.
+
+“I didn’t think–" said Goldilocks.
+
+“And why did you break my chair and sleep in my bed?” said Little Bear.
+
+“I guess I didn’t think about that, either,” said Goldilocks.
+
+They were both quiet.
+
+Goldilocks said, “I could have waited outside your door.”
+
+“We were coming right home,” said Mama Bear.  "We might have invited you in, if we knew you were hungry."
+
+"I could have waited outside your door."
+“I'm sorry about the chair,” said Goldilocks.  “It broke.”
+
+"We know that," said Mama Bear with a frown.
+
+“I’m good at fixing things,” said Goldilocks, “If you have glue.”
+
+“Of course we have glue!” said Papa Bear. “What kind of bears do you think we are?”
+
+“I promise, I'll make it up to you.” said Goldilocks. “Come on in then, dear,” said Mama Bear. 
+
+“We'll start over,” said Papa Bear with a nod.
+
+“Come in, come in!” said Little Bear.
+
+"Okay, I'm coming!" said Goldilocks.  
+
+With smiles, they stepped into the Bear’s house.  And started over.
+
+ </p>
+    
+  </div>
+
+  
+
+
+  <!-- Dictionary Popup -->
+  <div id="dictionary-popup"></div>
+
+  <!-- AI Chat Assistant -->
+  <img src="ai1.png" class="chat-icon" id="chatToggle" alt="AI Chat Icon" />
+  <div class="chat-bubble" id="chatBubble">
+    👋 Need help with the story?
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const toggle = document.getElementById("chatToggle");
+    const bubble = document.getElementById("chatBubble");
+    toggle.addEventListener("click", () => {
+      bubble.classList.toggle("show");
+    });
+
+    // Dictionary popup logic
+    const popup = document.getElementById("dictionary-popup");
+    document.getElementById("story").addEventListener("pointerdown", (e) => {
+      const selection = window.getSelection();
+      setTimeout(() => {
+        const word = selection.toString().trim();
+        if (word.length > 0) {
+          fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+            .then(res => res.json())
+            .then(data => {
+              const def = data[0]?.meanings[0]?.definitions[0]?.definition || "No definition found.";
+              popup.innerHTML = `<strong>${word}</strong>: ${def}`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            })
+            .catch(() => {
+              popup.innerHTML = `No definition found for "${word}".`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            });
+        }
+      }, 500);
+    });
+
+    document.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  </script>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-31f6fa21-066a-4d5e-8751-6591d35cdf0e" data-elfsight-app-lazy></div>
+
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryNest | Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Base styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Karma', sans-serif; }
+    body { color: #fff; }
+    #bg-video {
+      position: fixed; top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover; z-index: -1;
+    }
+
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(0, 0, 0, 0.5); padding: 10px 30px;
+      position: fixed; width: 100%; top: 0; z-index: 1000;
+    }
+
+    .nav-left { display: flex; align-items: center; gap: 10px; }
+    .nav-left img { height: 50px; }
+    .nav-left span {
+      font-size: 1.8rem; font-weight: 700; color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .nav-center { display: flex; gap: 2rem; align-items: center; }
+    .nav-center a, .subnavbtn {
+      color: #fff; text-decoration: none; font-size: 1.1rem;
+      background: none; border: none; cursor: pointer; position: relative;
+    }
+    .nav-center a:hover, .subnavbtn:hover { color: #ffd700; }
+
+    .subnav { position: relative; }
+    .vertical-subnav {
+      display: none; position: absolute; top: 100%; left: 0;
+      background-color: rgba(0, 0, 0, 0.95);
+      max-height: 300px; overflow-y: auto;
+      padding: 10px; border-radius: 0 0 8px 8px;
+      z-index: 999; width: 200px;
+    }
+    .vertical-subnav a {
+      display: block; padding: 8px 14px;
+      color: white; text-decoration: none;
+    }
+    .vertical-subnav a:hover {
+      background-color: #f8a100; color: black; border-radius: 4px;
+    }
+    .subnav:hover .vertical-subnav { display: block; }
+
+    .nav-right { display: flex; align-items: center; gap: 12px; }
+    .search-box input {
+      padding: 6px; border-radius: 5px 0 0 5px;
+      border: none; outline: none;
+    }
+    .search-box button {
+      border-radius: 0 5px 5px 0;
+      background-color: #f8a100; border: none;
+      padding: 6px 10px; cursor: pointer;
+    }
+
+    .container {
+      margin: 150px auto 60px auto;
+      max-width: 700px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .container h2, .container h3 {
+      color: #ffd700;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    form label {
+      display: block; margin: 10px 0 5px;
+    }
+
+    form input, form textarea, form select {
+      width: 100%; padding: 10px;
+      border-radius: 6px; border: none;
+      margin-bottom: 15px;
+    }
+
+    form button {
+      background-color: #f8a100;
+      color: black; padding: 10px 20px;
+      border: none; border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .comment-box, .story-box {
+      background: rgba(255,255,255,0.1);
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .chat-icon {
+      position: fixed; bottom: 20px; right: 20px;
+      cursor: pointer; width: 60px; z-index: 100;
+    }
+
+    .chat-bubble {
+      display: none; position: fixed;
+      bottom: 90px; right: 25px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white; padding: 12px 16px;
+      border-radius: 12px; font-size: 0.9rem;
+      max-width: 200px;
+    }
+
+    .chat-bubble.show { display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video id="bg-video" autoplay muted loop>
+    <source src="back.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-left">
+      <img src="logo.png" alt="StoryNest Logo" />
+      <span><strong>StoryNest</strong></span>
+    </div>
+
+    <div class="nav-center">
+      <a href="index.html">Home</a>
+      <div class="subnav">
+        <button class="subnavbtn">Genre ⌄</button>
+        <div class="vertical-subnav">
+          <a href="#">Fairy</a>
+          <a href="#">Adventure</a>
+          <a href="#">Mystery</a>
+          <a href="#">Crime</a>         
+          <a href="#">Science Fiction</a>
+          <a href="#">Horror</a>
+          <a href="#">Romance</a>
+          <a href="#">Historical</a>
+          <a href="#">Drama</a>
+          <a href="#">Comedy</a>
+          <a href="#">Mythology</a>
+          <a href="#">Supernatural</a>
+          <a href="#">Folklore</a>          
+          <a href="#">Puranas</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="#">Sign Up | Register</a>
+      <div class="search-box">
+        <input type="text" placeholder="Search..." />
+        <button>🔍</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h2>Share Your Feedback</h2>
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" required>
+
+      <label for="feedback">Your Feedback</label>
+      <textarea id="feedback" rows="4" required></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+
+    <h3>Public Comments</h3>
+    <form>
+      <label for="comment">Write a Comment</label>
+      <textarea id="comment" rows="3" required></textarea>
+      <button type="submit">Post Comment</button>
+    </form>
+
+    <div class="comment-box">
+      <strong>Viewer:</strong> This site is amazing! I love the mythology section.
+      <div><small>👍 12 | 💬 3</small></div>
+    </div>
+
+    <div class="comment-box">
+      <strong>Writer:</strong> I just submitted a new story under “Folklore”!
+      <div><small>👍 7 | 💬 1</small></div>
+    </div>
+
+    <h3>Post Your Story</h3>
+    <form>
+      <label for="story-title">Story Title</label>
+      <input type="text" id="story-title" required>
+
+      <label for="genre">Select Genre</label>
+      <select id="genre" required>
+        <option value="">--Choose Genre--</option>
+        <option>Fairy</option>
+        <option>Adventure</option>
+        <option>Mystery</option>
+        <option>Crime</option>       
+        <option>Science Fiction</option>
+        <option>Horror</option>
+        <option>Romance</option>
+        <option>Historical</option>
+        <option>Drama</option>
+        <option>Comedy</option>
+        <option>Mythology</option>
+        <option>Supernatural</option>
+        <option>Folklore</option>        
+        <option>Puranas</option>
+      </select>
+
+      <label for="story-content">Your Story</label>
+      <textarea id="story-content" rows="6" required></textarea>
+
+      <button type="submit">Upload Story</button>
+    </form>
+
+    <div class="story-box">
+      <strong>Public User:</strong> “The Whispering Banyan” has been added to the Folklore genre!
+      <div><small>🗂️ Genre: Folklore | 🕒 Just now</small></div>
+    </div>
+  </div>
+
+  <!-- AI Chat Assistant -->
+  <img src="ai1.png" class="chat-icon" id="chatToggle" alt="AI Chat Icon" />
+  <div class="chat-bubble" id="chatBubble">
+    👋 Hi! Need help or want to share your thoughts?
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    const toggle = document.getElementById("chatToggle");
+    const bubble = document.getElementById("chatBubble");
+
+    toggle.addEventListener("click", () => {
+      bubble.classList.toggle("show");
+    });
+
+    // Optional: Simulate dynamic comment or story posting
+    // You can later replace this with real backend integration
+    document.querySelectorAll("form").forEach(form => {
+      form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        alert("Your submission has been received. Thank you!");
+        form.reset();
+      });
+    });
+  </script>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-31f6fa21-066a-4d5e-8751-6591d35cdf0e" data-elfsight-app-lazy></div>
+
+
+</body>
+</html>

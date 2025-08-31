@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryNest | Lady and the tramp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Karma', sans-serif;
+    }
+
+    body {
+      color: #fff;
+      background: #000;
+    }
+
+    #bg-image {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      height: 50px;
+    }
+
+    .nav-logo span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 140px auto 60px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #ffd700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      width: 60px;
+      z-index: 100;
+    }
+
+    .chat-bubble {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 25px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      max-width: 200px;
+    }
+
+    .chat-bubble.show {
+      display: block;
+    }
+
+    #dictionary-popup {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.95);
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      display: none;
+      max-width: 300px;
+      font-size: 0.95rem;
+      z-index: 9999;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .fixed-back {
+      position: fixed;
+      top: 90px; /* just below the nav bar */
+      right: 20px;
+      background-color: #f8a100;
+      color: black;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1001;
+      box-shadow: 0 0 6px rgba(0,0,0,0.5);
+      transition: background 0.3s;
+    }
+
+    .fixed-back:hover {
+      background-color: #ffc04d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Image -->
+  <img id="bg-image" src="11. LAdy.jpg" alt="Background Image" />
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.png" alt="Logo" />
+      <span>StoryNest</span>
+    </div>
+  </nav>
+
+  <!-- Back Button -->
+  <a href="fairy.html" class="fixed-back">← Back to Fairy Tales</a>
+
+  <!-- Lesson 1 -->
+  <div class="container" id="story">
+    <h2>Lady and the tramp</h2>
+    <p>“The inspiration for 'Lady', the story, was my dog, a springer spaniel with championship credentials and the official name of 'Lady Nell the Second.' Lady was entered in a number of dog shows, but her strange antics made it clear that show business was not her thing. Although she managed to win a small cup, it became clear that domestic life suited her better.
+
+By this time, our first born child had arrived, and we soon discovered that Lady was a natural nanny. In the years that followed, Lady was showered with affection (not to mention baby food, pabulum, and assorted crockery from the high chair).
+
+With Lady at the mercy of the baby, ideas began to flow in form of drawings and story situations. One drawing in particular was especially poignant and I showed it to Walt. He gave us a big 'OK' to develop Lady's story into a feature, with the addition of Tramp to give the story a touch of romance. She was too busy nannying and being a full-time family member. Lady never realized that her role was played by a cocker spaniel. I don't think she would have minded. She had a generous heart.”
+
+Walt told a journalist that “we were not satisfied, so the project was put on the shelf” when asked why he didn't develop the project sooner. If you'd like to see Joe Grant's version of the tale, pick up a copy of the book Walt Disney's Surprise Package (July 1944, Simon & Schuster) and you'll see that the core of the story is there along with some nice concept art:
+
+Lady is the dog of “Mister Fred” and “Missis” and the story starts with the the baby being there for six months. The Grandmother brings her two Siamese cats that stir up trouble, forcing Lady to rescue Trilby the canary who flees for its life when attacked by the cats. Lady gets blamed for eating the canary! Later, she gets blamed for attacking the baby and tossed out into the rain. She gets saved at the last minute when “Mister” discovers lace and blue ribbon in the claws of the cats and realizes that they are the true villains. The cats and the Grandmother are shown the door and Lady is welcomed back into the house.
+
+Walt was right that the story wasn't strong enough to support a feature and was too involved for a short.
+
+Ward Greene was editor and general manager of King Features newspaper syndicate, which published the Disney comic strips. During the time he worked for King Features, Greene eventually produced seven novels, two plays, a children's book, and a scenario for a Walt Disney film.
+
+Walt met with Greene in the mid-1940s concerning a short story that Greene had written in 1943 for Cosmopolitian magazine titled “Happy Dan, the Whistling Dog.”
+
+Walt felt that combining a happy-go-lucky mutt like the one in Greene's story with the delicate, more proper little cocker spaniel would create the right sense of conflict found in traditional live-action romantic films. Walt also felt that since it was an original story, it needed to be available to the public at least two years before the release of the actual film so that audiences could become familiar with the two main characters and the storyline.
+
+In 1953, Simon and Schuster published the first editon of Lady and the Tramp with illustrations by Joe Rinaldi, who worked on the story for the feature film. Even though elements of Grant's story (including Lady's personality) ended up in this version, Greene was credited as the sole writer. Perhaps one of the reasons for this happening was that Grant had left the Disney Studios in 1949 although the artists still made use of his art work and story concepts for the final film that, of course, were the property of the Disney Company.
+
+Here is Walt Disney's introduction to that volume that Walt hoped would get audiences excited about the upcoming film:
+
+“This is how Lady and the Tramp came to be written. My studio staff and I had been thinking about a dog story in which a pretty little debutante cocker spaniel was to be the heroine—a story in which a human family would be seen and judged through the eyes of their pet. We called her Lady.
+
+But we discovered during our preliminary story conferences that we had only half the story we wanted. Our prim, well-bred, and house-sheltered little Lady when confronted with a crisis in our story just up and ran away and all our cajoleries couldn't lure her back again. We had forgotten one all-important thing—no person or family can ever completely 'own' an animal. Any dog worth room and keep in a household has a life of his own. He's a dog; entitled to some natural animal life aside from being man's best friend and his most tolerant critic. It was when we ignored this that we got into trouble storywise and dogwise.
+
+It was then that I came across Ward Greene's raffish short story Happy Dan, the Whistling Dog. It seemed to me that Ward's roguish mutt might be just the fellow for Lady and it was obvious that Ward Greene knew a lot about household pets as well as those alley rovers who wear no man's collar.
+
+I lost no time in contacting Ward. He knew in a moment what ailed our precious Lady. So we conferred and palavared and exchanged doggish anecdotes and family experiences involving our own pets. It wasn't long before Ward had whistled up the Tramp. In a minute, the gay dog was calling our shy Lady 'little pigeon' and the two hit it off together wonderfully. Once these two canine characters had been introduced, it didn't take much urging to incite Ward to write a book about them.
+
+From then on, their amazing adventures were in Ward's literary hands. Eventually, after the Tramp had shown the fascinated Lady the wonders of a free world during a marvelous night of wandering when she had run away from the horrors of a muzzle and leash, she brought him back home for the most exciting adventure of all.
+
+And so, the gallant mutt settled down with Mrs. Lady, envied and respected by all the pedigreed neighborhood dogs—to whistle and wink no more—even to accept the collar of the family of Jim Dear, Darling, and the Baby…but here I am tipping off a part of Ward's story, which is his alone to relate in the following pages.”
+
+Walt was being uncharacteristically modest. It was Walt who named the dog Tramp. In early drafts, Tramp was called Homer, Rags, and even Bozo. It was Walt who came up with the name Tramp against the objections of Greene and the strong objections of the distributors, who felt the title Lady and the Tramp was a little too “adult” sounding for a Disney product.
+
+Perhaps Walt was thinking of “The Lady Is a Tramp” a showtune from the 1937 Rodgers and Hart musical Babes in Arms, although most people remember singer Frank Sinatra's upbeat suggestive interpretation of the song from the 1957 film Pal Joey.
+
+Driving home one night, story artist Erdman Penner spotted what he felt would be a perfect live-action reference model for the Tramp dashing past his headlights and into the bushes. It took some hunting, but he finally located the dog in a nearby dog pound just hours before the poor pooch was to take the “long walk” to the gas chamber.
+
+He rescued the dog and everyone at the Disney Studios agreed that the dog, less than 1 year old, had just the right look for the roguish Tramp. But here's a secret: The dog was female!
+
+And here's another secret: After she served as a live-action model, that dog lived out the rest of her days at Disneyland's Pony Farm with Owen Pope and his wife, Dolly. The Popes, who managed the horses at Disneyland, actually lived backstage at Disneyland in one of the houses that remained on the land that Walt purchased for Disneyland. The “real” Tramp lived a happy life behind-the-scenes at Disneyland and guests never knew.
+
+The picture required four years and cost $4 million dollars to make, which was quite a sizeable investment when Walt was so strapped for cash with the development of Disneyland. The extended production time was to adjust to filming in CinemaScope for the first time.
+
+According to the original press release for the film: “It took 2 million rough and finished drawings by more than a 150 Disney artists and animators to arrive at the 110,000 full-color frames of film which make up this heartwarming canine caper. Inking the finished drawings onto ‘cels' and painting them in for the photographing required the services of 100 girls who used 700 gallons (nearly 4 tons) of paint mixed in 100 shades.”
+
+Lady and the Tramp was the first Disney animated feature to be based on an original story created at the studio.
+
+“Nearly all our stories up to this time had that international quality,” stated Walt when the film was released to theaters. “Lady and the Tramp was very American, but it had dogs and they're international. Freedom would be the key word in discussing the advantages of this situation. We were free to develop the story as we saw fit, which is not the case when you work on a classic.
+
+“Then you must adhere rigidly to the sequence conceived by the author, which is familiar to your audience,” he said. “As the characters came to life (in this film) and the scenes took shape, we were able to alter, embellish, eliminate and change to improve the material.”
+
+Larry Roberts, who did the voice for Tramp, was an actor and a producer who retired from show business in the 1950s and returned to Cleveland where he reassumed his real last name, “Salters,” and went into the ladies' clothing business. He first worked for Bobbie Brooks, Inc., a company founded by his uncle, Maurice Saltzman.
+
+He then moved to New York City and was a designer for Russ Togs, another ladies' clothing manufacturer. Larry died of AIDS-related causes on Fire Island, New York sometime around the late 1980s.
+
+He was chosen to play the role of Tramp in Lady and the Tramp when a Disney storyman discovered him performing onstage. Roberts was extremely active in the Hollywood theater scene. He created and was part owner of the Players Ring, a prominent Hollywood theatre group of the day. Lady and the Tramp is his only film credit.
+
+Before voicing Lady, Barbara Luddy was a radio actress well known to audiences of the First Nighter radio program. She would later provide the voice for several Disney characters, including Merryweather in Sleeping Beauty (1959), Kanga in the Winnie the Pooh featurettes, and Mother Rabbit in Robin Hood (1973).
+
+Ms. Luddy had a single-line role as the grandmother in the Carousel of Progress attraction shown at the 1964 New York World's Fair, at Disneyland Park, and later at the Magic Kingdom in the Walt Disney World Resort.
+
+As a kid, one of my favorite characters in the film was the feisty little Scottie known as Jock. Jock's Scottish voice was done by the versatile Bill Thompson, well known to Disney fans as the voice of Mr. Smee in Peter Pan, the White Rabbit in Alice in Wonderland and Ranger J. Audubon Woodlore in the Donald Duck cartoons.
+
+Thompson also supplied another Scottish voice for the Disney Company. He was the first voice of Scrooge McDuck in the short Scrooge McDuck and Money (1967).
+
+In 1957, Thompson joined the Los Angeles branch of Union Oil as an executive, working in community relations and unfortunately only occasionally doing voice work for animation.
+
+Jock is really not a black dog, because it would have made him too dark to see any facial expressions. He is painted in a medium value with darker shades of grey and the backgrounds are always light behind him making him look like a black dog.
+
+Thompson also provided the voice for Bull, a rough English bulldog and Dachsie, a heavy-accented dachshund.
+
+Alan Reed, better known as the original voice of Fred Flintstone, was the voice of Boris, the philosophical Russian wolfhound. Bill Baucom was Trusty and Dallas McKennon (the voice of Ben Franklin in the American Adventure attraction at Epcot) voiced Toughy, the stray nondescript mutt, as well as Pedro.
+
+Verna Felton (the voice of the Queen of Hearts in Alice in Wonderland, the Fairy Godmother in Cinderella, as well as voices in other Disney cartoons) did the voice for Aunt Sarah; her son, Lee Carson Millar Jr., was the voice of Jim Dear (as well as the dog catcher).
+
+His father (and Felton's husband), Lee Millar, occasionally did the voice of Pluto before his death in 1941 in cartoons like The Pointer (1939) and Bone Trouble (1940). George Givot talked as overly exuberant Tony.
+
+Singer Peggy Lee supplies the voice not only of Peg, the female dog in the dog pound, but also the voice of both Siamese cats, Si and Am, as well as the voice of Darling, one of Lady's owners.
+
+With Sonny Burke, Lee co-wrote five of the songs (including “Bella Notte”and “Peace on Earth”) in the film and sang three of them: “He's A Tramp,” “Siamese Cat Song,” “La La Lu.”
+
+The character of “Peg” was originally named Mame in the storyboards, but since this was the 1950s, there was a concern that it might be considered offensive to President Eisenhower's wife, Mamie. The character had been called Mame because of her predominant bangs, a characteristic of Mrs. Eisenhower. Miss Lee very graciously allowed the character to be named Peg instead.
+
+“I was thrilled to have [Walt Disney] name that dog‘Peg. The animators had me lip-sync the song ‘He's a Tramp' and do a little undulating walk,” recalled Lee who re-created the moment in the ABC Disney television weekly episode, Cavalcade of Songs originally broadcast on February 16, 1955 to promote the film.
+
+Eric Larson, who animated Peg, claimed that Peg was based “partly on Mae West and a lot on Peggy Lee.”
+
+Several characters in Lady and the Tramp went through name changes. Even Si and Am at one point were called Nip and Tuck.
+
+Lee also provided the vocal work and music for the Siamese cats.
+
+“I especially enjoyed it when Walt turned me loose in the sound-effects department to find the sounds that fitted the Siamese cats,” she said. “Bells, cymbals, chimes, the works. I practiced singing one cat and then the other…a fifth away. Walt let me have all the freedom one could possible have.
+
+“There was some public embarrassment [in 1987],” wrote Lee in her autobiography “Miss Peggy Lee” (Berkley Books 1989). I was doing an interview (promoting the film) one day on CBS radio in San Francisco and had just finsihed a long, detailed description of what it was like to be originating a duet with myself; one voice singing the first part and then overdubbing myself to get the effect of the Siamese cats singing as Siamese twins. ‘There are no finer cats than I am,' to rhyme with ‘Siam.' The engineer put the needle down on the record and two strange voices came out singing. ‘There are no finer cats than WE are' which of course doe not rhyme with ‘Siam'. I was shocked. ‘I named these cats Si and Am and that wasn't even me. How could they do this?' At this point the show's host told the engineer to stop the record, and we briefly discussed the possibility that this was a bootleg record. It wasn't. I later received an apology, sort of, from the product manager at Disney.”
+
+Most likely, the recording was from the 1962 Disney Storyteller LP where singer Robie Lester did a double tracked harmony of “The Siamese Cat Song” that was reused for years on numerous compilations and singles.
+
+In 1987, Peggy Lee sued Disney over Lady and the Tramp. Lee's lawsuit claimed that she was due royalties for video tapes, a technology that didn't exist when she agreed to write and perform for Disney. She only gave Disney permission to use her voice and songs for the original film and soundtrack recording (which also explains why Disney had Robie Lester do a “cover” version).
+
+“Sonny Burke and I worked for hire, which for me meant $250 a day, a total of $3,500 over a period of three years. That's really not so much for originating those voices, but I was still relatively young and inexperienced…No question, every person that worked on the film was touched by Mr. Disney's genius. An Italian award was given to Lady and the Tramp that read: ‘In this troubled world, a visible island of poetry.' Well said. I've promoted Lady and the Tramp for over 36 years,” Lee wrote.
+
+The wheelchair-bound Lee was eventually awarded $2.3 million, but not without a lengthy and bitter legal battle with the Disney Studios that negatively impacted her frail health as a result of diabetes and heart problems. The lawsuit was finally settled in 1991 and set a precedent for future talent contracts at Disney. Lee was dissatisfied with the settlement and threatened that she was going to write a book about the entire incident but never did. She died in January 2002.
+
+For such a wonderfully simple story, there were an amazing number of changes. When Trusty the bloodhound is crushed underneath the dogcatcher's wagon, he was originally supposed to die, which is why Jock howls so mournfully and Trusty does not respond to being nudged.
+
+Walt, who had taken criticism for death of Bambi's mother, decided after seeing the scene that it was too intense and had the animators include Trusty in the final Christmas scene.
+
+He was also influenced by Lee as reported over the decades in a number of written accounts.
+
+According to Lee's version:
+
+“In the original story, ‘Old Trusty', the bloodhound was killed by the wagon. By this time, every character was real to me, I couldn't stand it and actually started to cry.
+
+“Walt said, ‘What's the matter, Peg?' I replied, ‘That's too sad, Walt. Please let him live. Please don't let him die…'
+
+“‘You need the drama', he said. ‘If everything goes along too evenly, you don't have a story'.
+
+I argued ‘Yes, but it's just too sad'.
+
+“‘Well, I'll see what we can do, but the rat stays dead.'”
+
+Another scene was planned that was “inspired” by “Pink Elephants on Parade” sequence from Dumbo . In the scene, Lady would be fearful of the arrival of the new baby and would have a nightmare where a baby bootie would split in two, then four and continue to multiply menancingly until Lady wakes from her dream when she sees real shoes and the wearer happily announcing that the baby had been born.
+
+Yet another planned scene would have had Lady and Tramp walking in the park and a song would have introduced a fantasy segment where the roles of dogs and humans would be switched where dogs are the masters and the humans are their pets and being taken for a walk.
+
+In fact, although it is hard to believe today, Walt wanted to cut the iconic and romantic spaghetti eating scene from the film, feeling that it would be awkward at best. It was animator Frank Thomas who experimented in his backyard with his own dogs eating spaghetti and came up with some sketches that finally changed Walt's mind and resulted in one of the most romantic and most parodied moments in American films.
+
+Thomas was lucky. Before animating the intense fight between Tramp and the rat, animator Woolie Reitherman kept rats in a cage next to his desk to study their actions.Last time, this column covered the making of Lady and the Tramp (1955) and this week, I want to concentrate on something most of us take for granted in the classic Disney animated features, the attention to detail in the background to create a setting for the characters that is so real and believable that we instantly become immersed in the story.
+
+Beginning with Cinderella (1950), Walt filmed live-action reference footage on minimal sets in order to help save time with the final animation by pre-determining angles and composition.
+
+One of Walt Disney's innovations in the making of Lady and the Tramp that few people know is that Walt had his artists construct a miniature Victorian mansion just like the one in the final film.
+
+With Walt's love of miniatures, he made sure it was furnished to the last detail. Then, the artists used celluloid cutouts of the principal characters (especially the animal characters that were done in the appropriate scale) to move around the house to get an idea for composition of scenes and the relationship of the character to the background.
+
+It really helped the artists get a “dog's-eye view” of going up the stairs and through doors.
+
+It was especially important to pre-plan scenes in Lady and the Tramp, because this was the first Disney cartoon feature to use CinemaScope. With the wider screen, the characters had greater freedom to move around through alleys, streets, and even the house itself, rather than moving the backgrounds behind the figures, as had been done in previous films to give the illusion the character was walking down a street.
+
+Unlike earlier animated features, fewer cuts and close-ups were necessary to conceal the lack of space for movement.
+
+“Our layout men, whose work is analogous to that of set designers, had to re-scheme the staging of all action to suit backgrounds twice as long as those we had been using. In doing so, they soon made a discovery: in CinemaScope, cartoon characters move, not the backgrounds,” wrote Disney Legend Ward Kimball in the March 1954 issue of Films in Review in an article titled “Cartooning in CinemaScope.”
+
+“Because there is more space, the characters can move about without getting outside the visual angle. They can also move about more in relation to each other. In CinemaScope, cartoon characters no longer perform in one spot against a moving background, but are moved through the scene.
+
+“Fewer separate scenes and fewer cuts [are] needed, since the action takes place in continuous, unbroken movement across one wide vista, where formerly numerous cuts back and forth had to be employed. Also, panoramic backgrounds are fewer and more figures can be shown simultaneously.
+
+“Our sound department instead of having one soundtrack to mix and re-record had three, one for each of the three speakers behind the CinemaScope screen.”
+
+CinemaScope was a relatively short-lived process (1953-1967), like Cinerama, to try and entice audiences away from their television sets at home and back into theaters for an experience they could get nowhere else.
+
+“Visually, CinemaScope gave us the opportunity—indeed, the necessity—to experiment with action, groupings and setting. It made us re-examine many of our work habits. We were able, of course, to do more in our backgrounds and settings because we had a larger canvas on which to work,” saidWalt Disney when the film was first released.
+
+Unfortunately, Walt discovered that there were not many theaters that had the capabilities to screen the new process so he had to shoot two versions of the film: one for CinemaScope and one where the background and characters were readjusted for the regular full frame Academy ratio that was common for all films for nearly two decades before Lady and the Tramp.
+
+A man's home may be his castle, but for his best friend and canine companion, it can be a loving playland for untold adventures.
+
+Although an early proposed version of Lady and the Tramp was set in San Francisco during the 1906 earthquake, the familiar animated feature film classic actually takes place in a quaint unidentified New England town in 1910.
+
+It is an exclusive upscale section of that community that includes influences from Walt Disney's memories of his childhood from that same time period growing up in Missouri.
+
+Colorful well maintained two-story houses with neatly manicured lawns nestle cozily on quiet tree-lined cobblestone streets with a variety of fences including the traditional wrought iron and wooden picket helping to define the individual properties.
+
+“What you see in Lady and the Tramp is a beautifully detailed real Victorian world,” Imagineer Tony Baxter said
+
+“It's almost like a Norman Rockwell painting,” said Animator Andreas Deja. “It has that detail and Americana styling to it.”
+
+The primary setting for the film's story is the interior and exterior of the charming two story house belonging to Jim Dear and Darling, the owners of a loving cocker spaniel named Lady.
+
+This ideallic location is much more detailed and delightful than the simple description from the original novel Lady and the Tramp: The Story of Two Dogs, written by Ward Greene in 1953 that was based on the storywork at the time for the Disney film.
+
+Author Greene wrote
+
+“Once upon a time—a time not so long ago but a time when most people still used gaslight and preferred horses and carriages to gas buggies—there lived in a white and green house on a pleasant street, a cocker spaniel named Lady.
+
+“It was a wonderful house. It wasn't large but it was brand new and everything in it was new. The floors were so new and shiny that Lady slipped and slid on them. But when the rugs came, they were delightful to the paws. So was the furniture. It was soft…the beds, for instance, where it was supposed to be soft… and it was not so soft like the man's big leather chair when a dog wanted a cool place to nap.”
+
+The Disney artists expanded on that much too brief description creating an authentic turn-of-the-century setting filled with numerous realistic details.
+
+In the film, the house is an accurate representation of Queen Anne architecture that was the preferred fashion from the late 1800s to around 1910. Queen Anne became the predominant style in small American towns that experienced an increase in wealth at the turn-of-the-century and wanted to capture some of the sophisticated flair of larger cities.
+
+It is very apparent that Jim Dear and Darling's home reflects owners who are financially well off and able to easily afford not only a well-polished grand piano in the parlor for entertaining, but a small greenhouse in the backyard to help maintain the always fresh flowers that are abundant both inside and out.
+
+These expansive and expressive houses proved expensive and difficult to maintain and so fell out of favor shortly after the time period in the film. Cut-away bay windows, steeply pitched slate roofs, patterned shingles often called “fish scales,” colorful stained glass, full porches with spindle work ornamentation, and an abundance of decorative details characterized this style of architecture and is clearly in evidence in the Disney artists' interpretation of Jim Dear and Darling's house.
+
+The inviting front porch was an important functional element of these types of houses and, in most cases, an essential decorative feature as well to help define the home. Jim Dear and Darling's porch feature a simple wooden rocking chair, much less elaborate than the two in the living room, surrounded by potted flowers. The engraved glass front door is framed by two red, yellow and blue stained glass panels on either side of the front door that foreshadow the interior color scheme.
+
+A small red brick walkway encircles the entire house and to the left side of the front yard is a metal hanging swing with a red and white canopied top to enjoy the summer evenings.
+
+As mentioned, Lady and the Tramp was being filmed in CinemaScope so layout artists had to extend and fill the viewing area on the right and the left of the usual frame of action.
+
+Fortunately, the intricate detail of Queen Anne architecture and the picturesque interior furnishings helped keep the background interesting without being distracting from the action.
+
+As Baxter pointed out, “When you look at the backgrounds, they create pools of light where the action is going to take place.”
+
+To help get a sense of the story from a “dog's eye view,” background artist Claude Coats who supervised the art work on the house built a scale model of the interior.
+
+Everything from the dainty kitchen and its finely carved wooden swinging door, to the imposing staircase with the stately grandfather clock anchored at the bottom were painstakingly created to stage the horizontal world seen by the canine stars of the film.
+
+“Claude Coats was trained in architecture so was particularly good at giving credibility to the setting. Coats liked to build models so he could see how things would translate dimensionally,” Baxter said.
+
+Animator Mike Gabriel who co-directed Pocahontas (1995) is a particular fan of Coats' work on the house.
+
+“Claude Coats created detail without distracting you,” Gabriel saidafter re-watching the film.
+
+Imagineer Bruce Bushman was also involved in creating the model that was hoped to be both useful and practical in creating some animation shortcuts just as a live-action film had been for Cinderella (1950). Primarily, it solved the problem of perspective, getting just the right view, like little Lady's first look at the Matterhorn-like stairway soaring from the floor of the front hall.
+
+The mansion was desinged and built to the scale of 1 1/2 inches to a foot. This set included painted wallpaper.
+
+The tiny rooms helped unify the vision of all the artists so that the job of getting all the backgrounds and objects identical on the drawing board was greatly simplified. While the time period chosen was an age of cluttered furnishings, by using a model, things could be arranged so they preserved the nostalgia of the era without becoming too “busy.”
+
+Dainty little Lady lives and frolics in this beautiful late-19th century home rich with countless individual items that create a warm, welcoming environment that is subtly authentic. Interior design during this “Gilded Age” was noted for its ornamentation but also for its orderliness.
+
+While the interior of the house may seem overly cluttered with furniture and knick knacks, the fashion of the time was that a bare room was in poor taste, so every surface was filled with objects that reflected the owner's interests and social status. To the left of the doorway entrance is the comfortable living room.
+
+Jim Dear and Darling have decorated their living room with many framed photos that cover the walls, the fireplace mantle and the various side tables, although none of the images in those photos are clearly seen in the film. Darling also fills space with fresh flowers and ferns that she so carefully cultivates in her outside garden that demonstrates “carpet bedding” which is same-height flora, a hallmark of Victorian gardening.
+
+Much of the furniture has the typical straight, turned legs replaced with more graceful cabriole legs where the leg had an out-curved knee and an in curved ankle. Near one wall, is an oak roll top desk with leather writing surface patiently awaiting the business of the day. Two different styles of rocking chairs are placed close to the marble fireplace with its castellated elements not only for warmth but illumination.
+
+At this time period, gas lighting had become the most common and inexpensive way to light a home with a variety of fixtures providing more than sufficient brightness. In the Jim Dear and Darling home, not only are there several graceful wall mounted fixtures and sconces, but delicate overhead chandeliers. Slag glass bent panel lamps as well as enchanting cut crystal hand painted lamps sit on quarter swan round oak tables in the living room.
+
+The living room wallpaper is green with a distinctive repeating dark green abstract floral decoration in keeping with the floral patterns in primary colors that was standard for upscale homes. Embellished hand carved wooden trim abounds in the room as well as the rest of the house.
+
+A curved window seat appropriately covered with plush pillows allows Lady to easily look out the multipanelled window for the arrival of her master or her canine friends, Jock and Trusty.
+
+To the right of the front doorway is the parlor, the most important room in the house since it was used for entertaining. The wallpaper is light blue with a faint laurel wreath pattern and serves as a pleasant background not only for a grand piano and artist easel but also several pets.
+
+Apparently, Lady shares her home with other animals. The Siamese troublemaking cats, Si and Am, peer hungrily from the curved opening at the top of an authentic Queen Anne high chest at a tropical Angelfish swimming below in a bowl. From a tall, twisting white stand hangs a simple birdcage that houses another tasty treat for the curious felines, a small yellow canary.
+
+Around the corner from the parlor is the entrance to the kitchen. Linonelum flooring for family kitchens became popular at the end of the 1800s and in this home, it is a light green background with a pattern of white squares with a smaller interior blue square that sometimes proves a slippery surface for little Lady. A large black cast iron stove is placed to the left side of the well kept room to allow plenty of space for a Sudbury cupboard.
+
+Just outside the kitchen's hinged door is the classic grandfather clock that sits prominently next to a full length mirror at the bottom of the dark wooden staircase.
+
+The stairs, with a single break for a windowed landing, are covered with a reddish patterned carpet and lead up to the master bedroom.
+
+The large bedroom is bright and airy with the same mixture of blue, purple, and violet colors found throughout the rest of the house, although, at one point, a fluffy yellow comforter with light blue highlights decorates the rich mahogany bed. The lush bed includes a half canopy covering at the headboard. Of course, this spacious room also intially serves as the location for the new baby in his blue cradle overflowing with frilly fabrics and ribbons.
+
+With casual elegance, Jim Dear and Darling's house clearly establishes the time period and social status of the characters while at the same time presenting a warm and friendly stage with many fascinating variations for the actions needed to tell the story.
+
+As Disney fans watch the classic Disney animated films, it is important to remember the attention to authentic detail that was contributed by so many talented artists who worked on the backgrounds to provide an appropriate stage for the characters.
+
+Hopefully, the next time any of you watch the film, you will pay a little attention to the magnificent setting that the talented Disney artists took great pains to create.  </p>
+    
+  </div>
+
+  
+
+
+  <!-- Dictionary Popup -->
+  <div id="dictionary-popup"></div>
+
+  <!-- AI Chat Assistant -->
+  <img src="ai1.png" class="chat-icon" id="chatToggle" alt="AI Chat Icon" />
+  <div class="chat-bubble" id="chatBubble">
+    👋 Need help with the story?
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const toggle = document.getElementById("chatToggle");
+    const bubble = document.getElementById("chatBubble");
+    toggle.addEventListener("click", () => {
+      bubble.classList.toggle("show");
+    });
+
+    // Dictionary popup logic
+    const popup = document.getElementById("dictionary-popup");
+    document.getElementById("story").addEventListener("pointerdown", (e) => {
+      const selection = window.getSelection();
+      setTimeout(() => {
+        const word = selection.toString().trim();
+        if (word.length > 0) {
+          fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+            .then(res => res.json())
+            .then(data => {
+              const def = data[0]?.meanings[0]?.definitions[0]?.definition || "No definition found.";
+              popup.innerHTML = `<strong>${word}</strong>: ${def}`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            })
+            .catch(() => {
+              popup.innerHTML = `No definition found for "${word}".`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            });
+        }
+      }, 500);
+    });
+
+    document.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  </script>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-31f6fa21-066a-4d5e-8751-6591d35cdf0e" data-elfsight-app-lazy></div>
+
+
+</body>
+</html>

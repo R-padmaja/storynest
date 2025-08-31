@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryNest | Fairy Tales</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Karma', sans-serif;
+    }
+
+    body {
+      color: #fff;
+      background: #000;
+    }
+#bg-image {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px 30px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      height: 50px;
+    }
+
+    .nav-logo span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: #f8a100;
+      color: black;
+    }
+
+    .back-to-genre {
+      position: fixed;
+      top: 90px;
+      right: 20px;
+      background-color: #f8a100;
+      color: black;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1001;
+      box-shadow: 0 0 6px rgba(0,0,0,0.5);
+      transition: background 0.3s;
+    }
+
+    .back-to-genre:hover {
+      background-color: #ffc04d;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 180px auto 60px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ffd700;
+      margin-bottom: 20px;
+    }
+    .story-list {
+  display: flex;
+  flex-direction: column; /* Show boxes one below the other */
+  align-items: center;     /* Center each box horizontally */
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.story-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 60px;             /* Reduced height */
+  background: #f8a100;
+  color: black;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+  text-align: center;
+}
+
+    .story-list a:hover {
+      background: #ffc04d;
+    }
+
+    .search-box {
+      margin-bottom: 20px;
+    }
+
+    .search-box input {
+      padding: 8px;
+      border-radius: 5px 0 0 5px;
+      border: none;
+      outline: none;
+      width: 200px;
+    }
+
+    .search-box button {
+      border-radius: 0 5px 5px 0;
+      background-color: #f8a100;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+    <!-- Background Image -->
+  <img id="bg-image" src="02. Fairytale BG4.jpg" alt="Background Image" />
+ 
+  
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.png" alt="Logo" />
+      <span>StoryNest</span>
+    </div>
+    <div class="nav-links">
+      <a href="fairy.html">Fairy Tale</a>
+      <a href="adventure.html">Adventure</a>
+      <a href="purana.html">Puranas</a>      
+      <a href="folklore.html">Folklore</a>
+      <a href="comedy.html">Comedy</a>
+      <a href="romance.html">Romance</a>
+      <a href="horror.html">Horror</a>
+      <a href="mythology.html">Mythology</a>
+      <a href="historical.html">Historical</a>
+      <a href="sci-fi.html">Sci-Fi</a>
+      <a href="mystery.html">Mystery</a>
+      <a href="crime.html">Crime</a>      
+    </div>
+  </nav>
+
+  <!-- Back to Genre Button -->
+  <a href="genre.html" class="back-to-genre">← Back to Genre</a>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Fairy Tale Stories</h1>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search stories..." />
+      <button>🔍</button>
+    </div>
+    <script src="js/search.js"></script>
+    <input list="storyList" id="searchInput" placeholder="Search stories..." />
+<datalist id="storyList">
+  <option value="Rapunzel"></option>
+  <option value="Beauty and the Beast"></option>
+  <option value="The Little Mermaid"></option>
+  <option value="Cinderella"></option>
+  <option value="Aladdin"></option>
+  <option value="Snow White and the Seven Dwarfs"></option>
+  <option value="The Frog Prince"></option>
+  <option value="The Princess and the Pea"></option>
+  <option value="Hansel and Gretel"></option>
+  <option value="The Twelve Dancing Princesses"></option>
+  <option value="Ugly Duckling"></option>
+  <option value="Alice in Wonderland"></option>
+  <option value="The Jungle Book"></option>
+  <option value="The Lady and the Tramp" ></option>
+  <option value="The Goose Girl" ></option>
+  <option value="Jack and the Beanstalk"></option>
+  <option value="Sleeping Beauty" ></option>
+  <option value="Thumbelina"></option>
+  <option value="Goldilocks and the Three Bears"></option>
+  <option value="Rumpelstiltskin" ></option>
+</datalist>
+<script>
+  document.getElementById("searchInput").addEventListener("change", function() {
+    const story = this.value.toLowerCase();
+
+    if (story === "rapunzel") {
+      window.location.href = "stories/rapunzel.html";
+    } else if (story === "cinderella") {
+      window.location.href = "stories/cinderella.html";
+    }
+    // Add more conditions as needed
+  });
+</script>
+
+<script src="js/dictionary.js"></script>
+
+
+    <div class="story-list">
+      <a href="cinderella.html">Cinderella</a>
+      <a href="snow-white.html">Snow White and Seven Drawfs</a>
+      <a href="rapunzel.html">Rapunzel</a>
+      <a href="sleeping-beauty.html">Sleeping Beauty</a>
+      <a href="little.html">The Little Mermaid</a>
+      <a href="hansel.html">Hansel and Gretel</a>
+      <a href="ugly.html">Ugly Duckling</a>
+      <a href="goldilocks.html">Goldilocks</a>
+      <a href="jack.html">Jack and the Beanstalk</a>
+      <a href="frog.html">The Frog Prince</a>
+      <a href="rump.html">Rumpelstiltskin</a>
+      <a href="twel.html">The Twelve Dancing Princesses</a>
+      <a href="thumb.html">Thumbelina</a>
+      <a href="princess.html">The Princess and the Pea</a>      
+      <a href="alice.html">The Alice in Wonderland</a>
+      <a href="goose.html">The Goose Girl</a>
+      <a href="jungle.html">The Jungle Book</a>
+      <a href="lady.html">The Lady and the tramp</a>
+      <a href="aladdin.html">The Aladdin</a>
+      <a href="beauty.html">The Beauty and Beast</a>
+
+
+
+    </div>
+  </div>
+
+</body>
+</html>

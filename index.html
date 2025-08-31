@@ -25,7 +25,6 @@
       color: #fff;
     }
 
-    /* --- Navigation --- */
     nav {
       display: flex;
       justify-content: space-between;
@@ -90,6 +89,14 @@
       font-size: 0.9rem;
       text-decoration: underline;
     }
+    .nav-left span {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffd700;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
 
     .search-box input {
       padding: 6px;
@@ -106,7 +113,6 @@
       cursor: pointer;
     }
 
-    /* --- Login Box --- */
     .login-container {
       background: rgba(0, 0, 0, 0.6);
       padding: 30px;
@@ -120,14 +126,14 @@
       width: 80%;
       padding: 10px;
       margin: 10px 0;
-      border: none;
+      border: round;
       border-radius: 5px;
     }
 
     .login-container button {
       padding: 10px 20px;
       background-color: #f8a100;
-      border: none;
+      border: round;
       border-radius: 5px;
       cursor: pointer;
       color: #000;
@@ -137,23 +143,38 @@
     .login-container button:hover {
       background-color: #ffc640;
     }
+    .oauth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    }
 
     .oauth button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      max-width: 300px;         /* Consistent width */
+      height: 45px;             /* Uniform height */
       background-color: #222;
       color: #fff;
-      margin: 5px;
       padding: 8px 16px;
       border: none;
-      border-radius: 5px;
+      border-radius: 25px;      /* Rounded pill shape */
       cursor: pointer;
-      transition: 0.3s;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
     }
+
+    
 
     .oauth button:hover {
       background-color: #444;
     }
 
-    /* --- Story Output Container --- */
     .stories-container {
       margin: 20px auto 80px auto;
       max-width: 600px;
@@ -179,7 +200,6 @@
       color: #ffd700;
     }
 
-    /* --- AI Chat Assistant --- */
     .chat-icon {
       position: fixed;
       bottom: 20px;
@@ -212,25 +232,27 @@
   <!-- Background Video -->
   <video id="bg-video" autoplay muted loop>
     <source src="back.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
   </video>
 
   <!-- Navigation Bar -->
   <nav>
     <div class="nav-left">
-      <img src="logo.png" alt="StoryNest Logo" />
+      <img src="1.logo-removebg-preview.png" alt="StoryNest Logo" />
       <span><strong>StoryNest</strong></span>
     </div>
 
     <div class="nav-center">
-      <a href="#">Home</a>
-      <a href="#">Genre</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="genre.html">Genre</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+
     </div>
 
     <div class="nav-right">
-      <a href="#">Sign Up | Register</a>
+      <a href="signup.html">Sign Up | Register</a>
+    
+
       <div class="search-box">
         <input type="text" placeholder="Search..." />
         <button>🔍</button>
@@ -247,31 +269,77 @@
     <p>Don't have an account?</p>
     <a href="#">Sign Up</a>
     <div class="oauth">
-      <button>Continue with Google</button>
-      <button>Continue with Microsoft</button>
-      <button>Continue with Apple</button>
-    </div>
+  <button>
+    <img src="google.png" alt="Google Logo" style="height: 20px; vertical-align: middle; margin-right: 10px;" />
+    Continue with Google
+  </button>
+  <button>
+    <img src="microsoft.png" alt="Microsoft Logo" style="height: 20px; vertical-align: middle; margin-right: 10px;" />
+    Continue with Microsoft
+  </button>
+  <button>
+    <img src="apple.png" alt="Apple Logo" style="height: 20px; vertical-align: middle; margin-right: 10px;" />
+    Continue with Apple
+  </button>
+</div>
   </div>
+
+    
 
   <!-- Stories Display -->
   <div class="stories-container" id="stories">
-    <h3>Loading stories...</h3>
+    <h3>Featured Stories</h3>
+    <div class="story-card">
+      <h3><a href="stories/cinderella.html" style="color: #ffd700;">Cinderella</a></h3>
+      <p>A magical tale of kindness, courage, and transformation.</p>
+    </div>
+    <div class="story-card">
+      <h3><a href="stories/sleeping-beauty.html" style="color: #ffd700;">Sleeping Beauty</a></h3>
+      <p>A princess cursed to sleep for a hundred years... until true love awakens her.</p>
+    </div>
+    <div class="story-card">
+      <h3><a href="stories/snow-queen.html" style="color:#ffd700;"></a>snow-queen</h3>
+      <p>snow queen story is based on snow queen love story..</p>
+    </div>
   </div>
 
-  <!-- AI Chat Image + Bubble -->
+  <!-- AI Chat Assistant -->
   <img src="ai1.png" class="chat-icon" id="chatToggle" alt="AI Chat Icon" />
   <div class="chat-bubble" id="chatBubble">
     👋 Hi! Need help or want to explore a story?
   </div>
+  <script>
+function searchStory() {
+  const query = document.getElementById("searchInput").value.toLowerCase();
+  // your story search logic here
+}
+</script>
+      <a href="fairy.html">Fairy Tale</a>
+      <a href="adventure.html">Adventure</a>
+      <a href="purana.html">Puranas</a>
+      <a href="culture.html">Culture</a>
+      <a href="folklore.html">Folklore</a>
+      <a href="comedy.html">Comedy</a>
+      <a href="romance.html">Romance</a>
+      <a href="horror.html">Horror</a>
+      <a href="mythology.html">Mythology</a>
+      <a href="historical.html">Historical</a>
+      <a href="sci-fi.html">Sci-Fi</a>
+      <a href="mystery.html">Mystery</a>
+      <a href="crime.html">Crime</a>      
+</div>
+
 
   <script>
     const toggle = document.getElementById("chatToggle");
     const bubble = document.getElementById("chatBubble");
-
     toggle.addEventListener("click", () => {
       bubble.classList.toggle("show");
     });
   </script>
+  
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-31f6fa21-066a-4d5e-8751-6591d35cdf0e" data-elfsight-app-lazy></div>
 
 </body>
 </html>

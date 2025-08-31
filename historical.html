@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryNest | Historical</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Karma', sans-serif;
+    }
+
+    body {
+      color: #fff;
+      background: #000;
+    }
+
+   #bg-image {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;    
+      z-index: -1;
+      opacity: 0.8;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px 30px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      height: 50px;
+    }
+
+    .nav-logo span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: #f8a100;
+      color: black;
+    }
+
+    .back-to-genre {
+      position: fixed;
+      top: 90px;
+      right: 20px;
+      background-color: #f8a100;
+      color: black;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1001;
+      box-shadow: 0 0 6px rgba(0,0,0,0.5);
+      transition: background 0.3s;
+    }
+
+    .back-to-genre:hover {
+      background-color: #ffc04d;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 180px auto 60px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ffd700;
+      margin-bottom: 20px;
+    }
+
+     .story-list {
+  display: flex;
+  flex-direction: column; /* Show boxes one below the other */
+  align-items: center;     /* Center each box horizontally */
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.story-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 60px;             /* Reduced height */
+  background: #f8a100;
+  color: black;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+  text-align: center;
+}
+
+
+    .story-list a:hover {
+      background: #ffc04d;
+    }
+
+    .search-box {
+      margin-bottom: 20px;
+    }
+
+    .search-box input {
+      padding: 8px;
+      border-radius: 5px 0 0 5px;
+      border: none;
+      outline: none;
+      width: 200px;
+    }
+
+    .search-box button {
+      border-radius: 0 5px 5px 0;
+      background-color: #f8a100;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background image -->
+ <img id="bg-image"src="historical.jpg"alt="background image"/>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.png" alt="Logo" />
+      <span>StoryNest</span>
+    </div>
+    <div class="nav-links">
+      <a href="fairy.html">Fairy Tale</a>
+      <a href="adventure.html">Adventure</a>
+      <a href="purana.html">Puranas</a>     
+      <a href="folklore.html">Folklore</a>
+      <a href="comedy.html">Comedy</a>
+      <a href="romance.html">Romance</a>
+      <a href="horror.html">Horror</a>
+      <a href="mythology.html">Mythology</a>
+      <a href="historical.html">Historical</a>
+      <a href="sci-fi.html">Sci-Fi</a>
+      <a href="mystery.html">Mystery</a>
+      <a href="crime.html">Crime</a>      
+    </div>
+  </nav>
+
+  <!-- Back to Genre Button -->
+  <a href="genre.html" class="back-to-genre">← Back to Genre</a>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Historical Stories</h1>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search stories..." />
+      <button>🔍</button>
+    </div>
+    <script src="js/search.js"></script>
+
+
+    <div class="story-list">
+      <a href="book-theif.html">Book Thief</a>
+      <a href="all-light.html">All light</a>
+      <a href="war-peace.html">War peace</a>
+      <a href="pillars-earth.html">Pillars earth</a>
+      <a href="wolf-hall.html">Wolf Hall</a>
+      <a href="red-tent.html">Red Tent</a>
+      <a href="geisha.html">Geisha</a>
+      <a href="gone-wind.html">Gone Wind</a>
+      <a href="alias-grace.html">Alias Grace</a>
+      <a href="nightingale.html">Nightingale</a>
+      
+
+      
+   </div>
+  </div>
+
+</body>
+</html>

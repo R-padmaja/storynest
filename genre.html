@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryNest | Genre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Karma', sans-serif;
+    }
+
+    #bg-video {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    body {
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 30px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-left img {
+      height: 50px;
+    }
+
+    .nav-left span {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .nav-center {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-center a,
+    .subnavbtn {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: 0.3s;
+      position: relative;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .nav-center a:hover,
+    .subnavbtn:hover {
+      color: #ffd700;
+    }
+
+    .nav-center a::after,
+    .subnavbtn::after {
+      content: "";
+      display: block;
+      height: 2px;
+      background: #f8a100;
+      transition: width 0.3s;
+      width: 0;
+      margin-top: 5px;
+    }
+
+    .nav-center a:hover::after,
+    .subnavbtn:hover::after {
+      width: 100%;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-right a {
+      color: #fff;
+      font-size: 0.9rem;
+      text-decoration: underline;
+    }
+
+    .search-box input {
+      padding: 6px;
+      border-radius: 5px 0 0 5px;
+      border: none;
+      outline: none;
+    }
+
+    .search-box button {
+      border-radius: 0 5px 5px 0;
+      background-color: #f8a100;
+      border: none;
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+
+    .subnav {
+      position: relative;
+    }
+
+    .vertical-subnav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.95);
+      max-height: 300px;
+      overflow-y: auto;
+      padding: 10px;
+      border-radius: 0 0 8px 8px;
+      z-index: 999;
+      width: 200px;
+    }
+
+    .vertical-subnav a {
+      display: block;
+      padding: 8px 14px;
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .vertical-subnav a:hover {
+      background-color: #f8a100;
+      color: black;
+      border-radius: 4px;
+    }
+
+    .subnav:hover .vertical-subnav {
+      display: block;
+    }
+
+    .stories-container {
+      margin: 150px auto 80px auto;
+      max-width: 600px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 10px;
+      min-height: 100px;
+    }
+
+    .stories-container ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .stories-container li {
+      background-color: rgba(255,255,255,0.1);
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .stories-container li:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    .stories-container a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      width: 60px;
+      z-index: 100;
+    }
+
+    .chat-bubble {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 25px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      max-width: 200px;
+    }
+
+    .chat-bubble.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video id="bg-video" autoplay muted loop>
+    <source src="back.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-left">
+      <img src="logo.png" alt="StoryNest Logo" />
+      <span><strong>StoryNest</strong></span>
+    </div>
+     <div class="nav-center">
+      <a href="index.html">Home</a>
+      <div class="subnav">
+        <button class="subnavbtn">Genre ⌄</button>
+        <div class="vertical-subnav">
+          <a href="fairy.html">Fairy Tale</a>
+          <a href="adventure.html">Adventure</a>
+          <a href="mystery.html">Mystery</a>
+          <a href="crime.html">Crime</a>
+          <a href="fantasy.html">Fantasy</a>
+          <a href="sci-fi.html">Science Fiction</a>
+          <a href="horror.html">Horror</a>
+          <a href="romance.html">Romance</a>
+          <a href="historical.html">Historical</a>
+          <a href="drama.html">Drama</a>
+          <a href="comedy.html">Comedy</a>
+          <a href="mythology.html">Mythology</a>
+          <a href="supernatural.html">Supernatural</a>
+          <a href="folklore.html">Folklore</a>         
+          <a href="purana.html">Puranas</a>
+        </div>
+      </div>
+
+    
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="#">Sign Up | Register</a>
+      <div class="search-box">
+        <input type="text" placeholder="Search..." />
+        <button>🔍</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Genre Story List -->
+  <div class="stories-container" id="storyList">
+    <h3>Select a genre from the menu to view stories</h3>
+  </div>
+
+  <!-- AI Chat Assistant -->
+  <img src="ai1.png" class="chat-icon" id="chatToggle" alt="AI Chat Icon" />
+  <div class="chat-bubble" id="chatBubble">
+    👋 Hi! Looking for a magical tale or thrilling mystery?
+  </div>
+
+  <script>
+    const toggle = document.getElementById("chatToggle");
+    const bubble = document.getElementById("chatBubble");
+
+    toggle.addEventListener("click", () => {
+      bubble.classList.toggle("show");
+    });
+
+    
+       const stories = {
+  fairy: [
+    { title: "Cinderella", link: "stories/cinderella.html" },
+    { title: "Sleeping Beauty", link: "stories/sleeping-beauty.html" },
+    { title: "Snow white and the Seven Dwarfs", link: "stories/snow-white.html" },
+    { title: "Rapunzel", link: "stories/rapunzel.html" },
+    { title: "Beauty and the Beast", link: "stories/beauty.html" },
+    { title: "The Little Mermaid", link: "stories/little.html" },
+    { title: "Aladdin", link: "stories/aladdin.html" },
+    { title: "Hansel and Gretel", link: "stories/hansel.html" },
+    { title: "Lady and the tramp", link: "stories/lady.html" },
+    { title: "The Ugly Duckling", link: "stories/ugly.html" },
+    { title: "Goldilocks and the Three Bears", link: "stories/goldilocks.html" },
+    { title: "Jack and the Beanstalk", link: "stories/jack.html" },
+    { title: "The Frog Prince", link: "stories/frog.html" },
+    { title: "Rumpelstiltskin", link: "stories/rump.html" },
+    { title: "The Twelve Dancing Princesses", link: "stories/twel.html" },
+    { title: "Thumbelina", link: "stories/thumb.html" },
+    { title: "The Princess and the Pea", link: "stories/princess.html" },
+    { title: "Alice in Wonderland", link: "stories/alice.html" },
+    { title: "The Goose Girl", link: "stories/goose.html" },
+    { title: "The Jungle Book", link: "stories/jungle.html" }
+  ],
+
+  adventure: [
+  { title: "The Lost Island", link: "stories/lost-island.html" },
+  { title: "Jungle Quest", link: "stories/jungle-quest.html" },
+  { title: "Pirate's Gold", link: "stories/pirates-gold.html" },
+  { title: "The Three Musketeers", link: "stories/three-musketeers.html" },
+  { title: "Treasure Island", link: "stories/treasure-island.html" },
+  { title: "Journey to the Center of the Earth", link: "stories/journey-center-earth.html" },
+  { title: "King Solomon's Mines", link: "stories/king-solomons-mines.html" },
+  { title: "The Count of Monte Cristo", link: "stories/count-of-monte-cristo.html" },
+  { title: "The Adventures of Huckleberry Finn", link: "stories/huckleberry-finn.html" },
+  { title: "The Hobbit", link: "stories/the-hobbit.html" },
+  { title: "Don Quixote", link: "stories/don-quixote.html" },
+  { title: "Robinson Crusoe", link: "stories/robinson-crusoe.html" },
+  { title: "Around the World in 80 Days", link: "stories/around-world-80-days.html" }
+],
+
+mystery: [
+  { title: "The Vanishing Key", link: "stories/vanishing-key.html" },
+  { title: "Whispers in the Fog", link: "stories/whispers-fog.html" },
+  { title: "The Locked Room", link: "stories/locked-room.html" },
+  { title: "And Then There Were None", link: "stories/and-then-there-were-none.html" },
+  { title: "The Hound of the Baskervilles", link: "stories/hound-of-baskervilles.html" },
+  { title: "The Big Sleep", link: "stories/big-sleep.html" },
+  { title: "Murder on the Orient Express", link: "stories/orient-express.html" },
+  { title: "The Girl with the Dragon Tattoo", link: "stories/dragon-tattoo.html" },
+  { title: "The Name of the Rose", link: "stories/name-of-the-rose.html" },
+  { title: "The Maltese Falcon", link: "stories/maltese-falcon.html" },
+  { title: "The Secret History", link: "stories/secret-history.html" },
+  { title: "The Woman in White", link: "stories/woman-in-white.html" },
+  { title: "The Do Vinci Code", link: "stories/do-vinci-code.html" },
+  { title: "The Moonstone", link: "stories/moonstone.html" },
+  { title: "Gone Girl", link: "stories/gone-girl.html" }
+],
+crime: [
+  { title: "The Silent Witness", link: "stories/crime/silent-witness.html" },
+  { title: "Midnight Confession", link: "stories/crime/midnight confession.html" },
+  { title: "The Final Alibi", link: "stories/crime/final alibi.html" },
+  { title: "The Noida Double Murder", link: "stories/crime/noida double murder.html" },
+  { title: "Jessica Lal Case", link: "stories/crime/jessica lal.html" },
+  { title: "Sheena Bora Mystery", link: "stories/crime/sheena bora.html" },
+  { title: "The Vanishing Banker", link: "stories/crime/vanishing banker.html" },
+  { title: "The Lakshmikanthan Murder", link: "stories/crime/lakshmikanthan.html" },
+  { title: "The Crimson Ledger", link: "stories/crime/crimson ledger.html" },
+  { title: "The Insider Job", link: "stories/crime/insider job.html" },
+  { title: "The Black Briefcase", link: "stories/crime/black briefcase.html" },
+  { title: "The Final Verdict", link: "stories/crime/final verdict.html" },
+  { title: "The Disappearing Heiress", link: "stories/crime/disappearing heiress.html" },
+  { title: "The Poisoned Pen", link: "stories/crime/poisoned pen.html" },
+  { title: "The Art of Deception", link: "stories/crime/art of deception.html" }
+],
+
+
+"sci-fi": [
+  { title: "The Time Machine", link: "stories/sci-fi/time-machine.html" },
+  { title: "All You Zombies", link: "stories/sci-fi/all-you-zombies.html" },
+  { title: "A Sound of Thunder", link: "stories/sci-fi/sound-of-thunder.html" },
+  { title: "The Machine Stops", link: "stories/sci-fi/machine-stops.html" },
+  { title: "I, Robot", link: "stories/sci-fi/i-robot.html" },
+  { title: "The Last Question", link: "stories/sci-fi/last-question.html" },
+  { title: "The Martian", link: "stories/sci-fi/the-martian.html" },
+  { title: "Bridesicle", link: "stories/sci-fi/bridesicle.html" },
+  { title: "Beachworld", link: "stories/sci-fi/beachworld.html" },
+  { title: "The Star", link: "stories/sci-fi/the-star.html" }
+],
+horror: [
+  { title: "The Tell-Tale Heart", link: "stories/horror/tell-tale-heart.html" },
+  { title: "The Monkey's Paw", link: "stories/horror/monkeys-paw.html" },
+  { title: "The Lottery", link: "stories/horror/lottery.html" },
+  { title: "The Yellow Wallpaper", link: "stories/horror/yellow-wallpaper.html" },
+  { title: "The Boogeyman", link: "stories/horror/boogeyman.html" },
+  { title: "The Landlady", link: "stories/horror/landlady.html" },
+  { title: "The Black Cat", link: "stories/horror/black-cat.html" },
+  { title: "The Horla", link: "stories/horror/horla.html" },
+  { title: "The Graveyard Rats", link: "stories/horror/graveyard-rats.html" },
+  { title: "The Haunter of the Dark", link: "stories/horror/haunter-dark.html" }
+],
+romance: [
+  { title: "Pride and Prejudice", link: "stories/romance/pride-prejudice.html" },
+  { title: "Jane Eyre", link: "stories/romance/jane-eyre.html" },
+  { title: "The Notebook", link: "stories/romance/notebook.html" },
+  { title: "Me Before You", link: "stories/romance/me-before-you.html" },
+  { title: "Love in the Time of Cholera", link: "stories/romance/love-cholera.html" },
+  { title: "Outlander", link: "stories/romance/outlander.html" },
+  { title: "The Fault in Our Stars", link: "stories/romance/fault-stars.html" },
+  { title: "The Rosie Project", link: "stories/romance/rosie-project.html" },
+  { title: "The Kiss Quotient", link: "stories/romance/kiss-quotient.html" },
+  { title: "It Ends With Us", link: "stories/romance/it-ends-with-us.html" }
+],
+historical: [
+  { title: "The Book Thief", link: "stories/historical/book-thief.html" },
+  { title: "All the Light We Cannot See", link: "stories/historical/all-light.html" },
+  { title: "War and Peace", link: "stories/historical/war-peace.html" },
+  { title: "The Pillars of the Earth", link: "stories/historical/pillars-earth.html" },
+  { title: "Wolf Hall", link: "stories/historical/wolf-hall.html" },
+  { title: "The Red Tent", link: "stories/historical/red-tent.html" },
+  { title: "Memoirs of a Geisha", link: "stories/historical/geisha.html" },
+  { title: "Gone with the Wind", link: "stories/historical/gone-wind.html" },
+  { title: "Alias Grace", link: "stories/historical/alias-grace.html" },
+  { title: "The Nightingale", link: "stories/historical/nightingale.html" }
+],
+drama: [
+  { title: "A Raisin in the Sun", link: "stories/drama/raisin-sun.html" },
+  { title: "Death of a Salesman", link: "stories/drama/death-salesman.html" },
+  { title: "The Glass Menagerie", link: "stories/drama/glass-menagerie.html" },
+  { title: "The Crucible", link: "stories/drama/crucible.html" },
+  { title: "Long Day's Journey Into Night", link: "stories/drama/long-day.html" },
+  { title: "The Kite Runner", link: "stories/drama/kite-runner.html" },
+  { title: "The Color Purple", link: "stories/drama/color-purple.html" },
+  { title: "Room", link: "stories/drama/room.html" },
+  { title: "The Reader", link: "stories/drama/reader.html" },
+  { title: "A Thousand Splendid Suns", link: "stories/drama/splendid-suns.html" }
+],
+comedy: [
+  { title: "The Importance of Being Earnest", link: "stories/comedy/earnest.html" },
+  { title: "Three Men in a Boat", link: "stories/comedy/three-men.html" },
+  { title: "Catch-22", link: "stories/comedy/catch-22.html" },
+  { title: "Good Omens", link: "stories/comedy/good-omens.html" },
+  { title: "Bridget Jones's Diary", link: "stories/comedy/bridget-jones.html" },
+  { title: "The Hitchhiker's Guide to the Galaxy", link: "stories/comedy/hitchhiker.html" },
+  { title: "Bossypants", link: "stories/comedy/bossypants.html" },
+  { title: "The Rosie Project", link: "stories/comedy/rosie-project.html" },
+  { title: "My Family and Other Animals", link: "stories/comedy/family-animals.html" },
+  { title: "Diary of a Wimpy Kid", link: "stories/comedy/wimpy-kid.html" }
+],
+mythology: [
+  { title: "The Odyssey", link: "stories/mythology/odyssey.html" },
+  { title: "The Iliad", link: "stories/mythology/iliad.html" },
+  { title: "The Labors of Hercules", link: "stories/mythology/hercules.html" },
+  { title: "The Tale of Prometheus", link: "stories/mythology/prometheus.html" },
+  { title: "The Birth of Athena", link: "stories/mythology/athena.html" },
+  { title: "The Fall of Icarus", link: "stories/mythology/icarus.html" },
+  { title: "The Trojan Horse", link: "stories/mythology/trojan-horse.html" },
+  { title: "The Judgment of Paris", link: "stories/mythology/judgment-paris.html" },
+  { title: "The Story of Medusa", link: "stories/mythology/medusa.html" },
+  { title: "The Curse of Cassandra", link: "stories/mythology/cassandra.html" }
+],
+supernatural: [
+  { title: "Dracula", link: "stories/supernatural/dracula.html" },
+  { title: "The Shining", link: "stories/supernatural/shining.html" },
+  { title: "The Witching Hour", link: "stories/supernatural/witching-hour.html" },
+  { title: "The Turn of the Screw", link: "stories/supernatural/turn-screw.html" },
+  { title: "The Exorcist", link: "stories/supernatural/exorcist.html" },
+  { title: "The Haunting of Hill House", link: "stories/supernatural/hill-house.html" },
+  { title: "The Amityville Horror", link: "stories/supernatural/amityville.html" },
+  { title: "The Woman in Black", link: "stories/supernatural/woman-black.html" },
+  { title: "Coraline", link: "stories/supernatural/coraline.html" },
+  { title: "The Graveyard Book", link: "stories/supernatural/graveyard-book.html" }
+],
+folklore: [
+  { title: "The Clever Rabbit and the Lion", link: "stories/folklore/clever-rabbit.html" },
+  { title: "The Tortoise and the Birds", link: "stories/folklore/tortoise-birds.html" },
+  { title: "The Tale of the Bamboo Cutter", link: "stories/folklore/bamboo-cutter.html" },
+  { title: "The Legend of Nian", link: "stories/folklore/legend-of-nian.html" },
+  { title: "The Monkey and the Crocodile", link: "stories/folklore/monkey-crocodile.html" },
+  { title: "The Boy Who Cried Wolf", link: "stories/folklore/boy-who-cried-wolf.html" },
+  { title: "The Fox and the Grapes", link: "stories/folklore/fox-grapes.html" },
+  { title: "The Legend of the White Snake", link: "stories/folklore/white-snake.html" },
+  { title: "The Fisherman and the Genie", link: "stories/folklore/fisherman-genie.html" },
+  { title: "The Tale of the Firebird", link: "stories/folklore/firebird.html" },
+  { title: "The Magic Paintbrush", link: "stories/folklore/magic-paintbrush.html" },
+  { title: "The Legend of the Rainbow Serpent", link: "stories/folklore/rainbow-serpent.html" },
+  { title: "The Snake Prince", link: "stories/folklore/snake-prince.html" },
+  { title: "The Stonecutter", link: "stories/folklore/stonecutter.html" },
+  { title: "The Golden Fish", link: "stories/folklore/golden-fish.html" }
+],
+
+puranas: [
+  { title: "Brahma Purana", link: "stories/puranas/brahma.html" },
+  { title: "Padma Purana", link: "stories/puranas/padma.html" },
+  { title: "Vishnu Purana", link: "stories/puranas/vishnu.html" },
+  { title: "Vayu Purana", link: "stories/puranas/vayu.html" },
+  { title: "Bhagavata Purana", link: "stories/puranas/bhagavata.html" },
+  { title: "Narada Purana", link: "stories/puranas/narada.html" },
+  { title: "Markandeya Purana", link: "stories/puranas/markandeya.html" },
+  { title: "Agni Purana", link: "stories/puranas/agni.html" },
+  { title: "Bhavishya Purana", link: "stories/puranas/bhavishya.html" },
+  { title: "Brahmavaivarta Purana", link: "stories/puranas/brahmavaivarta.html" },
+  { title: "Linga Purana", link: "stories/puranas/linga.html" },
+  { title: "Varaha Purana", link: "stories/puranas/varaha.html" },
+  { title: "Skanda Purana", link: "stories/puranas/skanda.html" },
+  { title: "Vamana Purana", link: "stories/puranas/vamana.html" },
+  { title: "Kurma Purana", link: "stories/puranas/kurma.html" },
+  { title: "Matsya Purana", link: "stories/puranas/matsya.html" },
+  { title: "Garuda Purana", link: "stories/puranas/garuda.html" },
+  { title: "Brahmanda Purana", link: "stories/puranas/brahmanda.html" },
+  { title: "Devi Bhagavata purana", link: "stories/puranas/devibhagavata.html"},
+  { title: "mahabharata", link: "stories/puranas/mahabharata.html"},
+  { title: "Ramayana", link: "stories/puranas/ramayana.html"}
+]
+
+};
+
+function showStories(genre) {
+  const container = document.getElementById("storyList");
+  const list = stories[genre]
+    .map(story => `<li><a href="${story.link}">${story.title}</a></li>`)
+    .join("");
+  container.innerHTML = `<h3>${genre.charAt(0).toUpperCase() + genre.slice(1)} Stories</h3><ul>${list}</ul>`;
+}
+</script>
+  
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-31f6fa21-066a-4d5e-8751-6591d35cdf0e" data-elfsight-app-lazy></div>
+
+</body>
+</html>

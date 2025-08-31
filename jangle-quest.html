@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryNest | Jangle Quest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Karma', sans-serif;
+    }
+
+    body {
+      color: #fff;
+      background: #000;
+    }
+
+    #bg-image {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.3;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      height: 50px;
+    }
+
+    .nav-logo span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 140px auto 60px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #ffd700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      width: 60px;
+      z-index: 100;
+    }
+
+    .chat-bubble {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 25px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      max-width: 200px;
+    }
+
+    .chat-bubble.show {
+      display: block;
+    }
+
+    #dictionary-popup {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.95);
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      display: none;
+      max-width: 300px;
+      font-size: 0.95rem;
+      z-index: 9999;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .fixed-back {
+      position: fixed;
+      top: 90px; /* just below the nav bar */
+      right: 20px;
+      background-color: #f8a100;
+      color: black;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1001;
+      box-shadow: 0 0 6px rgba(0,0,0,0.5);
+      transition: background 0.3s;
+    }
+
+    .fixed-back:hover {
+      background-color: #ffc04d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Image -->
+  <img id="bg-image" src="jangle quest.jpg" alt="Background Image" />
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.png" alt="Logo" />
+      <span>StoryNest</span>
+    </div>
+  </nav>
+
+  <!-- Back Button -->
+  <a href="adventure.html" class="fixed-back">← Back to Adventure</a>
+
+  <!-- Lesson 1 -->
+  <div class="container" id="story">
+    <h2>Jangle Quest</h2>
+    <p>The Amazon Jangle stood tall and vast before the team of explorers, its lush canopy shrouded in a veil of mist. The air was thick with the scent of damp earth and uncharted flora, creating an atmosphere of eerie tranquility.The team set up camp as night fell, the darkness amplifying the Jangle's symphony of nocturnal creatures. The explorers huddled around the campfire, its flickering light casting long shadows on their faces, amplifying the eeriness of their surroundings.In the middle of the night, a sudden rustling from the undergrowth sent a ripple of alertness through the team. The explorers held their breath, straining their ears to decipher the source of the noise.From the shadows emerged a majestic jaguar, its coat glistening under the dim moonlight. The team watched, frozen in awe and fear, as the creature prowled past their campsite, indifferent to their presence.The team continued their journey the next morning, the encounter with the jaguar a stark reminder of the wilderness they were venturing into. The Jangle seemed to grow more mysterious with each passing day.As they delved deeper into the Jangle, the team discovered an ancient stone structure, its weather-worn carvings hinting at the existence of a long-forgotten civilization. A sense of wonder and trepidation filled the explorers.The explorers carefully examined the stone structure, their fingers tracing the worn-out carvings, their eyes filled with curiosity. What secrets did the Jangle hold? What stories were etched into these ancient stones?As they explored the ancient structure, a sudden collapse of a stone wall revealed a hidden chamber. The team's hearts pounded in unison as they peered into the darkness, unsure of what they would find.Inside the chamber, they discovered an array of artifacts - pottery, stone carvings, and ancient tools. The explorers were overwhelmed with a sense of discovery, their minds racing with questions about the civilization that once flourished here.As they cataloged their discoveries, a sudden, deafening roar echoed through the Jangle. The team froze, their blood running cold as the echo reverberated through the dense forest.The ground beneath them began to shake, a growing tremor that sent them sprawling. The team scrambled to their feet, their eyes wide with fear as they realized the Jangle was not as dormant as it seemed.As they clambered out of the collapsing structure, they found themselves face-to-face with an enormous anaconda. The snake hissed menacingly, its eyes fixed on the intruders, its massive body coiling in anticipation.The team backed away slowly, their hearts pounding in their chests as they stared at the gigantic snake. They knew they had to escape, but the path to safety was blocked by the formidable creature.Just when they thought they were trapped, the jaguar from the previous night emerged from the undergrowth. It pounced on the anaconda, engaging the snake in a fierce battle and providing the team with a chance to escape.The team didn't waste a moment. They sprinted away from the scene, their breaths ragged and their hearts pounding. They didn't stop until they were safely away from the deadly confrontation.As they caught their breath, the team couldn't help but marvel at the sheer power and unpredictability of the Jangle. They had come face-to-face with death, only to be saved by the very creature they had feared.As the days passed, the team continued their exploration, their encounters serving as stark reminders of the Jangle's raw, untamed beauty. They began to understand and respect the balance of life within the Jangle.The team carried their discoveries and experiences with them as they finally exited the Jangle. The experience had changed them, filling them with a profound respect for the mysteries and the power of nature.As they looked back one last time, the Amazon Jangle stood as majestic and mysterious as ever, its secrets safe within its emerald depths. Their adventure had ended, but the echoes of the Jangle would stay with them forever.The End. </p>
+    
+  </div>
+
+  
+
+
+  <!-- Dictionary Popup -->
+  <div id="dictionary-popup"></div>
+
+  <!-- AI Chat Assistant -->
+  <img src="ai1.png" class="chat-icon" id="chatToggle" alt="AI Chat Icon" />
+  <div class="chat-bubble" id="chatBubble">
+    👋 Need help with the story?
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const toggle = document.getElementById("chatToggle");
+    const bubble = document.getElementById("chatBubble");
+    toggle.addEventListener("click", () => {
+      bubble.classList.toggle("show");
+    });
+
+    // Dictionary popup logic
+    const popup = document.getElementById("dictionary-popup");
+    document.getElementById("story").addEventListener("pointerdown", (e) => {
+      const selection = window.getSelection();
+      setTimeout(() => {
+        const word = selection.toString().trim();
+        if (word.length > 0) {
+          fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+            .then(res => res.json())
+            .then(data => {
+              const def = data[0]?.meanings[0]?.definitions[0]?.definition || "No definition found.";
+              popup.innerHTML = `<strong>${word}</strong>: ${def}`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            })
+            .catch(() => {
+              popup.innerHTML = `No definition found for "${word}".`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            });
+        }
+      }, 500);
+    });
+
+    document.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  </script>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-31f6fa21-066a-4d5e-8751-6591d35cdf0e" data-elfsight-app-lazy></div>
+
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryNest | The Coraline</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Karma', sans-serif;
+    }
+
+    body {
+      color: #fff;
+      background: #000;
+    }
+
+    #bg-image {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.3;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      height: 50px;
+    }
+
+    .nav-logo span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 140px auto 60px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #ffd700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      width: 60px;
+      z-index: 100;
+    }
+
+    .chat-bubble {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 25px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      max-width: 200px;
+    }
+
+    .chat-bubble.show {
+      display: block;
+    }
+
+    #dictionary-popup {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.95);
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      display: none;
+      max-width: 300px;
+      font-size: 0.95rem;
+      z-index: 9999;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .fixed-back {
+      position: fixed;
+      top: 90px; /* just below the nav bar */
+      right: 20px;
+      background-color: #f8a100;
+      color: black;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1001;
+      box-shadow: 0 0 6px rgba(0,0,0,0.5);
+      transition: background 0.3s;
+    }
+
+    .fixed-back:hover {
+      background-color: #ffc04d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Image -->
+  <img id="bg-image" src="pic.png" alt="Background Image" />
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.png" alt="Logo" />
+      <span>StoryNest</span>
+    </div>
+  </nav>
+
+  <!-- Back Button -->
+  <a href="supernatural.html" class="fixed-back">← Back to Supernatural</a>
+
+  <!-- Lesson 1 -->
+  <div class="container" id="story">
+    <h2>The Coraline</h2>
+    <p>Once upon a time in a far-away land lived a sweet and pretty girl named Cinderella. She 
+made her home with her mean old step-mother and her two stepsisters, and they made her do all 
+the work in the house. Cinderella cooked and baked. She cleaned and scrubbed. She had no time 
+left for parties and fun. 
+But one day an invitation came from the palace of the king. A great ball was to be given for 
+the prince of the land. And every young girl in the kingdom was invited. 
+“How nice!” thought Cinderella. “I am invited, too.” But her mean stepsisters never thought 
+of her. They thought only of themselves, of course. They had all sorts of jobs for Cinderella to do. 
+“Wash this slip. Press this dress. Curl my hair. Find my fan.” They both kept shouting, as fast 
+as they could speak. 
+“But I must get ready myself. I’m going, too,” said Cinderella.  
+“You!” they hooted. “The Prince’s ball for you?” And they kept her busy all day long. She 
+worked in the morning, while her stepsisters slept. She worked all afternoon, while they bathed 
+and dressed. And in the evening she had to help them put on the finishing touches for the ball. She 
+had not one minute to think of herself.  
+Soon the coach was ready at the door. The ugly stepsisters were powdered, pressed, and 
+curled. But there stood Cinderella in her workaday rags. “Why, Cinderella!” said the stepsisters. 
+“You’re not dressed for the ball.” 
+“No,” said Cinderella. “I guess I cannot go.” Poor Cinderella sat weeping in the garden.  
+Suddenly a little old woman with a sweet, kind face stood before her. It was her fairy 
+godmother. 
+“Hurry, child!” she said. “You are going to the ball!” Cinderella could hardly believe her eyes! 
+The fairy godmother turned a fat pumpkin into a splendid coach. Next her pet mice became horses, 
+and her dog a fine footman. The barn horse was turned into a coachman. 
+“There, my dear,” said the fairy godmother. “Now into the coach with you, and off to the ball 
+you go.” 
+“But my dress--” said Cinderella. 
+“Lovely, my dear,” the fairy godmother began. Then she really looked at Cinderella’s rags. 
+“Oh, good heavens,” she said. “You can never go in that.” She waved her magic wand. 
+“Salaga doola, 
+Menchika boola, 
+Bibbidy bobbidy boo!” she said. 
+There stood Cinderella in the loveliest ball dress that ever was. And on her feet were tiny
+glass slippers! “Oh,” cried Cinderella. “How can I ever thank you?” 
+“Just have a wonderful time at the ball, my dear,” said her fairy godmother. “But remember, 
+this magic lasts only until midnight. At the stroke of midnight, the spell will be broken. And 
+everything will be as it was before.” 
+“I will remember,” said Cinderella. “It is more than I ever dreamed of.” Then into the magic 
+coach she stepped, and was whirled away to the ball. 
+And such a ball! The king’s palace was ablaze with lights. there was music and laughter. And 
+every lady in the land was dressed in her beautiful best.  
+But Cinderella was the loveliest of them all. The prince never left her side, all evening long. 
+They danced every dance. They had supper side by side. and they happily smiled into each other’s 
+eyes. 
+But all at once the clock began to strike midnight, Bong Bong Bong-- 
+“Oh!” cried Cinderella. “I almost forgot!” And without a word, away she ran, out of the 
+ballroom and down the palace stairs. She lost one glass slipper. But she could not stop.  
+Into her magic coach she stepped, and away it rolled. But as the clock stopped striking, the 
+coach disappeared. And no one knew where she had gone.  
+Next morning all the kingdom was filled with the news. The Grand Duke was going from 
+house to house, with a small glass slipper in his hand. For the prince had said he would marry no 
+one but the girl who could wear the tiny shoe.  
+Every girl in the land tried hard to put it on. The ugly stepsisters tried hardest of all. But not a 
+one could wear the glass shoe.  
+And where was Cinderella? Locked in her room. For the mean old stepmother was taking no 
+chances of letting her try on the slipper. Poor Cinderella! It looked as if the Grand Duke would 
+surely pass her by.  
+But her little friends the mice got the stepmother’s key. And they pushed it under Cinderella’s 
+door. So down the long stairs she came, as the Duke was just about to leave. 
+“Please!” cried Cinderella. “Please let me try.” And of course the slipper fitted, since it was 
+her very own. 
+That was all the Duke needed. Now his long search was done. And so Cinderella became the 
+prince’s bride, and lived happily ever after--and the little pet mice lived in the palace and were 
+happy ever after, too.  </p>
+    
+  </div>
+
+  
+
+
+  <!-- Dictionary Popup -->
+  <div id="dictionary-popup"></div>
+
+  <!-- AI Chat Assistant -->
+  <img src="ai1.png" class="chat-icon" id="chatToggle" alt="AI Chat Icon" />
+  <div class="chat-bubble" id="chatBubble">
+    👋 Need help with the story?
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const toggle = document.getElementById("chatToggle");
+    const bubble = document.getElementById("chatBubble");
+    toggle.addEventListener("click", () => {
+      bubble.classList.toggle("show");
+    });
+
+    // Dictionary popup logic
+    const popup = document.getElementById("dictionary-popup");
+    document.getElementById("story").addEventListener("pointerdown", (e) => {
+      const selection = window.getSelection();
+      setTimeout(() => {
+        const word = selection.toString().trim();
+        if (word.length > 0) {
+          fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+            .then(res => res.json())
+            .then(data => {
+              const def = data[0]?.meanings[0]?.definitions[0]?.definition || "No definition found.";
+              popup.innerHTML = `<strong>${word}</strong>: ${def}`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            })
+            .catch(() => {
+              popup.innerHTML = `No definition found for "${word}".`;
+              popup.style.top = `${e.pageY + 10}px`;
+              popup.style.left = `${e.pageX + 10}px`;
+              popup.style.display = "block";
+            });
+        }
+      }, 500);
+    });
+
+    document.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  </script>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-31f6fa21-066a-4d5e-8751-6591d35cdf0e" data-elfsight-app-lazy></div>
+
+
+</body>
+</html>
